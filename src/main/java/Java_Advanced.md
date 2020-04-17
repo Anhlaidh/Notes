@@ -357,21 +357,21 @@ public class testJackson {
 [
   {
     "category": "COOKING",
-    "title": "Everyday Italian",
+    "tools.title": "Everyday Italian",
     "author": "Giada De Laurentiis",
     "year": "2005",
     "price": 30
   },
   {
     "category": "CHILDREN",
-    "title": "Harry Potter",
+    "tools.title": "Harry Potter",
     "author": "J K Rowling",
     "year": "2005",
     "price": 29
   },
   {
     "category": "WEB",
-    "title": "Learning XML",
+    "tools.title": "Learning XML",
     "author": "Erik T.Ray",
     "year": "2003",
     "price": 39

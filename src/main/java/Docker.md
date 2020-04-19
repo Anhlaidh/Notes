@@ -301,6 +301,7 @@ dk02
     这时需思考如何设计namespace的控制权限)等等
     2. Docker 镜像,在用Dockerfile定义一个文件之后,`docker build`会产生一个Docker镜像,当运行Docker镜像时,会真正开始提供服务
     3. Docker容器,容器是直接提供服务的
+    4. 例:` docker build -f ./DockerFileTest2  -t test/centos:1.4 .`
 
 ### DockerFile体系结构(保留字指令)
 
@@ -323,3 +324,15 @@ dk02
     - `ENTRYPOINT` 的目的和`CMD`一样,都是在指定容器启动程序及参数
 - `ONBUILD` 当构建一个被继承的Dockerfile时运行命令,父镜像在被子继承后父镜像`onbuild`被触发
 
+#### 遇到的问题
+
+- WARNING: IPv4 forwarding is disabled. Networking will not work. 导致`RUN yum -y install xxx` 不可用
+    - 原因,docker 容器ip地址未分配
+    - 解决措施: 复用宿主机ip
+        -  写入宿主机
+            - `echo "net.ipv4.ip_forward=1" >>/usr/lib/sysctl.d/00-system.conf `
+        - 重启宿主机network和docker
+            - `systemctl restart network`
+            - `systemctl restart docker`
+        
+    

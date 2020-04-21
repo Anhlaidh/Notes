@@ -335,4 +335,16 @@ dk02
             - `systemctl restart network`
             - `systemctl restart docker`
         
-    
+
+
+### push
+
+```shell script
+$ sudo docker login --username=chinaanhlaidh registry.cn-hangzhou.aliyuncs.com
+$ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/anhlaidh/mysentos:[镜像版本号]
+$ sudo docker push registry.cn-hangzhou.aliyuncs.com/anhlaidh/mysentos:[镜像版本号]
+```
+
+```shell script
+$ sudo docker tag e575ef00df05 registry.cn-hangzhou.aliyuncs.com/anhlaidh/mysentos:1.0.1
+```

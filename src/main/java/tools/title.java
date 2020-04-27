@@ -9,6 +9,6 @@ import com.github.houbb.markdown.toc.core.impl.AtxMarkdownToc;
  */
 public class title {
     public static void main(String[] args) {
-        AtxMarkdownToc.newInstance().genTocFile("G:\\Notes\\src\\main\\java\\Docker.md");
+        AtxMarkdownToc.newInstance().genTocFile("G:\\Notes\\src\\main\\java\\Java_Advanced.md");
     }
 }

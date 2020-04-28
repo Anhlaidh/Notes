@@ -1,3 +1,18 @@
+# Table of Contents
+
+* [MySQL](#mysql)
+      * [](#)
+    * [SQL概述](#sql概述)
+    * [连接数据库](#连接数据库)
+    * [概念](#概念)
+  * [常用命令](#常用命令)
+    * [Base](#base)
+      * [简单查询](#简单查询)
+      * [分组查询](#分组查询)
+      * [总结](#总结)
+      * [连接查询](#连接查询)
+
+
 # MySQL
 
 ##准备
@@ -41,7 +56,9 @@ msyql -uroot -p123456
 - `show create table <tablename>;`查看建表语句
 
 ### Base
-- 简单查询
+ 
+#### 简单查询
+- 查询
     - `select <volumes> from <table>;`  查询某个字段的信息(无视大小写)
         - 可以加数学表达式
             - `select empno,ename,sal*12 from emp;`
@@ -121,3 +138,174 @@ select ename,hiredate from emp where hiredate=str_to_date('12-17-1980','%m-%d-%Y
        mm|%i|分
        ss|%s|秒
        SSS| |毫秒 
+         
+
+- 分组函数/聚合函数/多行处理函数 (忽略空值)
+    - 函数|说明
+      ---|---
+      count|取得记录值
+      sum|求和
+      avg|取平均
+      max|取最大值
+      min|取最小
+    - 分组函数不能直接用在where函数中
+    
+- distinct 去重复
+    - 前面不能有字段
+
+```sql
+select distinct job from emp;
+```
+
+#### 分组查询
+
+- 分组查询涉及的两个子句:
+    - group by 分组,优先执行(先分组,再where,再select再having)
+    - having 分组之后过滤
+- group by
+    - 若一条DQL语句中有group by子句,那么select关键字后面只能跟参与分组的字段和分组函数
+求不同job的最大sal
+```sql
+ select max(sal) from emp group by job;
+```
+求不同job的最大sal也显示job
+```sql
+select job,max(sal) from emp group by job;
+```
+两个字段联合划分分组
+```sql
+ select deptno,job,max(sal) from emp group by job,deptno;
+```
+select: 分组前筛选
+having: 分组后筛选
+```sql
+ select job,avg(sal) from emp group by job having avg(sal)>1500;
+
+```
+- 原则:
+    - 尽量在where中过滤,无法过滤的数据,通常需要先分组之后再过滤,这个时候可以选择用having.效率问题
+    
+#### 总结
+
+```sql
+select
+    ...
+from
+    ...
+where
+    ...
+group by
+    ...
+having
+    ...
+order by
+    ...
+
+```
+1. 顺序不能变
+2. 执行顺序
+    1. from 从某张表中查询出来
+    2. where 经过某条件进行过滤
+    3. group by 然后分组
+    4. having 分组之后不满意再过滤
+    5. select 查询出来
+    6. order by 排序输出
+    
+#### 连接查询
+
+1.  什么是连接查询
+    - 查询的时候只从一张表检索数据,称为单表查询
+    - 在实际开发中,数据并不是存储在一张表中,是同时存储在多张表中,这些表和表之箭存在关系,我们在检索的时候通常是
+    需要将多张表联合起来取得有效数据,这种多表查询被称为连接查询或者叫做跨表查询
+2. 链接查询根据出现年代分类
+    - SQL92[1992]
+    - SQL00[1999:更新的语法,主要掌握这种]
+    
+3. 连接查询根据连接方式可分为
+    - 内连接 :A表和B表能够完全匹配的记录查询出来,被称为内连接(inner可以省略)
+        - 等值连接  
+            - SQL92语法:等值连接
+            ```sql
+              select e.ename ,d.dname from emp e ,dept d where e.deptno=d.deptno;
+            ```
+            -SQL99语法:等值连接 join on
+                - 表独立出来了,结构更清晰,对表连接不满意的话可以追加where过滤
+             ```sql
+              select e.ename ,d.dname from emp e join dept d on e.deptno=d.deptno;
+             ```
+
+        - 非等值连接
+            - SQL99:
+                 ```sql
+                 select e.ename,s.grade from emp e , salgrade s where e.sal between s.losal and hisal;
+                 ```
+            - SQL99:
+                ```sql
+                select e.ename,s.grade from emp e join salgrade s on e.sal between s.losal and hisal;
+                ```
+        - 自连接
+            - SQL99:
+                ```sql
+                select e.ename , m.ename from emp e , emp m where m.empno=e.mgr;
+                ``` 
+            - SQL99:
+                ```sql
+                select e.ename , m.ename from emp e join emp m on m.empno=e.mgr;
+                ``` 
+    - 外连接 : (outer可以省略)
+        - A表和B表能够完全匹配的记录查询出来之外,将其中一张表的记录无条件的完全查询出来.
+    对方没有匹配的记录,会自动模拟出null与之匹配,这种查询被称为外连接
+        - 外连接的查询结果条数>=内连接的查询结果条数
+    
+        - 左外连接
+            - SQL99:
+                ```sql
+                select e.ename,d.dname from dept d left join emp e on e.deptno=d.deptno;
+                ``` 
+        - 右外连接
+            - SQL99:
+                ```sql
+                 select e.ename,d.dname from emp e right join dept d on e.deptno=d.deptno;
+                ``` 
+        - 任何一个右外连接都可以写成左外连接,反之亦可
+    - 全连接
+    
+- 若两张表进行连接查询的时候没有任何条件限制,最终的查询结果总数是两张表记录的条数的乘积,这种现象被称为
+笛卡尔积现象,为了避免笛卡尔积现象的发生,必须在进行表连接的时候添加限制条件
+```sql
+ select e.ename ,d.dname from emp e ,dept d;
+```
+- 多张表连接的语法格式
+```sql
+select
+    xxx
+from
+    a
+join
+    b
+on
+    条件
+join
+    c
+on
+    条件;
+
+```
+原理:a和b进行表连接之后,a再和c进行表连接
+
+-  案例:找出每一个员工对应的部门名称,以及该员工的工资等级:
+```sql
+ select e.ename ,d.dname,s.grade from emp e join dept d on e.deptno=d.deptno join salgrade s on e.sal between losal and hisal;
+```
+
+
+子查询:
+```sql
+select e.ename,e.dname,s.grade from (select e.ename,e.sal,d.dname from emp e left join dept d on e.deptno=d.deptno) e left join salgrade s on e.sal between s.losal and hisal;
+```
+#### 子查询
+
+1. 什么是子查询
+    - select语句嵌套select语句
+2. 子查询可以出现在哪儿
+    

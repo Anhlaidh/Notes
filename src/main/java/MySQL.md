@@ -11,6 +11,8 @@
       * [分组查询](#分组查询)
       * [总结](#总结)
       * [连接查询](#连接查询)
+      * [子查询](#子查询)
+      * [union](#union)
 
 
 # MySQL
@@ -308,4 +310,18 @@ select e.ename,e.dname,s.grade from (select e.ename,e.sal,d.dname from emp e lef
 1. 什么是子查询
     - select语句嵌套select语句
 2. 子查询可以出现在哪儿
+    - select...(select)
+    - from....(select)
+    - where....(select)
     
+select后select
+```sql
+select e.ename,(select d.dname from dept d where e.deptno=d.deptno)as dname from emp e;
+```
+- 找出每个部门的平均薪水,并且要求显示平均薪水的薪水等级
+from 后select
+```sql
+select d.dname,s.grade from( select d.dname ,e.sal from (select deptno,avg(sal) as sal from emp group by deptno) e join dept d on d.deptno=e.deptno) d join salgrade s on d.sal between losal and hisal;
+```
+
+#### union

@@ -2,7 +2,7 @@
 ## Java
 
 - [Java#1](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/Java.md)
-- [Java#2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/Java#2.md)
+- [Java#2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/Java%232.md)
 - [算法](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/算法.md)
 
 ## Frame

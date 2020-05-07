@@ -325,3 +325,33 @@ select d.dname,s.grade from( select d.dname ,e.sal from (select deptno,avg(sal) 
 ```
 
 #### union
+
+- 连接两个表一同输出
+```sql
+select xxxxx
+union
+select xxxxx
+```
+字段个数相同,(Oracle中数据类型也要相同)
+
+#### limit
+1. 获取一张表中的某部分数据
+2. 只在MySQL数据库中存在,不通用,是MySQL数据库的特色
+```sql
+ select ename ,sal from emp limit 5;
+```
+limit 5 代表,从表中记录下标0开始,取五条等同于下面的sql语句
+```sql
+ select ename ,sal from emp limit 0,5;
+```
+limit的语法: limit 起始下标,长度
+    - 起始坐标没有指定,默认从0开始,0表示表中的第一条ji'lu
+    
+- 找出公司中工资排名在前五的员工
+```sql
+select ename ,sal from emp order by sal desc limit 5;
+```
+
+### 表
+
+- DDL

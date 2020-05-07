@@ -1249,7 +1249,17 @@ public class SumTest {
     - ConcurrentLinkedQueue非阻塞
     - ArrayBlockingQueue/LinkedBlockingQueue阻塞
     
-    
+### 并发协作与控制
+
+#### Lock
+- Lock也可以实现同步的效果
+    - 实现更复杂的临界区结构
+    - tryLock方法可以预判锁是否空闲
+    - 允许分离读写的操作,多个读,一个写
+    - 性能更好
+- ReentrantLock 类,可重入的互斥锁
+- ReentrantReadWriteLock类,可重入的读写锁
+- lock和unlock函数
 ## Java网络编程
 
 ### 网络基础知识

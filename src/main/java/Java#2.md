@@ -1463,6 +1463,13 @@ public class SemaphoreExample {
 }
 
 ```
+#### latch
+- 等待锁,是一个同步辅助类
+- 用来同步执行任务的一个或者多个线程
+- 不是用来保护临界区或者资源共享
+- CountDownLatch
+    - countDown() 计数-1
+    - await() 等待latch变成0
 ## Java网络编程
 
 ### 网络基础知识

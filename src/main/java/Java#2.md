@@ -18,7 +18,6 @@
       * [多进程](#多进程)
       * [多线程](#多线程)
         * [启动](#启动)
-                      * [](#)
         * [规则](#规则)
       * [多进程和多线程的对比](#多进程和多线程的对比)
     * [多线程信息共享](#多线程信息共享)
@@ -30,6 +29,12 @@
     * [Fork-Join](#fork-join)
       * [主要类](#主要类)
     * [并发数据结构](#并发数据结构)
+    * [并发协作与控制](#并发协作与控制)
+      * [Lock](#lock)
+      * [Semaphore](#semaphore)
+      * [latch](#latch)
+      * [Barrier](#barrier)
+      * [Phaser](#phaser)
   * [Java网络编程](#java网络编程)
     * [网络基础知识](#网络基础知识)
     * [UDP](#udp)
@@ -1252,6 +1257,7 @@ public class SumTest {
 ### 并发协作与控制
 
 #### Lock
+> 买奶茶,读写锁,互斥锁
 - Lock也可以实现同步的效果
     - 实现更复杂的临界区结构
     - tryLock方法可以预判锁是否空闲
@@ -1391,6 +1397,7 @@ public class LockExample {
 
 ```
 #### Semaphore
+> 抢车位,车位满了不可停车,其他等着
 - 信号量:由1965年Dijkstra提出
 - 信号量:本质上是一个计数器
 - 计数器大于0,可以使用,等于0不能使用
@@ -1464,12 +1471,89 @@ public class SemaphoreExample {
 
 ```
 #### latch
+> 百米赛跑,发令枪归零同时起跑(startSignal),运动员依次就位(doneSignal)
 - 等待锁,是一个同步辅助类
 - 用来同步执行任务的一个或者多个线程
 - 不是用来保护临界区或者资源共享
 - CountDownLatch
     - countDown() 计数-1
     - await() 等待latch变成0
+```java
+package Java.JavaLearning_Advanced.thread.CountDownLatch;
+
+import java.util.concurrent.CountDownLatch;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-08 10:58
+ */
+public class CountDownLatchExample {
+    /**
+     * 设想百米赛跑比赛,发令枪发出信号后选手开始跑,全部选手跑到终点后比赛结束
+     * @param args args
+     * @throws InterruptedException Interrupted Exception
+     */
+    public static void main(String[] args) throws InterruptedException {
+        int runnerCnt = 10;
+        CountDownLatch startSignal = new CountDownLatch(1);
+        CountDownLatch doneSignal = new CountDownLatch(runnerCnt);
+        for (int i = 0; i < runnerCnt; i++) {//create and start threads
+            new Thread(new Worker(startSignal,doneSignal)).start();
+        }
+        System.out.println("准备工作");
+        System.out.println("准备工作就绪");
+        startSignal.countDown();//let all thread proceed
+        System.out.println("比赛开始");
+        doneSignal.await();//wait for all to finish
+
+    }
+
+    private static class Worker implements Runnable {
+        private final CountDownLatch startSignal;
+        private final CountDownLatch downSignal;
+
+        public Worker(CountDownLatch startSignal, CountDownLatch downSignal) {
+            this.startSignal = startSignal;
+            this.downSignal = downSignal;
+        }
+
+        @Override
+        public void run() {
+            try {
+                startSignal.await();
+                Thread.sleep((long)(Math.random()*500));
+                doWork();
+                downSignal.countDown();
+            } catch (InterruptedException e) {
+                //return;
+            }
+
+        }
+
+        private void doWork() {
+            System.out.println(Thread.currentThread().getName()+":跑完全程");
+        }
+    }
+}
+
+```
+
+#### Barrier
+> 分步计算总和
+- 集合点,也是一个同步辅助类
+- 允许多个线程在某一个点上进行同步
+- CyclicBarrier
+    - 构造函数是需要同步的线程数量
+    - await等待其他线程,达到数量后就放行
+#### Phaser
+- 允许执行并发多阶段任务,同步辅助类
+- 在每一个阶段结束的位置对线程进行同步,当所有线程都到达这步,再进行下一步
+- Phaser
+    - arrive()
+    - arriveAndAwaitAdvance()
+    
+
 ## Java网络编程
 
 ### 网络基础知识

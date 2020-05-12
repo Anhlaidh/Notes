@@ -1694,6 +1694,74 @@ public class ExchangerExample {
 ```
 ### 定时任务
 - 简单定时机制
+    - 设置计划任务,也就是在指定的时间开始执行某一个任务
+    - TimerTask封装任务
+    - Timer类 定时器
+- Timer
+```java
+package Java.JavaLearning_Advanced.thread.Timer;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-10 17:42
+ */
+public class TimerTest {
+    public static void main(String[] args) throws InterruptedException {
+        MyTask myTask = new MyTask();
+        Timer timer = new Timer();
+        System.out.println("当前时间:" + new Date().toLocaleString());
+        //当前时间一秒后,每两秒执行一次
+        timer.schedule(myTask,1000,2000);
+        Thread.sleep(10000);
+        myTask.cancel();//取消当前任务
+        System.out.println("==============");
+        Calendar now = Calendar.getInstance();
+        now.set(Calendar.SECOND, now.get(Calendar.SECOND) + 3);
+        Date runDate = now.getTime();
+        MyTask2 myTask2 = new MyTask2();
+        timer.scheduleAtFixedRate(myTask2,runDate,3000);
+    }
+
+    private static class MyTask extends TimerTask {
+        @Override
+        public void run() {
+            System.out.println("运行了!时间为:"+new Date());
+        }
+
+    }
+
+    private static class MyTask2 extends TimerTask{
+        @Override
+        public void run() {
+            System.out.println("运行了!时间为:"+new Date());
+            try {
+                Thread.sleep(4000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+```
+- Executor+定时器机制
+- ScheduledExecutorService
+    - 定时任务
+    - 周期任务
+- Quartz
+    - Quartz是一个较为完善的任务调度框架
+    - 解决程序中Timer零散管理的问题
+    - 功能更加强大
+        - Timer执行周期任务,如果中间有一次有一场,整个任务终止执行
+        - Quartz执行周期任务,如果中间某一次有异常,不影响下次任务执行
+
+
     
 ## Java网络编程
 

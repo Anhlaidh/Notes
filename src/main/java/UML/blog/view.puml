@@ -1,0 +1,27 @@
+@startuml
+actor 博主
+博主->博客:1.登录
+activate 博主
+activate 博客
+博客->博客:2.检查数据合法性
+activate 博客
+deactivate 博客
+博客->User:3.请求登录数据
+activate User
+User-->博客:4.返回数据
+deactivate User
+博客-->博主:5.登陆成功
+deactivate 博客
+博主->博客:6.查看博客(ID)
+activate 博客
+博客->Question:7.查询页面数据
+activate Question
+Question-->博客:8.返回数据
+deactivate Question
+activate 博客
+博客->博客:9.渲染
+deactivate 博客
+博客-->博主:10.返回页面
+deactivate 博客
+deactivate 博主
+@enduml

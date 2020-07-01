@@ -1,0 +1,20 @@
+@startuml
+Actor 服务人员
+服务人员->系统:1.信息上报
+activate 服务人员
+activate 系统
+系统->系统:2.验证数据合法性
+activate 系统
+系统-->服务人员:2.1.错误信息
+服务人员->系统:2.2信息填写
+deactivate 系统
+系统->数据库:3.写入
+
+activate 数据库
+数据库-->系统:3.1.返回值
+deactivate 数据库
+系统-->服务人员:4.写入成功
+deactivate 系统
+deactivate 服务人员
+
+@enduml

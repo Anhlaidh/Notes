@@ -1,0 +1,31 @@
+@startuml
+actor 病人
+病人->系统:1.每日打卡
+activate 病人
+activate 系统
+actor 服务人员
+actor 决策者
+系统<-服务人员:2.信息上报
+系统->数据库:3.存入数据
+决策者->系统:4.数据可视化
+activate 决策者
+系统->数据库:5.获取数据
+activate 数据库
+数据库-->系统:5.1反馈数据
+deactivate 数据库
+系统-->决策者:5.2反馈数据
+决策者->系统:6.分析数据
+deactivate 决策者
+deactivate 系统
+病人->系统:就餐申请/返程报备
+activate 系统
+决策者->系统:7.下达任务
+系统-->服务人员:8.任务安排
+activate 服务人员
+服务人员->系统:9.物资管理
+系统-->病人:10反馈
+deactivate 系统
+deactivate 服务人员
+deactivate 病人
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+actor 用户
+activate 用户
+用户->系统:用户信息
+activate 系统
+系统->系统:数据校验
+activate 系统
+系统-->用户:返回错误信息
+deactivate 系统
+deactivate 系统
+用户->系统:用户信息
+activate 系统
+系统->数据库:写入用户信息
+activate 数据库
+数据库-->系统:返回成功代码
+deactivate 数据库
+系统-->用户:注册成功
+deactivate 系统
+deactivate 用户
+@enduml

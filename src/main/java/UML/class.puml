@@ -1,0 +1,122 @@
+@startuml
+
+class 用户{
+-用户名:String
+-密码:String
+-ID:String
+-权限:int
+
++int 登录()
++注册()
++健康打卡()
+}
+class 管理员{
++添加用户()
++修改用户()
++删除用户()
++查询用户()
+}
+class 服务人员{
++信息上报()
++物资分配()
+}
+class 病人{
+        需求申请()
+外出登记()
+返程报备()
+}
+class 决策者{
++数据汇总()
++数据分析()
++下达决策()
+}
+class 打卡记录{
+-用户ID:int
+-打卡时间:Date
+-打卡次数:int
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+class 外出记录{
+-用户ID:int
+-外出事由:Blob
+-外出时间:Date
+-返程时间:Date
+
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+class 就餐信息{
+-用户ID:int
+-偏好种类:String
+-用餐时间:Date
+
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+class 服务记录{
+-服务人员ID:int
+-病人ID:int
+-详情描述:String
+-时间:Date
+
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+class 物资信息{
+-物资种类:int
+-物资数量:int
+-剩余容量:int
+
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+class 信息上报{
+-服务人员ID:int
+-上报时间:Date
+-上报内容:Blob
+
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+class 查房记录{
+-服务人员ID:int
+-查房时间:Date
+-查房记录:Blob
+
++int insert()
++List<> query()
++int remove()
++int modify()
+}
+
+
+用户<|--管理员
+用户<|--决策者
+用户<|--服务人员
+用户<|--病人
+
+决策者"1..*"--->"0..*"查房记录
+决策者"1..*"--->"0..*"打卡记录
+决策者"1"--->"0..*"服务记录
+决策者"1..*"--->"0..*"外出记录
+服务人员"1"--->"0..*"服务记录
+服务人员"1"--->"0..*"信息上报
+服务人员"1"--->"0..*"物资信息
+病人"1"--->"0..*"打卡记录
+病人"1"--->"0..*"服务记录
+病人"1"--->"0..*"就餐信息
+病人"1"--->"0..*"外出记录
+@enduml

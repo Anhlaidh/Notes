@@ -1,0 +1,22 @@
+@startuml
+actor 病人
+病人->系统:健康打卡
+activate 病人
+activate 系统
+系统->数据库:记录打卡信息
+activate 数据库
+数据库-->系统:返回值
+deactivate 数据库
+系统-->病人:反馈信息
+deactivate 系统
+病人->系统:行动申请
+activate 系统
+系统->数据库:写入记录
+activate 数据库
+数据库-->系统:反馈信息
+deactivate 数据库
+系统-->病人:许可通知
+deactivate 系统
+deactivate 病人
+
+@enduml

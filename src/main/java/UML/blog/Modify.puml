@@ -1,0 +1,28 @@
+@startuml
+actor 博主
+actor 博主
+博主->博客:1.登录
+activate 博主
+activate 博客
+博客->博客:2.检查数据合法性
+activate 博客
+deactivate 博客
+博客->User:3.请求登录数据
+activate User
+User-->博客:4.返回数据
+deactivate User
+博客-->博主:5.登陆成功
+deactivate 博客
+博主->博客:6.修改信息
+activate 博客
+博客->博客:7.核对数据合法性
+activate 博客
+博客->User:8.update(用户信息)
+deactivate 博客
+activate User
+User-->博客:返回结果
+deactivate User
+博客-->博主:修改成功
+deactivate 博客
+deactivate 博主
+@enduml

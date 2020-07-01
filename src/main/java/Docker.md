@@ -154,7 +154,7 @@ docker ps [OPTIONS]
     - `docker kill xxx` 强制停止容器
     
 - 删除容器
-`docker rm xxx`没有i
+`docker rm xxx`没有i::
     - `-f` 强制删除
     - 删除多个容器
         - `docker rm -f $(docker ps -a -q)`

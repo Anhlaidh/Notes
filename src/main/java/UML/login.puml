@@ -1,0 +1,21 @@
+@startuml
+actor 用户
+用户->系统:登录凭证
+activate 用户
+activate 系统
+系统->系统:验证数据合法性
+系统-->用户:错误信息
+deactivate 系统
+用户->系统:重新填写
+activate 系统
+系统->系统:验证数据合法性
+activate 系统
+系统->数据库:查询
+deactivate 系统
+activate 数据库
+数据库-->系统:用户信息
+deactivate 数据库
+系统-->用户:登陆成功
+deactivate 系统
+deactivate 用户
+@enduml

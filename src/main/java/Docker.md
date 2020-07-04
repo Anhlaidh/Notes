@@ -213,7 +213,7 @@ docker ps [OPTIONS]
         - `docker run -it -v /宿主机绝对路径目录:/容器目录 镜像名` 如果目录不存在,会创建目录
         - `docker inspect` 查看详细信息,看是否挂载成功
         - `docker run -it -v /宿主机绝对路径目录:/容器内目录:ro 镜像名` 只读
-         
+        - ` --privileged=true` 若没有权限加此参数
     - dockerFile添加
     备注:
     

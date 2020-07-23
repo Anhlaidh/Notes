@@ -252,7 +252,7 @@ throws:抛出异常
 - Hashtable 同步，慢，数据量小   t是小写
     ![Hashtable](.java_images/Hashtable.png)
     ![Iterator遍历](.java_images/9d857dc3.png)
-- HashMap 不支持同步，快，数据量打
+- HashMap 不支持同步，快，数据量大
     ![HashMap](.java_images/HashMap.png)
     - 遍历有iterator方法和KeySet方法（hashMap.get(key)）,KeySet方法速度更快
 - LinkedHashMap

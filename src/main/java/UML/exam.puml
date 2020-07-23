@@ -1,0 +1,18 @@
+@startuml
+actor Client
+Client->Order:1.消息
+activate Client
+activate Order
+Order->CatalogueEntry:2.获取零件价格
+activate CatalogueEntry
+CatalogueEntry-->>Order:3.返回零件价格
+deactivate CatalogueEntry
+Order->CatalogueEntry:4.存放零件数量,零件价格,库存等信息
+activate CatalogueEntry
+CatalogueEntry-->>Order:5.存放成功
+deactivate CatalogueEntry
+Order->>Client:6.创建成功
+deactivate Order
+deactivate Client
+
+@enduml

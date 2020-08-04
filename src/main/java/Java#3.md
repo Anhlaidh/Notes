@@ -648,4 +648,95 @@ public class JavaSourceFromString extends SimpleJavaFileObject {
 - Java EE 的Jsp编译
 - 在线编程观景
 - 在线程序评判系统(OJ)
-0 自动化的构建和测试工具
+- 自动化的构建和测试工具
+
+## 代理(Proxy):代替处理
+- 代理模式
+    - 外界不用直接访问目标对象,而是访问代理对象,由代理对象再调用目标对象
+    - 代理对象中可以添加监控和审查处理
+    - 静态代理
+        - 代理对象持有目标对象的句柄
+        - 所有调用目标对象的方法,都调用代理对象的方法
+        - 对每个方法,需要静态编码(理解简单,但代码繁琐)
+    - 动态代理
+        - 对目标对象的方法每次被调用,进行动态拦截
+        - 方法重名会用第一个接口的方法
+- Main
+```java
+package Java.Java_Final.Proxy.test;
+
+import java.lang.reflect.*;
+import java.util.Arrays;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-04 18:06
+ */
+public class MultipleInterfacesProxyTest {
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Cook cook = new CookImpl();
+        ClassLoader cl = MultipleInterfacesProxyTest.class.getClassLoader();
+        ProxyHandler handler = new ProxyHandler(cook);
+        //生成代理类型
+        Class<?> proxyClass = Proxy.getProxyClass(cl, new Class<?>[]{Cook.class, Driver.class});
+        //生成代理对象
+        Object proxy = proxyClass.getConstructor(new Class[]{InvocationHandler.class}).newInstance(new Object[]{handler});
+        System.out.println(Proxy.isProxyClass(proxyClass));
+
+        Proxy p = (Proxy) proxy;
+        System.out.println(Proxy.getInvocationHandler(proxy).getClass().getName());
+        System.out.println("proxy类型" + proxyClass.getName());
+        //代理对象都继承于java.lang.reflect.Proxy,但是获取父类是Object而不是Proxy
+        Class father = proxyClass.getSuperclass();
+        System.out.println("proxy的父类类型:" + father.getName());
+        Class[] cs = proxy.getClass().getInterfaces();
+        for (Class c : cs) {
+
+            System.out.println("proxy的父接口类型" + c.getName());
+        }
+        System.out.println("===============");
+        Method[] ms = proxy.getClass().getMethods();
+        for (Method m : ms) {
+            System.out.println("调用方法" + m.getName() + "参数为" + Arrays.deepToString(m.getParameters()));
+        }
+        System.out.println("===============");
+        Cook c = (Cook) proxy;
+        c.doWork();
+        Driver d = (Driver) proxy;
+        d.doWork();
+
+    }
+}
+
+```
+- Handler
+```java
+package Java.Java_Final.Proxy.test;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-04 18:03
+ */
+public class ProxyHandler implements InvocationHandler {
+    private Cook cook;
+
+    public ProxyHandler(Cook cook) {
+        this.cook = cook;
+    }
+
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("proxy类型" + proxy.getClass().getName());
+        System.out.println("调用方法" + method + ";参数为" + Arrays.deepToString(args));
+        Object result = method.invoke(cook, args);
+        return result;
+    }
+}
+
+```

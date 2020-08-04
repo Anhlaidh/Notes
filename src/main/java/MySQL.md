@@ -16,9 +16,65 @@
 
 
 # MySQL
+## 介绍 
+### 数据是什么
+### 如何存储
+### 数据库引擎
+- innodb
+- myisam
+- memory
 
+- 区别
+    1. innodb存储引擎数据跟索引文件放在一个文件中,myisam分为不同文件
+    2. innodb支持事务,myisam不支持事务
+    3. innodb支持表锁和行锁,myisam支持表锁
+    4. innodb有外键,myisam没有外键
+### 索引的分类
+- 主键索引
+    - 主键索引是一种唯一性索引,但它必须指定为primary key,每个表只能有一个主见
+- 唯一索引
+    - 索引的列所有值都只能出现一次,即必须唯一,值可以为空
+- 普通索引
+    - 基本的索引类型,值可以为空,没有唯一性限制
+- 全文索引
+    - 全文索引类型为FULLTEXT,全文索引可以在varchar,char,text类型的列上创建
+- 组合索引
+    - 多列值组成一个索引,专门用于组合搜索
+    
+#### 回表
+#### 最左匹配原则
+#### 索引覆盖
+#### 索引下推
+`select * from t1 where age=? and gender=?`
+先根据age字段从存储引擎层将数据拉取回server层,然后在server层进行gender筛选,再从存储引擎层拉去数据的
+时候,就会直接根据age,gender一起筛选
 ##准备
-
+### 数据库
+- 云数据库
+    - RDS,PolarDB,TDSQL
+- NewSQL
+    - TiDB
+- 生产线
+    - 厂家
+        - Oracle 官方
+        - MariaDB
+        - Percona
+- 5.6
+    - 5.6.36,5.6.38,5.6.40,5.6.46
+- 5.7
+    - 5.7.20 22 24....
+- 8.0
+    - 8.0.11,8.0.17,8.0.18
+    
+- C:社区版
+- E:企业版
+### linux环境 mysql指令
+- 数据初始化
+    - `mysqld --initialize-insecure --user=xxx --basedir=/app/database/mysql --datadir=/data/3306/`
+    - 有-insecure
+        1. 初始化完成后,有12位临时密码,必须在使用mysql之前重置这个密码
+        2. 密码管理使用严格模式: 3种密码复杂度,8位以上
+        3. 
 ### SQL概述
 
 - Structured Query Language

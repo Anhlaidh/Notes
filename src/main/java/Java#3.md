@@ -451,3 +451,201 @@ public class testSwitch {
         - 方法Method
         - 构造函数Constructor
         
+## 编译器API
+- 对 .java文件即时编译
+- 对字符串即时编译
+- 监听在编译过程中产生的警告和错误
+- 在代码中运行编译器(并非:Runtime命令调用javac命令)
+### JavaCompiler
+- 1.6推出
+- 可用在程序文件中的Java编译器接口(代替javac.exe)
+- 在程序中编译java文件,产生class文件
+- run方法(继承自java.tools.Tools):较简单,可以编译java源文件,生成class文件,但不能指定输出
+路径,监控错误信息,调用后就在源码所在目录生成class文件
+- getTask方法:更强大的功能,可以编译java源文件,包括在内存中的java文件(字符串),生成class文件
+
+- 编译文件:
+```java
+package Java.Java_Final.JavaCompiler;
+
+import javax.tools.JavaCompiler;
+import javax.tools.ToolProvider;
+import java.io.ByteArrayOutputStream;
+import java.nio.charset.Charset;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-04 14:30
+ */
+public class SimpleJavaCompiler {
+    public static void main(String[] args) {
+//        successCompile();
+
+        failCompile();
+    }
+
+    private static void failCompile() {
+        ByteArrayOutputStream err = new ByteArrayOutputStream();
+        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+        int result = compiler.run(null, null, err, "./aaa.java");
+        if (0 == result) {
+            System.out.println("Success");
+        } else {
+            System.out.println("Fail");
+            System.out.println(new String(err.toByteArray(), Charset.defaultCharset()) );
+        }
+    }
+
+
+    private static void successCompile() {
+        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+        /**
+         * 第一个参数:输入流,null表示默认使用system.in
+         * 第二个参数:输出流,null标识默认使用system.out
+         * 第三个参数:错误流,null标识默认使用system.err
+         * 第四个参数:String...需要编译的文件名
+         * 返回值:0表示成功,其他错误
+         */
+        int result = compiler.run(null, null, null, "G:\\Coding\\src\\main\\java\\Java\\Java_Final\\API\\hello1.java","G:\\Coding\\src\\main\\java\\Java\\Java_Final\\API\\hello2.java");
+
+        System.out.println(0 == result ? "Success" : "Fail");
+    }
+}
+
+```
+- 编译字符串
+```java
+package Java.Java_Final.JavaCompiler;
+
+import javax.tools.*;
+import java.io.File;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.util.Iterator;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-04 14:46
+ */
+public class JavaCompilerTask {
+    public static void main(String[] args) {
+        compilerJavaFromString();
+//        System.out.println("hello world");
+    }
+
+    private static void compilerJavaFromString() {
+        StringBuffer stringBuffer = new StringBuffer();
+        String className = "Hello";
+        stringBuffer.append("public class " + className + "{");
+        stringBuffer.append(" public static void main(String[] args) {");
+        stringBuffer.append(" System.out.println(\"hello world\");\n");
+        stringBuffer.append("}\n");
+        stringBuffer.append("}\n");
+
+
+        Class<?> c = compiler(className, stringBuffer.toString());
+        try {
+            //生成对象
+            Object obj = c.newInstance();
+            Method m = c.getMethod("main", String[].class);
+            m.invoke(obj, new Object[]{new String[]{}});
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+
+    }
+
+    private static Class<?> compiler(String className, String javaCode) {
+        JavaSourceFromString srcObject = new JavaSourceFromString(className, javaCode);
+        System.out.println(srcObject.getCode());
+        Iterable<? extends JavaFileObject> fileObjects = Arrays.asList(srcObject);
+
+        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+        StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, Charset.defaultCharset());
+        DiagnosticCollector<JavaFileObject> diagnosticCollector = new DiagnosticCollector<>();
+        //设置编译的输出目录,并包装在options中
+        String flag = "-d";
+        String outDir = "";
+        try {
+            URL resource = Thread.currentThread().getContextClassLoader().getResource("");
+            File classpath = new File(resource.toURI());
+            outDir = classpath.getAbsolutePath() + File.separator;
+            System.out.println(outDir);
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        Iterable<String> options = Arrays.asList(flag, outDir);
+        /**
+         * JavaCompiler.getTask方法:以future的任务形式(多线程)来执行编译任务
+         * 第一个参数:额外输出流,null表示默认使用System.err
+         * 第二个参数:文件管理器,null表示编译器默认方法来报告诊断信息
+         * 第三个参数:诊断监听器,null表示使用编译器默认方法来报告诊断信息
+         * 第四个参数:编译器参数,null表示无参数
+         * 第五个参数:需要经过annotation处理的类名,null表示没有类需要annotation
+         * 第六个参数,待编译的类
+         */
+        JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, diagnosticCollector, options, null, fileObjects);
+        //等待编译结束
+        boolean result = task.call();
+        if (result == true) {
+
+            try {
+                return Class.forName(className);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        } else {
+            for (Diagnostic diagnostic : diagnosticCollector.getDiagnostics()) {
+                System.out.println("Error on line:" + diagnostic.getLineNumber() + ";URI" + diagnostic.getSource().toString());
+            }
+
+        }
+        return null;
+    }
+
+}
+
+```
+- 其中的JavaSourceFromString 类
+```java
+package Java.Java_Final.JavaCompiler;
+
+import javax.tools.SimpleJavaFileObject;
+import java.io.IOException;
+import java.net.URI;
+
+/**
+ * @Description: A file object used to represent source coming from a string
+ * @author: Anhlaidh
+ * @date: 2020-08-04 14:57
+ */
+public class JavaSourceFromString extends SimpleJavaFileObject {
+    private String code;
+    public JavaSourceFromString(String name, String code) {
+        super(URI.create("string:///" + name.replace('.', '/') + Kind.SOURCE.extension),Kind.SOURCE);
+        this.code = code;
+    }
+
+    @Override
+    public CharSequence getCharContent(boolean ignoreEncodingErrors) throws IOException {
+        return code;
+    }
+
+    public String getCode() {
+        return code;
+    }
+}
+
+```
+- Java EE 的Jsp编译
+- 在线编程观景
+- 在线程序评判系统(OJ)
+0 自动化的构建和测试工具

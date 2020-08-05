@@ -1,3 +1,27 @@
+# Table of Contents
+
+* [Java](#java)
+  * [语法糖 Syntactic sugar](#语法糖-syntactic-sugar)
+    * [jdk版本](#jdk版本)
+    * [for/for-each](#forfor-each)
+    * [enum类型](#enum类型)
+    * [不定项参数](#不定项参数)
+    * [静态导入](#静态导入)
+    * [自动装箱和拆箱](#自动装箱和拆箱)
+    * [多异常并列](#多异常并列)
+    * [数字增强](#数字增强)
+    * [接口方法](#接口方法)
+    * [try-with-resource](#try-with-resource)
+    * [ResourceBundle文件加载](#resourcebundle文件加载)
+    * [var类型](#var类型)
+    * [switch](#switch)
+  * [反射 reflection](#反射-reflection)
+  * [编译器API](#编译器api)
+    * [JavaCompiler](#javacompiler)
+  * [代理(Proxy):代替处理](#代理proxy代替处理)
+  * [AOP(Aspect Oriented Programming)](#aopaspect-oriented-programming)
+
+
 # Java
 
 ## 语法糖 Syntactic sugar
@@ -740,3 +764,120 @@ public class ProxyHandler implements InvocationHandler {
 }
 
 ```
+## AOP(Aspect Oriented Programming)
+- 面向对象: 
+将需求功能划分为不同的,独立,分装良好的类,并让他们通过继承和多态实现相同和不同行为
+- 面向切面: 
+将通用需求功能从众多类中分离出来,使得很多类共享一个行为,一旦发生变化,不必修改很多类,而只修改这个行为即可
+### 面向切面编程
+- 一个概念/规范,没有限定语言
+- 不是取代OOP编程,而是OOP的补充,和数据库的触发器有点相似
+- 主要内容
+    - Aspect:配置文件,包括一些Pointcut和响应的Advice
+    - JointPoint:在程序中明确定义的点,如方法调用,对类成员访问等
+    - PointCut: 一组JointPoint,可以哦通过逻辑关系/通配符/正则等组合起来,定义了响应advice将要发生的地方
+    - Advice:定义了在pointcut处要发生的动作,通过before/after/around来关联
+    - weaving:advice代码在具体jointPoint的关联方式
+    
+## 注解Annotation
+- JDK1.5引入
+- 位于源码中(代码/注释/注解),使用其他工具进行处理的标签
+- 注解用来修饰程序的元素,但不会对修饰的对象有直接的影响
+- 只有通过某种配套的工具才会对注解信息进行访问和处理
+- 主要用途
+    - 提供信息给编译器/IDE工具
+    - 可用于其他工具来产生额外的代码/配置文件等
+    - 有一些注解可在程序运行时访问,增加程序动态性
+- @SuppressWarning
+    - 不同jdk 不同,javac -X可查看
+### 自定义注解 
+- 注解可以包括的类型
+    - 8种基本类型
+    - String
+    - Class
+    - enum
+    - 注解类型
+    - 由前面类型组成的数组
+
+```java
+package Java.Java_Final.Annotation;
+
+public @interface BugReport {
+    enum Status {UNCONFIRMED,CONFIRMED,FIXED, NOTABUG};
+
+    boolean showStopper() default true;
+
+    String assignedTo() default "[note]";
+
+    Status status() default Status.UNCONFIRMED;
+
+    String[] reportedBy();
+}
+
+```
+
+- 注解使用的位置(@Target)
+- @Retention(RetentionPolicy.RUNTIME) 编译时也存在
+- 自定义注解及其使用
+```java
+package Java.Java_Final.Annotation.Single;
+
+import java.lang.reflect.Method;
+
+/**
+ * @Description:
+ * @author: Anhlaidh 
+ * @date: 2020-08-05 17:18
+ */
+public class Main {
+    public static void main(String[] args) throws ClassNotFoundException {
+        int passed = 0, failed = 0;
+        String className = "Java.Java_Final.Annotation.Single.Foo";
+        for (Method m : Class.forName(className).getMethods()) {
+            if (m.isAnnotationPresent(SingleTest.class)) {
+                System.out.println(m.getName());
+                SingleTest st = m.getAnnotation(SingleTest.class);
+                try {
+                    m.invoke(null, st.value());
+                    passed++;
+                } catch (Throwable throwable) {
+                    System.out.printf("Test %s failed %s %n", m, throwable.getCause().getMessage());
+                    failed++;
+                }
+            }
+        }
+        System.out.printf("Success: %d ,Failed: %d %n", passed, failed);
+    }
+}
+
+```
+
+### 元注解
+- 修饰注解的注解
+- @Target 设置目标范围
+    - 限定目标注解作用于什么位置@Target({ElementType.METHOD})
+    - ElementType.ANNOTATION_TYPE(注:修饰注解)
+    - ElementType.CONSTRUCTOR
+    - ElementType.FIELD
+    - ElementType.LOCAL_VARIABLE
+    - ElementType.METHOD
+    - ElementType.PACKAGE
+    - ElementType.PARAMETER
+    - ElementType.TYPE(注:任何类型,即上面的类型都可以修饰)
+    
+    
+- @Retention 设置保持性
+     - 修饰其他注解的存在范围
+     - Retention.SOURCE 注解仅存在源码,不在class文件
+     - Retention.CLASS(默认的注解保留策略) 注解存在于.class文件,不能被JVM加载
+     - Retention.RUNTIME这种策略下,注解可以被JVM运行时访问到,通常情况下,可以结合反射来做一些事情
+     
+- @Inherited 注解继承
+    - 让一个类和他的子类都包含某个注解
+    - 普通的注解没有继承功能
+- @Repeatable 此注解可以重复修饰
+    - 自jdk1.8引入
+    - 表示被修饰的注解可以重复应用标注
+    - 需要定义注解和容器注解
+- @Document 文档
+    - 指明这个注解可以被javadoc工具解析,形成帮助文档

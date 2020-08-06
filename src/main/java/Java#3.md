@@ -20,6 +20,14 @@
     * [JavaCompiler](#javacompiler)
   * [代理(Proxy):代替处理](#代理proxy代替处理)
   * [AOP(Aspect Oriented Programming)](#aopaspect-oriented-programming)
+    * [面向切面编程](#面向切面编程)
+  * [注解Annotation](#注解annotation)
+    * [自定义注解](#自定义注解)
+    * [元注解](#元注解)
+  * [嵌套类 Nested classes](#嵌套类-nested-classes)
+  * [Lambda表达式](#lambda表达式)
+    * [函数式接口](#函数式接口)
+    * [系统自带的函数式接口](#系统自带的函数式接口)
 
 
 # Java
@@ -881,3 +889,116 @@ public class Main {
     - 需要定义注解和容器注解
 - @Document 文档
     - 指明这个注解可以被javadoc工具解析,形成帮助文档
+- RUNTIME注解调用路线
+    1. Java为注解产生一个代理类
+    2. 这个代理类包括一个AnnotationInvocationHandler成员变量
+    3. AnnotationInvocationHandler有个Map的成员变量,用来存储所有的注解的属性赋值
+    4. 在程序中,调用注解接口的方法,将会被代理类接管,然后根据方法名字,到Map里拿到对应的Value并返回
+
+## 嵌套类 Nested classes
+- 静态嵌套类: Static nested classes,即前面有static修饰符
+    - 层级和包围类(enclosing class)的成员变量/方法一样
+    - 静态嵌套类可以定义静态和非静态成员
+    - 第三方需要通过外部包围类才可以访问到静态嵌套类
+        - `Outer.Inner obj = new Outer.Inner();`
+- 非静态嵌套类: Non-static nested classes ,又名内部类,Inner classes
+    - 普通内部类(成员内部类)
+        - 非static的类,定义在某个类的成员变量位置
+        - 定义后在类里面均可以使用
+        - 在第三方类中,需要先创建外部包围类实例,才能创建内部类的实例,不允许单独的普通内部类对象存在
+            - `Outer.Inner obj = Outer.new Inner();`
+    - 局部内部类(Local classes)
+        - 定义在代码块中的非静态的类,如方法,for循环,if语句等
+        - 定义后,即可创建对象使用
+        - 只能活在这个代码块中,代码块结束后,外界无法使用该类
+    - 匿名内部类(Anonymous class)
+        - 没有类名的内部类,必须继承一个父类/实现一个父接口
+        - 在实例化以后,迅速转型为父类/父接口
+        - 这种类型的对象,只能new一个对象,之后以对象名字操作
+        - 可在普通语句和成员变量赋值时使用内部类
+- 为什么需要嵌套类
+    - 不同的访问权限要求,更细粒度的访问控制
+    - 简介,避免过多的类定义
+    - 语言设计过于复杂,较难学习和使用
+    
+    | |位置 |名字(编译后的class文件)| 作用范围 | 基本信息 |嵌套类内部的内容|可访问的外部包围类的内容|和外部类的关系
+    |---|---|---|---|---|---|---|---|
+    | 匿名内部类|成员变量或者成员方法内| 外部类名+$+数字编号|跟随被复制变量的作用范围,<br>外界无法访问|没有类名,没有构造函数<br>没有static,private/default/protected/public修饰|不能带静态成员|访问外部的所有成员|在外部类对象内部
+    | 局部内部类|成员方法内| 外部类名+$+序号+内部类名|所在的方法内<br>外界无法访问|有类名,有构造函数<br>没有static,private/default/protected/public修饰|不能带静态成员,除了常量|访问外部的所有成员|在外部类的对象内部
+    | 普通内部类|成员变量| 外部类名+$+内部类名|包围类内可以访问,<br>外界可以访问|有类名,有构造函数<br>没有static,private/default/protected/public修饰|不能带静态成员,除了常量|访问外部的所有成员|外界可以new,<br>但是必须依附于一个外部包围类对象
+    | 静态嵌套类|成员变量| 外部类名+$+内部类名|包围类内部可以访问,<br>外界可以访问|有类名,有构造函数<br>有static,private/default/protected/public修饰|可以定义静态成员变量和方法|访问外部的所有静态成员|可以new,可独立进行工作
+- 变量遮蔽:Shadowing
+    - 嵌套类变量和外部包围类的变量重名
+        - 以离得近作为优先原则
+        - 优先级高的变量回遮蔽优先级低的变量
+        - 外部包围类.this.变量名,可以访问到外部包围类的成员变量
+        - 静态嵌套类不能访问非静态变量
+        - Java7及以前,匿名内部类和局部内部类只能访问外部包围类的final成员变量
+        - Java8及以后,匿名内部类和局部内部类可以访问外部包围类的final成员变量和
+        事实意义上的final变量(effectively final,一个变量定值后,再也没有改过值)
+## Lambda表达式
+- 参数,箭头,一个表达式
+- 参数,箭头,{多个语句}
+- 类似于匿名方法,一个没有名字的方法
+- 参数,箭头,表达式语句
+- 可以忽略写参数类型
+- 坚决不声明返回值类型
+- 没有public/protected/private/static/final等修饰符
+- 单句表达式,将直接返回值,不用大括号
+- 带return语句,算多句,必须用大括号
+### 函数式接口
+- 是一个接口,符合Java接口的定义
+- 只包含一个抽象方法的接口
+- 可以包含其他的default方法,static方法,private方法
+- 由于只有一个未实现的方法,所以Lambda表达式可以自动填上这个尚未实现的方法
+- 采用Lambda表达式,可以自动创建出一个(伪)嵌套类的对象(没有实际嵌套类class文件产生),然后使用,
+比真正嵌套类更加轻量,更加简洁高效
+
+```java
+package Java.Java_Final.Lambda;
+@FunctionalInterface
+//标记为函数式接口
+public interface StringChecker {
+    public boolean test(String s);
+}
+
+```
+```java
+package Java.Java_Final.Lambda;
+
+import java.util.Arrays;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-06 21:38
+ */
+public class Main {
+    public static void main(String[] args) {
+        String[] s = new String[]{"aaa", "bbbb", "cccccc"};
+        StringChecker eventLength = s1 -> {
+            if (s1.length() % 2 == 0) {
+                return true;
+            }
+            return false;
+        };
+
+        for (String p : s) {
+            if (eventLength.test(p)) {
+                System.out.println(p);
+
+            }
+        }
+    }
+
+}
+
+```
+
+### 系统自带的函数式接口
+接口|参数|返回值|实例
+---|---|---|---
+Predicate<T>|T|Boolean|接收一个参数,返回一个boolean
+Consumer<T>|T|void|接受一个参数,无返回
+Function<T,R>|T|R|接受一个参数,返回一个值
+Supplier<T>|None|T|数据工厂

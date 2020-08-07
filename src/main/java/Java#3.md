@@ -1002,3 +1002,69 @@ Predicate<T>|T|Boolean|接收一个参数,返回一个boolean
 Consumer<T>|T|void|接受一个参数,无返回
 Function<T,R>|T|R|接受一个参数,返回一个值
 Supplier<T>|None|T|数据工厂
+### 方法引用
+- Class::staticMethod
+```java
+package Java.Java_Final.Lambda;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-06 22:26
+ */
+public class method {
+    public static void main(String[] args) {
+        double a = -3.5;
+        double b = worker(Math::abs, a);
+        System.out.println(b);
+        double c = worker(Math::floor, a);
+        System.out.println(c);
+        double d = worker((num -> (num % 10)), a);
+        System.out.println(d);
+
+    }
+
+    public static double worker(NumFunction nf, double num) {
+        return nf.calculate(num);
+    }
+}
+
+```
+- Class::instanceMethod
+    - 第一个参数将变成方法的执行体
+    - String::compareToIgnoreCase等价于(x,y)->x.compareToIgnoreCase(y)
+    - ```
+          String[] planets = new String[]{"DDD","aaa", "bbb", "ccc"};
+          Arrays.sort(planets, String::compareToIgnoreCase);
+          System.out.println(Arrays.toString(planets));
+      ```
+- object::instanceMethod
+    - 支持this::instanceMethod
+    - 支持super::instanceMethod
+- Class::new,调用某类构造函数,支持单个对象构建
+- Class[]::new,调用某类构造函数,支持数组对象构建
+- 应用
+```java
+package Java.Java_Final.Lambda;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-08-07 15:06
+ */
+public class testIterable {
+    public static void main(String[] args) {
+        String[] p = new String[]{"aaa", "bbb", "ccc"};
+        ArrayList<String> pList = new ArrayList<String>(Arrays.asList(p));
+        for (String s : pList) {
+            System.out.println(s);
+        }
+        pList.forEach(System.out::println);
+
+    }
+}
+
+```

@@ -5,9 +5,9 @@
 - [MySQL](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//DB/MySQL.md)
 - [mgdb](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//DB/mgdb.md)
 ## Java
-- [Java#2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java#2.md)
+- [Java-2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java-2.md)
 - [Java](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java.md)
-- [Java#3](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java#3.md)
+- [Java-3](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java-3.md)
 ## Tool
 - [Docker](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Docker.md)
 - [Nginx](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Nginx.md)

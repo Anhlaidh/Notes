@@ -1068,3 +1068,21 @@ public class testIterable {
 }
 
 ```
+
+## 流 stream
+- sequence of elements:一个流对外提供一个接口,可以访问到一串特定的数据,流不存储元素,但是可以根据需要进行计算转化
+- source:数据来源,如数据结构,数组,文件等
+- aggregate operation:聚合操作,流支持像SQL操作或者其他函数式语言的操作
+    如filter/map/reduce/find/match/sorted等
+- Stream流
+    - pipelining:很多流操作也是返回一个流
+    - Internal Iteration:流操作进行迭代,用户感知不到循环遍历
+### 流的工作流程
+1. 流的创建
+    - Collection接口的stream方法
+    - Arrays.stream(数组)
+    - Stream.of()
+    - empty() 空流
+    - 
+2. 流的转换,将流转换为其他流的中间操作,可包括多个步骤(惰性操作)
+3. 流的计算结果,这个操作会强制执行之前的惰性操作,这个步骤以后,流就再也不用了

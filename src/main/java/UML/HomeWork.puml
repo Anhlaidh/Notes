@@ -1,17 +1,17 @@
 @startuml
 actor 用户
-note left : 角色
+notes left : 角色
 activate 用户 #FFBBBB
-note right 用户:角色
+notes right 用户:角色
 用户 ->手机:1.输入手机密码
-note left
+notes left
 同步消息
-end note
+end notes
 activate 手机 #FFBBBB
 手机 -->用户:2.打开手机
-note left
+notes left
 返回消息
-end note
+end notes
 deactivate 手机
 用户->微信:3.打开微信扫一扫
 activate 微信 #FFBBBB
@@ -24,16 +24,16 @@ activate 微信 #FFBBBB
 商家-->微信:5.3返回收款二维码
 deactivate 商家
 微信->微信:读取识别商家二维码
-note over 手机:生命线
+notes over 手机:生命线
 商家-->用户:6.提示输入微信支付密码
 用户->微信:7.1输入微信支付密码
 微信->微信:7.2微信验证用户输入密码正确
 微信->商家:7.3向商家汇款
 activate 商家 #FFBBBB
-note over 商家: 控制焦点
+notes over 商家: 控制焦点
 商家-->微信:7.4汇款结果
 deactivate 商家
-note right 微信:抉择(ALT)
+notes right 微信:抉择(ALT)
 alt 向商家汇款结果==true
     微信-->用户:8.提示用户支付成功
 else 向商家汇款结果==false

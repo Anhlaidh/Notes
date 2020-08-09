@@ -339,7 +339,7 @@ public class String2inputStream {
         - 具有一个无参的构造函数
         - 可以包括多个属性，所有属性都是private
         - 每个属性都有对应的Getter/Setter方法
-        - JavaBean 用于封装数据，有可称为POJO(Plain Old Java Object)
+        - JavaBean 用于封装数据，有可称为POJO(Plain Old notes.Java Object)
 
 ```java
 package JavaLearning_Advanced.Json;
@@ -1268,7 +1268,7 @@ public class SumTest {
 - ReentrantReadWriteLock类,可重入的读写锁
 - lock和unlock函数
 ```java
-package Java.JavaLearning_Advanced.thread.Lock;
+package notes.Java.JavaLearning_Advanced.thread.Lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -1408,7 +1408,7 @@ public class LockExample {
     - release释放
 - 比lock更进一步,可以控制多个同时访问关键区
 ```java
-package Java.JavaLearning_Advanced.thread.Semaphore;
+package notes.Java.JavaLearning_Advanced.thread.Semaphore;
 
 import java.util.concurrent.Semaphore;
 
@@ -1480,7 +1480,7 @@ public class SemaphoreExample {
     - countDown() 计数-1
     - await() 等待latch变成0
 ```java
-package Java.JavaLearning_Advanced.thread.CountDownLatch;
+package notes.Java.JavaLearning_Advanced.thread.CountDownLatch;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -1555,7 +1555,7 @@ public class CountDownLatchExample {
     - arriveAndAwaitAdvance()
 
 ```java
-package Java.JavaLearning_Advanced.thread.Phaser;
+package notes.Java.JavaLearning_Advanced.thread.Phaser;
 
 import java.util.concurrent.Phaser;
 
@@ -1619,7 +1619,7 @@ public class PhaserExample {
     - exchange(),线程双方互相交换数据
     - 交换数据是双向的
 ```java
-package Java.JavaLearning_Advanced.thread.Exchanger;
+package notes.Java.JavaLearning_Advanced.thread.Exchanger;
 
 import java.util.Scanner;
 import java.util.concurrent.Exchanger;
@@ -1699,7 +1699,7 @@ public class ExchangerExample {
     - Timer类 定时器
 - Timer
 ```java
-package Java.JavaLearning_Advanced.thread.Timer;
+package notes.Java.JavaLearning_Advanced.thread.Timer;
 
 import java.util.Calendar;
 import java.util.Date;

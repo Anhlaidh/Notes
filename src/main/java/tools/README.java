@@ -1,3 +1,5 @@
+package tools;
+
 /**
  * @Description:
  * @author: Anhlaidh
@@ -5,6 +7,7 @@
  */
 public class README {
     public static void main(String[] args) {
+        ReadmeUP.run();
 
     }
 }

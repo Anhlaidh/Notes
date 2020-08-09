@@ -79,8 +79,8 @@
 
 - Structured Query Language
     - 用来跟数据库打交道,完成和数据库的通信,90%以上的SQL语句是通用的
-- 数据库(DB)
-    - DB: 通常是一个或一组文件,保存了一些符合特定规格的数据
+- 数据库(notes.DB)
+    - notes.DB: 通常是一个或一组文件,保存了一些符合特定规格的数据
     - DBMS:DataBase Management System 数据库管理系统 MySql,Oracle,执行SQL,操作数据库
     
 ### 连接数据库
@@ -187,7 +187,7 @@ select ename,hiredate from emp where hiredate=str_to_date('12-17-1980','%m-%d-%Y
 ```
     
 - 日期格式
-    - Java|MySQL|说明
+    - notes.Java|MySQL|说明
        ---|---|---
        yyyy|%Y|年
        MM|%m|月

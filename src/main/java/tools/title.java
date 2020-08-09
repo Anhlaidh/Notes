@@ -10,6 +10,6 @@
 // */
 //public class title {
 //    public static void main(String[] args) {
-//        AtxMarkdownToc.newInstance().genTocFile("G:\\Notes\\src\\main\\java\\Java#3.md");
+//        AtxMarkdownToc.newInstance().genTocFile("G:\\Notes\\src\\main\\java\\notes.Java#3.md");
 //    }
 //}

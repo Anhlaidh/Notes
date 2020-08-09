@@ -1,14 +1,13 @@
-# 目录
+# Notes
+## DB
+- [Redis](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//DB/Redis.md)
+- [NoSQL](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//DB/NoSQL.md)
+- [MySQL](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//DB/MySQL.md)
+- [mgdb](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//DB/mgdb.md)
 ## Java
-
-- [Java#1](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/Java.md)
-- [Java#2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/Java%232.md)
-- [算法](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/算法.md)
-
-## Frame
-
-## Tools
-
-- [Docker](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/Docker.md)
-## 
-- [MySQL](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/MySQL.md)
+- [Java#2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java#2.md)
+- [Java](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java.md)
+- [Java#3](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java#3.md)
+## Tool
+- [Docker](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Docker.md)
+- [Nginx](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Nginx.md)

@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Java](#java)
+* [notes.Java](#java)
   * [idea](#idea)
   * [类转型&多态&契约设计](#类转型多态契约设计)
   * [static、final 和常量设计](#static、final-和常量设计)
@@ -9,8 +9,8 @@
     * [final](#final)
     * [常量&常量池](#常量常量池)
     * [不可变对象](#不可变对象)
-  * [Java 访问权限](#java-访问权限)
-  * [Java 类库](#java-类库)
+  * [notes.Java 访问权限](#java-访问权限)
+  * [notes.Java 类库](#java-类库)
     * [数字类](#数字类)
     * [字符串类](#字符串类)
     * [时间类](#时间类)
@@ -36,7 +36,7 @@
     * [zip读入输出](#zip读入输出)
 
 
-# Java
+# notes.Java
 
 ## idea
 
@@ -83,7 +83,7 @@
 ### 常量&常量池
 
 1. java 中的常量：static 和 final
-2. Java 接口中的变量都是常量
+2. notes.Java 接口中的变量都是常量
 3. 对象生成有两种：常量赋值（栈内存）和 new 创建（堆内存）
 4. 常见包装类
    ![包装类](.java_images/2020-03-11-16-34-12.png)
@@ -96,11 +96,11 @@
 2. 不可变对象设计的方法
 3. 字符串 append 操作速度：StringBuilder>StringBuffer>String
 
-## Java 访问权限
+## notes.Java 访问权限
 
 ![权限](.java_images/2020-03-11-17-43-27.png)
 
-## Java 类库
+## notes.Java 类库
 
 ### 数字类
 

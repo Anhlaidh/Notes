@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Java](#java)
+* [notes.Java](#java)
   * [语法糖 Syntactic sugar](#语法糖-syntactic-sugar)
     * [jdk版本](#jdk版本)
     * [for/for-each](#forfor-each)
@@ -30,7 +30,7 @@
     * [系统自带的函数式接口](#系统自带的函数式接口)
 
 
-# Java
+# notes.Java
 
 ## 语法糖 Syntactic sugar
 
@@ -63,7 +63,7 @@ enum类型
     - valueOf()将字符串初始化为枚举对象
     - values() 返回所有的枚举值
 ```java
-package Java.Java_Final.suger;
+package notes.Java.Java_Final.suger;
 
 /**
  * @Description:
@@ -118,7 +118,7 @@ public class testEnum {
     - 重载的优先级规则1:固定参数的方法,比可变参数优先级更高
     - 重载的优先级规则2:调用语句,同时与两个带可变参数的方法匹配,则报错
 ```java
-package Java.Java_Final.suger;
+package notes.Java.Java_Final.suger;
 
 /**
  * @Description: 可变参数
@@ -174,7 +174,7 @@ public class testVariableArgument {
 - 基础数据类型与封装类型进行 `==`,`+`,`-`,`*`,`/`操作运算,会将封装类进行拆箱,对基础数据类型进行运算
 - 谨慎使用多个非同类的数值类进行运算
 ```java
-package Java.Java_Final.suger;
+package notes.Java.Java_Final.suger;
 
 /**
  * @Description:
@@ -214,7 +214,7 @@ public class testNumber {
     - short/int/long/float/double
     - 下划线只能出现在数字中间
 ```java
-package Java.Java_Final.suger;
+package notes.Java.Java_Final.suger;
 
 /**
  * @Description:
@@ -300,7 +300,7 @@ public class testNumber2 {
 - 原理
     - 资源对象必须实现AutoCloseable接口,即close方法,jdk自带
 ```java
-package Java.Java_Final.suger.testTryWithResource;
+package notes.Java.Java_Final.suger.testTryWithResource;
 
 /**
  * @Description:
@@ -348,7 +348,7 @@ class MyConnection implements AutoCloseable {
 - 仍不支持long/float/double
 - 多分支合并
 ```java
-package Java.Java_Final.suger;
+package notes.Java.Java_Final.suger;
 
 import java.util.Scanner;
 
@@ -413,7 +413,7 @@ public class testSwitch {
     2. 克隆(clone()),继承Cloneable,速度快
     3. 序列化serialization,反序列化deserialization继承Serializable接口
         - ```java
-            package Java.Java_Final.Reflect;
+            package notes.Java.Java_Final.Reflect;
             
             import java.io.*;
             
@@ -448,7 +448,7 @@ public class testSwitch {
             ```
     4. 反射
         ```java
-        package Java.Java_Final.Reflect;
+        package notes.Java.Java_Final.Reflect;
         
         
         import java.lang.reflect.Constructor;
@@ -462,10 +462,10 @@ public class testSwitch {
          */
         public class testNewInstance {
             public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, IllegalAccessException, InstantiationException, NoSuchMethodException {
-                Object obj1 = Class.forName("Java.Java_Final.Reflect.A").newInstance();
-                Method m = Class.forName("Java.Java_Final.Reflect.A").getMethod("hello");
+                Object obj1 = Class.forName("notes.Java.Java_Final.Reflect.A").newInstance();
+                Method m = Class.forName("notes.Java.Java_Final.Reflect.A").getMethod("hello");
                 m.invoke(obj1);//获取方法
-                A obj2 = (A) Class.forName("Java.Java_Final.Reflect.A").newInstance();
+                A obj2 = (A) Class.forName("notes.Java.Java_Final.Reflect.A").newInstance();
                 Constructor<A> constructor = A.class.getConstructor();//构造函数
                 A obj3 = constructor.newInstance();
                 obj3.hello();
@@ -498,7 +498,7 @@ public class testSwitch {
 
 - 编译文件:
 ```java
-package Java.Java_Final.JavaCompiler;
+package notes.Java.Java_Final.JavaCompiler;
 
 import javax.tools.JavaCompiler;
 import javax.tools.ToolProvider;
@@ -539,7 +539,7 @@ public class SimpleJavaCompiler {
          * 第四个参数:String...需要编译的文件名
          * 返回值:0表示成功,其他错误
          */
-        int result = compiler.run(null, null, null, "G:\\Coding\\src\\main\\java\\Java\\Java_Final\\API\\hello1.java","G:\\Coding\\src\\main\\java\\Java\\Java_Final\\API\\hello2.java");
+        int result = compiler.run(null, null, null, "G:\\Coding\\src\\main\\java\\notes.Java\\Java_Final\\API\\hello1.java","G:\\Coding\\src\\main\\java\\notes.Java\\Java_Final\\API\\hello2.java");
 
         System.out.println(0 == result ? "Success" : "Fail");
     }
@@ -548,17 +548,15 @@ public class SimpleJavaCompiler {
 ```
 - 编译字符串
 ```java
-package Java.Java_Final.JavaCompiler;
+package notes.Java.Java_Final.JavaCompiler;
 
 import javax.tools.*;
 import java.io.File;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Arrays;
-import java.util.Iterator;
 
 /**
  * @Description:
@@ -648,7 +646,7 @@ public class JavaCompilerTask {
 ```
 - 其中的JavaSourceFromString 类
 ```java
-package Java.Java_Final.JavaCompiler;
+package notes.Java.Java_Final.JavaCompiler;
 
 import javax.tools.SimpleJavaFileObject;
 import java.io.IOException;
@@ -677,7 +675,7 @@ public class JavaSourceFromString extends SimpleJavaFileObject {
 }
 
 ```
-- Java EE 的Jsp编译
+- notes.Java EE 的Jsp编译
 - 在线编程观景
 - 在线程序评判系统(OJ)
 - 自动化的构建和测试工具
@@ -695,7 +693,7 @@ public class JavaSourceFromString extends SimpleJavaFileObject {
         - 方法重名会用第一个接口的方法
 - Main
 ```java
-package Java.Java_Final.Proxy.test;
+package notes.Java.Java_Final.Proxy.test;
 
 import java.lang.reflect.*;
 import java.util.Arrays;
@@ -744,7 +742,7 @@ public class MultipleInterfacesProxyTest {
 ```
 - Handler
 ```java
-package Java.Java_Final.Proxy.test;
+package notes.Java.Java_Final.Proxy.test;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -808,14 +806,14 @@ public class ProxyHandler implements InvocationHandler {
     - 由前面类型组成的数组
 
 ```java
-package Java.Java_Final.Annotation;
+package notes.Java.Java_Final.Annotation;
 
 public @interface BugReport {
     enum Status {UNCONFIRMED,CONFIRMED,FIXED, NOTABUG};
 
     boolean showStopper() default true;
 
-    String assignedTo() default "[note]";
+    String assignedTo() default "[notes]";
 
     Status status() default Status.UNCONFIRMED;
 
@@ -828,7 +826,7 @@ public @interface BugReport {
 - @Retention(RetentionPolicy.RUNTIME) 编译时也存在
 - 自定义注解及其使用
 ```java
-package Java.Java_Final.Annotation.Single;
+package notes.Java.Java_Final.Annotation.Single;
 
 import java.lang.reflect.Method;
 
@@ -840,7 +838,7 @@ import java.lang.reflect.Method;
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
         int passed = 0, failed = 0;
-        String className = "Java.Java_Final.Annotation.Single.Foo";
+        String className = "notes.Java.Java_Final.Annotation.Single.Foo";
         for (Method m : Class.forName(className).getMethods()) {
             if (m.isAnnotationPresent(SingleTest.class)) {
                 System.out.println(m.getName());
@@ -955,7 +953,7 @@ public class Main {
 比真正嵌套类更加轻量,更加简洁高效
 
 ```java
-package Java.Java_Final.Lambda;
+package notes.Java.Java_Final.Lambda;
 @FunctionalInterface
 //标记为函数式接口
 public interface StringChecker {
@@ -964,9 +962,7 @@ public interface StringChecker {
 
 ```
 ```java
-package Java.Java_Final.Lambda;
-
-import java.util.Arrays;
+package notes.Java.Java_Final.Lambda;
 
 /**
  * @Description:
@@ -1005,7 +1001,7 @@ Supplier<T>|None|T|数据工厂
 ### 方法引用
 - Class::staticMethod
 ```java
-package Java.Java_Final.Lambda;
+package notes.Java.Java_Final.Lambda;
 
 /**
  * @Description:
@@ -1045,7 +1041,7 @@ public class method {
 - Class[]::new,调用某类构造函数,支持数组对象构建
 - 应用
 ```java
-package Java.Java_Final.Lambda;
+package notes.Java.Java_Final.Lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;

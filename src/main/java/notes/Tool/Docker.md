@@ -15,11 +15,11 @@
     * [重要命令](#重要命令)
   * [镜像原理](#镜像原理)
   * [Docker容器数据卷](#docker容器数据卷)
-  * [DockerFile](#dockerfile)
+  * [notes.Tool.DockerFile](#dockerfile)
     * [直接命令添加](#直接命令添加)
     * [DockerFile添加](#dockerfile添加)
     * [数据卷容器](#数据卷容器)
-    * [DockerFile 规范](#dockerfile-规范)
+    * [notes.Tool.DockerFile 规范](#dockerfile-规范)
     * [DockerFile体系结构(保留字指令)](#dockerfile体系结构保留字指令)
       * [遇到的问题](#遇到的问题)
     * [push](#push)
@@ -218,7 +218,7 @@ docker ps [OPTIONS]
     备注:
     
 
-## DockerFile
+## notes.Tool.DockerFile
 
 ### 直接命令添加
 
@@ -292,7 +292,7 @@ dk02
 
 挂载对应一致,实现共享数据
 
-### DockerFile 规范
+### notes.Tool.DockerFile 规范
 1. 每条保留字指令都必须为大写字母且后面至少跟随一个参数
 2. 指令按照从上到下,顺序执行
 3. `#`表示注释

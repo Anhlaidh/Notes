@@ -1,4 +1,6 @@
 # JVM
+## 学术名词
+- TLAB (Thread Local Allocation Buffer)
 ## 垃圾回收器
 - 分代
     - CMS +ParNew

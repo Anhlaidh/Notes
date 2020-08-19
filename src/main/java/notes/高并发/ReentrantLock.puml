@@ -1,0 +1,16 @@
+
+@startuml
+|ReentrantLock|
+start
+:lock();
+|SyncNonfairSync|
+:acquire(1);
+|AQS|
+:acquire(1);
+|SyncNonfairSync|
+:tryAcquire;
+:nonfairTryAcquire(1);
+
+stop
+@enduml
+

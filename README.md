@@ -8,6 +8,14 @@
 - [Java-2](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java-2.md)
 - [Java](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java.md)
 - [Java-3](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/Java-3.md)
+- [JVM](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/JVM.md)
+- [网络](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/网络.md)
+- [算法](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Java/算法.md)
 ## Tool
 - [Docker](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Docker.md)
 - [Nginx](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Nginx.md)
+- [Git](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//Tool/Git.md)
+## 网络
+- [TCP-IP](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//网络/TCP-IP.md)
+## 高并发
+- [多线程与高并发](https://github.com/Anhlaidh/Notes/blob/master/src/main/java/notes//高并发/多线程与高并发.md)

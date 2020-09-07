@@ -91,9 +91,12 @@ public class Triangle {
             return false;
         }
         //两边和大于第三边
-        if (a+b<=c) return false;
-        if (b+c<=a) return false;
-        if (c+a<=b) return false;
+        if (a+b<=c) {
+return false;}
+        if (b+c<=a) {
+return false;}
+        if (c+a<=b) {
+return false;}
 
         return true;
     }

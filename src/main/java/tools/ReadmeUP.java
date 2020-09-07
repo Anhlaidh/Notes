@@ -54,10 +54,14 @@ public class ReadmeUP {
         buffer.append("#").append(" Notes").append("\n");
 
         for (File file : files) {
-            if (file.isHidden()) continue;
+            if (file.isHidden()) {
+                continue;
+            }
             if (file.isDirectory()) {
                 String tag = file.getName();
-                if ('.' == tag.charAt(0)) continue;
+                if ('.' == tag.charAt(0)) {
+                    continue;
+                }
                 //二级标题
                 buffer.append("##").append(" ").append(tag).append("\n");
                 File[] children = file.listFiles();

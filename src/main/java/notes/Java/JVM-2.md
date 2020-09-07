@@ -27,3 +27,28 @@
 ## Class File Format
 - 二进制字节流
 - 数据类型 u1 u2 u4 u8 和_info
+- 前八个16进制->magic version
+- 然后八个16进制->minor version
+- 然后四个16进制(2个字节)-> constant_pool_count
+    - 常量池
+- 紧接constant_pool *
+    - 长度为constant_pool_count-1的表,从1开始,保留0
+    
+- access_flags 定义类的那一排所代表的,例如public,final,implement,annotation
+- this_class
+    - 当前class文件
+- super_class
+- interfaces_count
+- interfaces
+- fields_count
+- fields
+- methods_count
+- methods
+    - access_flags
+    - name_index u2
+    - descriptor_index u2
+    - attributes_count
+    - attributes
+- attributes_count -u2
+- attributes
+    - code

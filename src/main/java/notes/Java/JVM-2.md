@@ -152,7 +152,7 @@
             - 有些无法被缓存的数据或者跨越多个缓存行的数据依然必须使用总线锁
             - 缓存行(cache line) 缓存的单位,一般为64字节 512位
                 - 伪共享
-                    - 位于同一缓存行的两个不同数据,被两个cpu锁定,产生互相影响的伪共享问题 ->JUC/falseSharing
+                    - 位于同一缓存行的两个不同数据,被两个cpu锁定,产生互相影响的伪共享问题 ->`JUC/falseSharing`
                 - 缓存行对齐 -> 能够提高效率
                     - 甚至disruptor中就有相关操作
                         - 在cursor前后各填充了七个long来对其缓存行来提高效率
@@ -160,9 +160,18 @@
         - MESI ->缓存锁
             - Modified 修改加标记,m
             - Exclusive 独享标记,e
-            - shared 同时在读 ,s
+            - shared 同时在读 ,s 
             - Invalid 被别人改过了 i
         - 目前数据一致性是缓存锁+总线锁
 - 指令排序
 ![](.JVM-2_images/jmm.png)
     - cpu类似内部多线程,查看没有依赖关系会乱序执行
+    - 乱序读合并写 `JUC/029_WriteCombining` ->四个超快缓存 ,四个字节
+    - 乱序执行JUC/jmm/Disorder
+- 保证不乱序
+    - cpu级别内存屏障
+        - intel
+            - sfence : 在sfence指令前的写操作当必须在sfence指令后的写操作前完成
+            - lfence : 在lfence指令前的读操作当必须在lfence指令后的读操作前完成
+            - mfence : 在mfence指令前的读写操作必须在mfence指令后的读写操作前完成
+            - lock

@@ -10,6 +10,6 @@
 // */
 //public class title {
 //    public static void main(String[] args) {
-//        AtxMarkdownToc.newInstance().genTocFile("G:\\Notes\\src\\main\\java\\notes\\高并发\\多线程与高并发.md");
+//        AtxMarkdownToc.newInstance().genTocFile("G:\\Notes\\src\\main\\java\\notes\\Java\\算法.md");
 //    }
 //}

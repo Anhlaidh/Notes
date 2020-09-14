@@ -170,8 +170,157 @@
     - 乱序执行JUC/jmm/Disorder
 - 保证不乱序
     - cpu级别内存屏障
-        - intel
+        - intel 硬件内存屏障,实实在在存在的
             - sfence : 在sfence指令前的写操作当必须在sfence指令后的写操作前完成
             - lfence : 在lfence指令前的读操作当必须在lfence指令后的读操作前完成
             - mfence : 在mfence指令前的读写操作必须在mfence指令后的读写操作前完成
-            - lock
+            - 原子指令:例如x86上的"lock",指令是一个Full Barrier,执行时会锁住内存子系统来确保执行顺序,甚至跨越
+            多个CPU,Software Locks通常使用了内存屏障或原子指令来实现变量可见性和保存程序顺序
+        - JVM级别(JSR133),依赖于硬件内存屏障 规范
+            - LoadLoad屏障
+            - StoreStore屏障
+            - LoadStore屏障
+            - StoreLoad屏障 
+- volatile
+    - java->class
+        - 标记ACCESS_FLAG volatile
+    - jvm
+        - 写操作
+            1. StoreStoreBarrier
+            2. volatile
+            3. StoreLoadBarrier
+        - 读操作
+            1. LoadLoadBarrier
+            2. volatile
+            3. LoadStoreBarrier            
+    - os
+        - hsdis -hotspot dis assembler
+        - Windows lock指令实现
+- synchronized
+    - java->class
+        - ACC_SYNCHRONIZED
+        -代码块
+            1. monitor enter
+            2. 代码块
+            3. monitor exit
+            4. monitor exit
+            - 可能出异常,所以一个enter对应两个exit
+    - jvm
+        - c和c++调用了系统提供的同步机制
+    - os
+        - lock cmpchg/xx
+### 面试题
+- 关于对象
+1. 解释一下对象的创建过程
+    1. class loading:类加载
+    2. class linking(verification preparation resolution)
+        1. verification:校验文件是否为class
+        2. preparation: 静态变量设默认值
+        3. resolution :解析
+    3. class initialization: 初始化,执行静态语句块
+    4. 申请对象内存
+    5. 成员变量赋默认值
+    6. 调用构造方法<init>
+        1. 成员变量顺序赋初始值
+        2. 执行构造方法语句 
+            1. super
+2. 对象在内存中的存储布局
+    - 观察虚拟机配置
+        - java -XX:+PrintCommandLineFlags -version
+    - 普通对象
+        1. 对象头: markword 8
+        2. ClassPointer指针: -XX:+UseCompressedClassPointers为四个字节,不开启为8字节
+        3. 实例数据
+            1. 引用类型: -XX:+UseCompressOops为四字节,不开启为8字节
+            Oops Ordinary Object Pointers 成员变量的指针
+        4. padding对齐,8的倍数 
+    - 数组对象
+        1. 对象头:markword 8
+        2. ClassPointer 指针同上
+        3. 数组长度:4字节
+        4. 数组数据
+        5. 对齐8的倍数
+    - ObjectSizeAgent
+    - HotSpot开启内存压缩的规则(64位)
+        1. 4g以下直接砍掉高32位
+        2. 4g-32g,默认开启内存压缩ClassPointer Oops
+        3. 32G,压缩无效,使用64位,内存不是越大越好
+        
+3. 对象头具体包括什么
+    1. 偏向锁
+    2. 锁
+    3. HashCode
+        - 31位hashcode->System.identityHashCode(...)  -->64位机子,32位的25位 
+        - 按原始内容机选hashcode,重写过的hashcode方法计算的结果不会存在这里
+    4. 分代年龄->4bit,最大15
+    - ![](.JVM-2_images/ObjectHead.png)
+4. 对象怎么定位
+    - 句柄池 -> gc算法方便(三色算法)
+    - 直接指针 ->hotspot
+5. 对象怎么分配
+    - GC相关内容
+6. Object o = new Object 在内存中占用多少字节
+## JVM Runtime Data Area && JVM Instructions
+### JVM Runtime Data Area 
+- PC program count 线程私有
+    - 存放指令位置
+    - 虚拟机的运行,类似于这样的循环
+      ```
+      while(not end)
+      {
+      取PC中的位置,找到对应位置指令
+      执行指令
+      PC++
+      }
+      ```
+- Heap
+- Stack
+    - JVM stack *** 线程私有
+        - Frame - 每个方法对应一个栈帧
+            1. Local Variables 局部变量表
+            2. Operand Stack 操作数栈 
+                - 对于long的处理(store and load),多数虚拟机的实现都是原子的jls17.7,没必要volatile
+            3. dynamic linking 动态链接
+                - jvms 2.6.3
+                - a()调用了b(),去constant_pool找b()的链接->动态链接
+            4. return address
+                - a()调用b(),返回值放的位置以及继续的地址
+    - native method stack 线程私有
+- method area *** 逻辑概念
+    - 具体实现
+      1. perm Space (<1.8)
+        - 字符串常量位于PermSpace
+        - FGC不会清理
+        ```
+        for(;;) I i =C::n //Method Area  ->OOM,1.8之后不会OOM
+        ```
+        - 大小启动时指定,不能变
+      2. meta space(>=1.8)
+        - 字符串常量位于堆
+        - 会触发FGC清理
+        - 不设定的话最大就是物理内存
+- Direct Memory
+    - JVM直接访问内存空间的内存,不用再复制到jvm
+    - nio,提高效率,实现zero copy
+### JVM Instructions
+- store
+- load
+- pop
+- add
+- mul
+...
+- invoke
+    1. invokeStatic
+        - 调用静态方法
+    2. invokeVirtual
+        - 自带多态
+        - final方法
+    3. invokeInterface
+    4. invokeSpecial
+        - 可以直接定位的
+            - private 方法,init
+    5. invokeDynamic
+        - JVM最难指令
+        - lambda表达式
+        - 反射
+        - 其他动态语言,scala,kotlin,CGLib ASM动态产生的class会用到的指令

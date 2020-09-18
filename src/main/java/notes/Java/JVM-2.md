@@ -256,7 +256,13 @@
     - ![](.JVM-2_images/ObjectHead.png)
 4. 对象怎么定位
     - 句柄池 -> gc算法方便(三色算法)
+        - 两个指针
+            1. 数据类型指针 T.class
+            2. 实例数据指针
     - 直接指针 ->hotspot
+        - 一个指针
+            - 指向实例数据
+            - 实例数据指向数据类型
 5. 对象怎么分配
     - GC相关内容
 6. Object o = new Object 在内存中占用多少字节
@@ -324,3 +330,139 @@
         - lambda表达式
         - 反射
         - 其他动态语言,scala,kotlin,CGLib ASM动态产生的class会用到的指令
+## Garbage Collector && GC tuning
+- 垃圾 -> 孤儿
+### how to find a garbage
+- reference count 引用计数 python
+    - 循环引用不能解决
+- root Searching 根可达算法 java
+    - 根对象
+        1. 线程栈变量
+        2. 静态变量
+        3. 常量池
+        4. JNI指针 ->native
+### GC Algorithms
+- Mark-Sweep(标记清除)
+    ![](.JVM-2_images/Mark-Sweep.png)
+    - 算法相对简单
+    - 存活对象比较多的情况下效率较高
+    - 两遍扫描,效率偏低
+    - 容易产生碎片
+- Copying(拷贝)
+    ![](.JVM-2_images/Copying.png)
+    - 适用于存活对象较少的情况,只扫描一次,效率高,没有碎片
+    - 空间浪费
+    - 移动复制对象,需要调整对象引用
+- Mark-Compact(标记压缩)
+    ![](.JVM-2_images/ Mark-Compact.png) 
+    - 不会产生碎片,方便对象分配
+    - 不会产生内存减半
+    - 扫描两次
+    - 需要移动对象,效率偏低
+### 堆内存逻辑分区(不适用部分带垃圾收集器)
+- 部分垃圾回收器使用的模型
+    - 除了Epsilon ZGC Shenandoah之外的GC都是使用逻辑分代模型
+    - G1是逻辑分代,物理不分代
+    - 除此之外,不仅逻辑分代,而且物理分代
+![](.JVM-2_images/heapMemery.png)
+- 内存分配
+    - [方法区,永久区,元空间...](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067286785070125&type=1024&vid=5285890796770442292) 30:00
+    1. 栈上分配
+        - 线程私有对象
+        - 无逃逸
+        - 支持标量替换
+        - 无需调整
+    2. 线程本地分配TLAB(Thread Local Allocation Buffer)
+        - 占用eden,默认1%
+        - 多线程的时候不用竞争eden就可以申请空间,提高效率
+        - 小对象
+        - 无需调整
+    3. 老年代
+        - 大对象
+    4. eden
+- 对象何时进入老年代
+    1. 超过 `XX:MaxTenuringThreshold` 指定次数(YGC)
+        - Parallel Scavenge 15
+        - CMS 6
+        - G1 15
+        git config --global http.proxy 'socks5://127.0.0.1:1080'
+        git config --global https.proxy 'socks5://127.0.0.1:1080'
+    2. 动态年龄
+        - s1 ->s2超过50%
+        - 把年龄最大的放入O
+    ![](.JVM-2_images/ObjectBirth.png)
+- 分配担保
+    - YGC期间 survivor区空间不够了 空间担保直接进入老年代
+### 垃圾回收器 
+![](.JVM-2_images/garbageCollectors.png)
+- Serial
+    - stw
+    - mark-sweep-compact ?
+    - safe point 完成必要的事情
+    - 老gc,处理空间小,大了则stw时间特别长
+- SerialOld 老年代
+    - stw
+    - mark-sweep-compact 标记压缩
+    - single GC thread
+- Parallel Scavenge
+    - stw
+    - copying
+    - multiple GC
+- Parallel old
+    - stw
+    - compacting
+    - multiple GC
+- Parallel new 
+    - stw
+    - copying
+    - multiple gc
+    - 加强版PS,配合CMS用的变种
+        - PN:响应时间优先
+        - PS:吞吐量优先
+- G1(10ms)
+    - 算法:三色标记+SATB
+- ZGC(1ms) PK C++
+    - 算法:ColoredPointers+写屏障
+- Shenandoah
+    - 算法:ColoredPointer+读屏障
+- Epsilon
+- 默认回收器,PS+Parallel Old
+#### CMS
+- concurrent mark sweep
+- 老年代垃圾回收器
+- phases 
+    1. initial mark
+    2. concurrent mark
+    3. remark
+    4. concurrent sweep
+    ![](.JVM-2_images/phases.png)
+- 问题
+    1. MemoryFragmentation 内存碎片化
+        - 搬出Serial Old来慢慢压缩空间
+        - -XX:CMSFUllGCsBeforeCompaction
+    2. Floating Garbage
+        - PromotionFailed
+        - Concurrent Mode Failure -XX:CMSInitiatingOccupancyFraction 92%
+            - 降低这个值,让cms保持老年代足够空间
+        - SeriaOld
+- 垃圾收集器跟内存大小的关系
+    1. Serial 几十m
+    2. PS 上百m到几个g
+    3. CMS 几个g到十几个g
+    4. g1 上百g
+    5. ZGC 4T
+##### 三色扫描算法
+        
+## GC 调优
+- 吞吐量: 用户代码时间/(用户代码执行时间+垃圾回收时间)  干正事的比例
+- 响应时间 : STW越短,响应时间越好
+- 所谓调优: 首先确定追求什么,吞吐量优先还是响应时间优先还是在满足一定响应时间的情况下,要求达到多少吞吐量
+### 命令
+### Log
+- `java -X ms5M -Xmx5M -XX:+PrintCommandLineFlags -XX:+PrintGCDetails com.mashibing.jvm.c5_gc.T01_HelloGC`
+    - ![](.JVM-2_images/ddc71b77.png)
+
+- ![](.JVM-2_images/yfGC.png)
+- ![](.JVM-2_images/msbygc.png)
+- ![](.JVM-2_images/heapDump.png)
+- total= eden+1个survivor

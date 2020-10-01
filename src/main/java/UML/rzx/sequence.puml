@@ -1,0 +1,20 @@
+@startuml
+actor 管理员
+管理员->图书管理界面:1.添加图书
+activate 管理员
+activate 图书管理界面
+图书管理界面-->管理员:2.操作对话框界面
+deactivate 图书管理界面
+管理员->图书管理界面:3.提交
+activate 图书管理界面
+图书管理界面->图书管理控制类:4.图书信息
+activate 图书管理控制类
+图书管理控制类->数据库:5.添加记录
+activate 数据库
+数据库-->图书管理界面:6.成功信息
+deactivate 数据库
+deactivate 图书管理控制类
+图书管理界面-->管理员:7.成功画面
+deactivate 图书管理界面
+deactivate 管理员
+@enduml

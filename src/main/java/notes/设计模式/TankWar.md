@@ -45,3 +45,7 @@
             - 子弹飞出窗口就remove掉
                 - 子弹添加live属性
                 - 出去就remove this ,所以需要拿到frame的引用,至此,tank和bullet都拿到了frame的引用了
+8. Junit test
+    - 测试路径
+    - classLoader来找
+9. load图片

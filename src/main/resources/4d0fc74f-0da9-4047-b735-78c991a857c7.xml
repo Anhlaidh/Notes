@@ -1,0 +1,2148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserProfile>
+    <achievementsList>KillEliteMonster CompleteTeleporter StayAlive1 Discover10UniqueTier1 CompleteThreeStages LoopOnce
+        TotalMoneyCollected MajorMultikill Die5Times RepeatFirstTeleporter Discover5Equipment FailShrineChance
+        HardHitter CompleteUnknownEnding Complete30StagesCareer KillTotalEnemies CompleteMultiBossShrine
+        RepeatedlyDuplicateItems MoveSpeed TotalDronesRepaired Complete20Stages UseThreePortals LogCollector Die20Times
+        MultiCombatShrine BeatArena HuntressCollectCrowbars KillBossQuick CompleteTeleporterWithoutInjury
+        ObtainArtifactCommand KillGoldTitanInOneCycle CleanupDuty CarryLunarItems KillBossQuantityInRun
+        CompleteMainEnding AttackSpeed DefeatSuperRoboBallBoss ObtainArtifactEliteOnly NeverBackDown ObtainArtifactGlass
+        HuntressMaintainFullHealthOnFrozenWall ObtainArtifactRandomSurvivorOnRespawn ObtainArtifactShadowClone
+        ObtainArtifactMixEnemy ObtainArtifactFriendlyFire MaxHealingShrine KillElitesMilestone FindTimedChest
+        ObtainArtifactEnigma ObtainArtifactBomb ObtainArtifactWispOnDeath ObtainArtifactTeamDeath
+        ObtainArtifactWeakAssKnees ObtainArtifactSingleMonsterType FreeMage ObtainArtifactSacrifice FindDevilAltar
+        BurnToDeath
+    </achievementsList>
+    <coins>1353387604</coins>
+    <discoveredPickups>ItemIndex.Syringe ItemIndex.Bear ItemIndex.Behemoth ItemIndex.Missile ItemIndex.ExplodeOnDeath
+        ItemIndex.Dagger ItemIndex.Tooth ItemIndex.CritGlasses ItemIndex.Hoof ItemIndex.Feather ItemIndex.ChainLightning
+        ItemIndex.Seed ItemIndex.Icicle ItemIndex.GhostOnKill ItemIndex.Mushroom ItemIndex.Crowbar
+        ItemIndex.AttackSpeedOnCrit ItemIndex.BleedOnHit ItemIndex.SprintOutOfCombat ItemIndex.FallBoots
+        ItemIndex.WardOnLevel ItemIndex.Phasing ItemIndex.HealWhileSafe ItemIndex.PersonalShield
+        ItemIndex.EquipmentMagazine ItemIndex.NovaOnHeal ItemIndex.ShockNearby ItemIndex.Infusion ItemIndex.Clover
+        ItemIndex.Medkit ItemIndex.Bandolier ItemIndex.BounceNearby ItemIndex.IgniteOnKill ItemIndex.StunChanceOnHit
+        ItemIndex.Firework ItemIndex.LunarDagger ItemIndex.GoldOnHit ItemIndex.ShieldOnly ItemIndex.AlienHead
+        ItemIndex.Talisman ItemIndex.Knurl ItemIndex.BeetleGland ItemIndex.SprintBonus ItemIndex.SecondarySkillMagazine
+        ItemIndex.StickyBomb ItemIndex.TreasureCache ItemIndex.BossDamageBonus ItemIndex.SprintArmor ItemIndex.IceRing
+        ItemIndex.SlowOnHit ItemIndex.ExtraLife ItemIndex.UtilitySkillMagazine ItemIndex.HeadHunter
+        ItemIndex.KillEliteFrenzy ItemIndex.RepeatHeal ItemIndex.JumpBoost ItemIndex.ExecuteLowHealthElite
+        ItemIndex.EnergizedOnEquipmentUse ItemIndex.BarrierOnOverHeal ItemIndex.TitanGoldDuringTP ItemIndex.SprintWisp
+        ItemIndex.BarrierOnKill ItemIndex.ArmorReductionOnHit ItemIndex.TPHealingNova ItemIndex.NearbyDamageBonus
+        ItemIndex.LunarUtilityReplacement ItemIndex.Thorns ItemIndex.RegenOnKill ItemIndex.BonusGoldPackOnKill
+        ItemIndex.LaserTurbine ItemIndex.LunarPrimaryReplacement ItemIndex.NovaOnLowHealth ItemIndex.LunarTrinket
+        ItemIndex.ArtifactKey ItemIndex.ArmorPlate ItemIndex.Squid ItemIndex.DeathMark ItemIndex.Plant
+        ItemIndex.FocusConvergence ItemIndex.FireballsOnHit ItemIndex.BleedOnHitAndExplode ItemIndex.SiphonOnLowHealth
+        ItemIndex.MonstersOnShrineUse ItemIndex.ScrapWhite ItemIndex.ScrapGreen ItemIndex.ScrapRed ItemIndex.ScrapYellow
+        ItemIndex.LunarBadLuck EquipmentIndex.CommandMissile EquipmentIndex.Fruit EquipmentIndex.Meteor
+        EquipmentIndex.AffixPoison EquipmentIndex.Blackhole EquipmentIndex.CritOnUse EquipmentIndex.DroneBackup
+        EquipmentIndex.BFG EquipmentIndex.Jetpack EquipmentIndex.Lightning EquipmentIndex.GoldGat
+        EquipmentIndex.BurnNearby EquipmentIndex.Scanner EquipmentIndex.CrippleWard EquipmentIndex.Gateway
+        EquipmentIndex.Cleanse EquipmentIndex.FireBallDash EquipmentIndex.GainArmor EquipmentIndex.Saw
+        EquipmentIndex.Recycle EquipmentIndex.TeamWarCry EquipmentIndex.DeathProjectile LunarCoin.Coin0
+        ArtifactIndex.EliteOnly ArtifactIndex.RandomSurvivorOnRespawn ArtifactIndex.ShadowClone
+        ArtifactIndex.SingleMonsterType ArtifactIndex.TeamDeath ArtifactIndex.WeakAssKnees
+    </discoveredPickups>
+    <gamepadVibrationScale>1</gamepadVibrationScale>
+    <joystickMap>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;JoystickMap dataVersion="2"
+        hardwareGuid="00000000-0000-0000-0000-000000000000" hardwareName="Unknown"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://guavaman.com/rewired
+        http://guavaman.com/schemas/rewired/1.1/JoystickMap.xsd" xmlns="http://guavaman.com/rewired"&gt;&lt;sourceMapId&gt;0&lt;/sourceMapId&gt;&lt;categoryId&gt;0&lt;/categoryId&gt;&lt;layoutId&gt;0&lt;/layoutId&gt;&lt;name&gt;&lt;/name&gt;&lt;hardwareGuid&gt;d74a350e-fe8b-4e9e-bbcd-efff16d34115&lt;/hardwareGuid&gt;&lt;enabled&gt;false&lt;/enabled&gt;&lt;buttonMaps&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;4&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;6&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;18&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;14&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;28&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;15&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;6&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;9&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;5&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;8&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;9&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;10&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;10&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;11&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;19&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;12&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;/buttonMaps&gt;&lt;axisMaps&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;0&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;0&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;1&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;1&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;16&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;2&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;17&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;3&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;8&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;4&lt;/elementIdentifierId&gt;&lt;axisRange&gt;1&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;7&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;5&lt;/elementIdentifierId&gt;&lt;axisRange&gt;1&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;/axisMaps&gt;&lt;/JoystickMap&gt;
+    </joystickMap>
+    <keyboardMap>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;KeyboardMap dataVersion="2"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://guavaman.com/rewired
+        http://guavaman.com/schemas/rewired/1.1/KeyboardMap.xsd" xmlns="http://guavaman.com/rewired"&gt;&lt;sourceMapId&gt;0&lt;/sourceMapId&gt;&lt;categoryId&gt;0&lt;/categoryId&gt;&lt;layoutId&gt;0&lt;/layoutId&gt;&lt;name&gt;&lt;/name&gt;&lt;hardwareGuid&gt;00000000-0000-0000-0000-000000000000&lt;/hardwareGuid&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;buttonMaps&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;0&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;4&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;100&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;0&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;1&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;1&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;97&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;1&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;23&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;119&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;1&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;19&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;1&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;115&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;4&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;54&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;32&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;18&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;119&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;306&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;5&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;5&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;101&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;6&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;17&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;113&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;9&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;117&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;304&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;10&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;18&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;114&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;19&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;56&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;9&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;/buttonMaps&gt;&lt;/KeyboardMap&gt;
+    </keyboardMap>
+    <mouseLookInvertX>0</mouseLookInvertX>
+    <mouseLookInvertY>0</mouseLookInvertY>
+    <mouseLookScaleX>1</mouseLookScaleX>
+    <mouseLookScaleY>1</mouseLookScaleY>
+    <mouseLookSensitivity>0.2</mouseLookSensitivity>
+    <mouseMap>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;MouseMap dataVersion="2"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://guavaman.com/rewired
+        http://guavaman.com/schemas/rewired/1.1/MouseMap.xsd" xmlns="http://guavaman.com/rewired"&gt;&lt;sourceMapId&gt;0&lt;/sourceMapId&gt;&lt;categoryId&gt;0&lt;/categoryId&gt;&lt;layoutId&gt;0&lt;/layoutId&gt;&lt;name&gt;&lt;/name&gt;&lt;hardwareGuid&gt;00000000-0000-0000-0000-000000000000&lt;/hardwareGuid&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;buttonMaps&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;7&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;3&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;8&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;4&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;28&lt;/actionId&gt;&lt;elementType&gt;1&lt;/elementType&gt;&lt;elementIdentifierId&gt;5&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;/buttonMaps&gt;&lt;axisMaps&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;2&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;0&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;ActionElementMap&gt;&lt;actionCategoryId&gt;0&lt;/actionCategoryId&gt;&lt;actionId&gt;3&lt;/actionId&gt;&lt;elementType&gt;0&lt;/elementType&gt;&lt;elementIdentifierId&gt;1&lt;/elementIdentifierId&gt;&lt;axisRange&gt;0&lt;/axisRange&gt;&lt;invert&gt;false&lt;/invert&gt;&lt;axisContribution&gt;0&lt;/axisContribution&gt;&lt;keyboardKeyCode&gt;0&lt;/keyboardKeyCode&gt;&lt;modifierKey1&gt;0&lt;/modifierKey1&gt;&lt;modifierKey2&gt;0&lt;/modifierKey2&gt;&lt;modifierKey3&gt;0&lt;/modifierKey3&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/ActionElementMap&gt;&lt;/axisMaps&gt;&lt;/MouseMap&gt;
+    </mouseMap>
+    <name>Anhlaidh</name>
+    <screenShakeScale>1</screenShakeScale>
+    <stickLookInvertX>0</stickLookInvertX>
+    <stickLookInvertY>0</stickLookInvertY>
+    <stickLookScaleX>1</stickLookScaleX>
+    <stickLookScaleY>1</stickLookScaleY>
+    <stickLookSensitivity>5</stickLookSensitivity>
+    <totalAliveSeconds>97993</totalAliveSeconds>
+    <totalCollectedCoins>98</totalCollectedCoins>
+    <totalLoginSeconds>128250</totalLoginSeconds>
+    <totalRunCount>0</totalRunCount>
+    <totalRunSeconds>112036</totalRunSeconds>
+    <unviewedAchievementsList></unviewedAchievementsList>
+    <version>2</version>
+    <viewedUnlockablesList></viewedUnlockablesList>
+    <viewedViewables>/Survivors/Huntress /Survivors/Commando /Survivors/Toolbot /Survivors/Merc /Survivors/Engineer
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_UTILITYSKILLMAGAZINE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BEAR_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/EQUIPMENT_BURNNEARBY_NAME
+        /Logbook/LOGBOOK_CATEGORY_SURVIVOR/COMMANDO_BODY_NAME /Logbook/LOGBOOK_CATEGORY_SURVIVOR/ENGI_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_SURVIVOR/HUNTRESS_BODY_NAME /Logbook/LOGBOOK_CATEGORY_SURVIVOR/MERC_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_SURVIVOR/TOOLBOT_BODY_NAME /Logbook/LOGBOOK_CATEGORY_STAGE/MAP_GOOLAKE_TITLE
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/WISP_BODY_NAME /Logbook/LOGBOOK_CATEGORY_MONSTER/LEMURIAN_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/GOLEM_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BEETLEGLAND_NAME /Survivors/Engi /Survivors/Mage
+        /Survivors/Treebot /Survivors/Loader /Survivors/Croco /Survivors/Captain
+        /Loadout/Bodies/HuntressBody/HuntressBodyUtilityFamily.HuntressBodyMiniBlink
+        /Loadout/Bodies/HuntressBody/HuntressBodySpecialFamily.AimArrowSnipe
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_DEATHMARK_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_SPRINTWISP_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_LUNARDAGGER_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_GOLDONHIT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_LUNARPRIMARYREPLACEMENT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_LUNARUTILITYREPLACEMENT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_SHIELDONLY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_FOCUSEDCONVERGENCE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/EQUIPMENT_METEOR_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/EQUIPMENT_TEAMWARCRY_NAME
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/PARENT_BODY_NAME /Logbook/LOGBOOK_CATEGORY_MONSTER/IMP_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/HERMIT_CRAB_BODY_NAME /Logbook/LOGBOOK_CATEGORY_MONSTER/ROBOBALLBOSS_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/GREATERWISP_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_KILLELITEMONSTER_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_FAILSHRINECHANCE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_DIE5TIMES_NAME
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/GRAVEKEEPER_BODY_NAME /Logbook/LOGBOOK_CATEGORY_MONSTER/SCAV_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_MONSTER/TITAN_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_INTERSTELLARDESKPLANT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_FIREWORK_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_SPRINTBONUS_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BARRIERONKILL_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_COMPLETETELEPORTER_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_OBTAINARTIFACTSHADOWCLONE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_OBTAINARTIFACTWEAKASSKNEES_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_OBTAINARTIFACTWISPONDEATH_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_OBTAINARTIFACTTEAMDEATH_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_OBTAINARTIFACTFRIENDLYFIRE_NAME
+        /Logbook/LOGBOOK_CATEGORY_SURVIVOR/LOADER_BODY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_DISCOVER5EQUIPMENT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_KILLELEMENTALLEMURIANS_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_AUTOMATIONACTIVATION_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_COMPLETE20STAGES_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_ALIENHEAD_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_SHOCKNEARBY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_NOVAONHEAL_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BOUNCENEARBY_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_DAGGER_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_FALLBOOTS_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_ARMORREDUCTIONONHIT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BARRIERONOVERHEAL_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_PERSONALSHIELD_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_IGNITEONKILL_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_STICKYBOMB_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BANDOLIER_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_SIPHONONLOWHEALTH_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_BLEEDONHITANDEXPLODE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_MEDKIT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_REPULSIONARMORPLATE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_PHASING_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_FIREBALLSONHIT_NAME
+        /Logbook/LOGBOOK_CATEGORY_ITEMANDEQUIPMENT/ITEM_TITANGOLDDURINGTP_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_KILLELITESMILESTONE_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_COMPLETEPRISMATICTRIAL_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_CHARGETELEPORTERWHILENEARDEATH_NAME
+        /Logbook/LOGBOOK_CATEGORY_ACHIEVEMENTS/ACHIEVEMENT_FINDUNIQUENEWTSTATUES_NAME
+    </viewedViewables>
+    <stats>
+        <stat name="totalGamesPlayed">59</stat>
+        <stat name="totalTimeAlive">87605.504568983</stat>
+        <stat name="totalKills">10528</stat>
+        <stat name="totalMinionKills">253</stat>
+        <stat name="totalDeaths">77</stat>
+        <stat name="totalDamageDealt">2670823930</stat>
+        <stat name="totalMinionDamageDealt">565430</stat>
+        <stat name="totalDamageTaken">268389</stat>
+        <stat name="totalHealthHealed">1317850</stat>
+        <stat name="highestDamageDealt">566231104</stat>
+        <stat name="highestLevel">48</stat>
+        <stat name="totalGoldCollected">1010144772</stat>
+        <stat name="maxGoldCollected">1005690320</stat>
+        <stat name="totalDistanceTraveled">1420842.99193618</stat>
+        <stat name="totalItemsCollected">2541</stat>
+        <stat name="highestItemsCollected">459</stat>
+        <stat name="totalStagesCompleted">234</stat>
+        <stat name="highestStagesCompleted">37</stat>
+        <stat name="totalPurchases">3089</stat>
+        <stat name="highestPurchases">802</stat>
+        <stat name="totalGoldPurchases">2728</stat>
+        <stat name="highestGoldPurchases">757</stat>
+        <stat name="totalBloodPurchases">101</stat>
+        <stat name="highestBloodPurchases">16</stat>
+        <stat name="totalLunarPurchases">35</stat>
+        <stat name="highestLunarPurchases">4</stat>
+        <stat name="totalTier1Purchases">82</stat>
+        <stat name="highestTier1Purchases">28</stat>
+        <stat name="totalTier2Purchases">10</stat>
+        <stat name="highestTier2Purchases">5</stat>
+        <stat name="totalTier3Purchases">1</stat>
+        <stat name="highestTier3Purchases">1</stat>
+        <stat name="totalDronesPurchased">53</stat>
+        <stat name="totalTurretsPurchased">5</stat>
+        <stat name="totalGreenSoupsPurchased">90</stat>
+        <stat name="totalRedSoupsPurchased">4</stat>
+        <stat name="suicideHermitCrabsAchievementProgress">2</stat>
+        <stat name="firstTeleporterCompleted">5</stat>
+        <stat name="totalEliteKills">2054</stat>
+        <stat name="totalBurnDeaths">2</stat>
+        <stat name="totalDeathsWhileBurning">3</stat>
+        <stat name="totalTeleporterBossKillsWitnessed">161</stat>
+        <stat name="totalCrocoInfectionsInflicted">0</stat>
+        <stat name="totalCrocoWeakEnemyKills">0</stat>
+        <stat name="totalMaulingRockKills">108</stat>
+        <stat name="totalTimeAlive.AltarSkeletonBody">0</stat>
+        <stat name="totalTimeAlive.AncientWispBody">0</stat>
+        <stat name="totalTimeAlive.ArchWispBody">0</stat>
+        <stat name="totalTimeAlive.ArtifactShellBody">0</stat>
+        <stat name="totalTimeAlive.AssassinBody">0</stat>
+        <stat name="totalTimeAlive.BackupDroneBody">0</stat>
+        <stat name="totalTimeAlive.BackupDroneOldBody">0</stat>
+        <stat name="totalTimeAlive.BanditBody">0</stat>
+        <stat name="totalTimeAlive.BeetleBody">0</stat>
+        <stat name="totalTimeAlive.BeetleCrystalBody">0</stat>
+        <stat name="totalTimeAlive.BeetleGuardAllyBody">0</stat>
+        <stat name="totalTimeAlive.BeetleGuardBody">0</stat>
+        <stat name="totalTimeAlive.BeetleGuardCrystalBody">0</stat>
+        <stat name="totalTimeAlive.BeetleQueen2Body">0</stat>
+        <stat name="totalTimeAlive.BellBody">0</stat>
+        <stat name="totalTimeAlive.BirdsharkBody">0</stat>
+        <stat name="totalTimeAlive.BisonBody">0</stat>
+        <stat name="totalTimeAlive.BomberBody">0</stat>
+        <stat name="totalTimeAlive.BrotherBody">0</stat>
+        <stat name="totalTimeAlive.BrotherGlassBody">0</stat>
+        <stat name="totalTimeAlive.BrotherHauntBody">0</stat>
+        <stat name="totalTimeAlive.BrotherHurtBody">0</stat>
+        <stat name="totalTimeAlive.CaptainBody">3215.63350104168</stat>
+        <stat name="totalTimeAlive.ClayBody">0</stat>
+        <stat name="totalTimeAlive.ClayBossBody">0</stat>
+        <stat name="totalTimeAlive.ClayBruiserBody">0</stat>
+        <stat name="totalTimeAlive.CommandoBody">4017.26687618345</stat>
+        <stat name="totalTimeAlive.CommandoPerformanceTestBody">0</stat>
+        <stat name="totalTimeAlive.CrocoBody">0</stat>
+        <stat name="totalTimeAlive.Drone1Body">0</stat>
+        <stat name="totalTimeAlive.Drone2Body">0</stat>
+        <stat name="totalTimeAlive.ElectricWormBody">0</stat>
+        <stat name="totalTimeAlive.EmergencyDroneBody">0</stat>
+        <stat name="totalTimeAlive.EnforcerBody">0</stat>
+        <stat name="totalTimeAlive.EngiBeamTurretBody">0</stat>
+        <stat name="totalTimeAlive.EngiBody">281.150014663115</stat>
+        <stat name="totalTimeAlive.EngiTurretBody">0</stat>
+        <stat name="totalTimeAlive.EngiWalkerTurretBody">0</stat>
+        <stat name="totalTimeAlive.EquipmentDroneBody">0</stat>
+        <stat name="totalTimeAlive.ExplosivePotDestructibleBody">0</stat>
+        <stat name="totalTimeAlive.FlameDroneBody">0</stat>
+        <stat name="totalTimeAlive.FusionCellDestructibleBody">0</stat>
+        <stat name="totalTimeAlive.GolemBody">0</stat>
+        <stat name="totalTimeAlive.GolemBodyInvincible">0</stat>
+        <stat name="totalTimeAlive.GrandParentBody">0</stat>
+        <stat name="totalTimeAlive.GravekeeperBody">0</stat>
+        <stat name="totalTimeAlive.GreaterWispBody">0</stat>
+        <stat name="totalTimeAlive.HANDBody">0</stat>
+        <stat name="totalTimeAlive.HaulerBody">0</stat>
+        <stat name="totalTimeAlive.HermitCrabBody">0</stat>
+        <stat name="totalTimeAlive.HuntressBody">44520.8356552757</stat>
+        <stat name="totalTimeAlive.ImpBody">0</stat>
+        <stat name="totalTimeAlive.ImpBossBody">0</stat>
+        <stat name="totalTimeAlive.JellyfishBody">0</stat>
+        <stat name="totalTimeAlive.LemurianBody">0</stat>
+        <stat name="totalTimeAlive.LemurianBruiserBody">0</stat>
+        <stat name="totalTimeAlive.LoaderBody">39.4333353899419</stat>
+        <stat name="totalTimeAlive.LunarGolemBody">0</stat>
+        <stat name="totalTimeAlive.LunarWispBody">0</stat>
+        <stat name="totalTimeAlive.MageBody">5523.8836214263</stat>
+        <stat name="totalTimeAlive.MagmaWormBody">0</stat>
+        <stat name="totalTimeAlive.MegaDroneBody">0</stat>
+        <stat name="totalTimeAlive.MercBody">10848.6172324661</stat>
+        <stat name="totalTimeAlive.MiniMushroomBody">0</stat>
+        <stat name="totalTimeAlive.MissileDroneBody">0</stat>
+        <stat name="totalTimeAlive.NullifierBody">0</stat>
+        <stat name="totalTimeAlive.PaladinBody">0</stat>
+        <stat name="totalTimeAlive.ParentBody">0</stat>
+        <stat name="totalTimeAlive.ParentPodBody">0</stat>
+        <stat name="totalTimeAlive.Pot2Body">0</stat>
+        <stat name="totalTimeAlive.PotMobile2Body">0</stat>
+        <stat name="totalTimeAlive.PotMobileBody">0</stat>
+        <stat name="totalTimeAlive.RoboBallBossBody">0</stat>
+        <stat name="totalTimeAlive.RoboBallMiniBody">0</stat>
+        <stat name="totalTimeAlive.ScavBody">0</stat>
+        <stat name="totalTimeAlive.ScavLunar1Body">0</stat>
+        <stat name="totalTimeAlive.ScavLunar2Body">0</stat>
+        <stat name="totalTimeAlive.ScavLunar3Body">0</stat>
+        <stat name="totalTimeAlive.ScavLunar4Body">0</stat>
+        <stat name="totalTimeAlive.ScavSackProjectile">0</stat>
+        <stat name="totalTimeAlive.ShopkeeperBody">0</stat>
+        <stat name="totalTimeAlive.SniperBody">0</stat>
+        <stat name="totalTimeAlive.SpectatorBody">0</stat>
+        <stat name="totalTimeAlive.SpectatorSlowBody">0</stat>
+        <stat name="totalTimeAlive.SquidTurretBody">0</stat>
+        <stat name="totalTimeAlive.SuperRoboBallBossBody">0</stat>
+        <stat name="totalTimeAlive.TimeCrystalBody">0</stat>
+        <stat name="totalTimeAlive.TitanBody">0</stat>
+        <stat name="totalTimeAlive.TitanGoldBody">0</stat>
+        <stat name="totalTimeAlive.ToolbotBody">19154.4176656473</stat>
+        <stat name="totalTimeAlive.TreebotBody">0</stat>
+        <stat name="totalTimeAlive.Turret1Body">0</stat>
+        <stat name="totalTimeAlive.UrchinTurretBody">0</stat>
+        <stat name="totalTimeAlive.VagrantBody">0</stat>
+        <stat name="totalTimeAlive.VultureBody">0</stat>
+        <stat name="totalTimeAlive.VultureEggBody">0</stat>
+        <stat name="totalTimeAlive.WispBody">0</stat>
+        <stat name="totalTimeAlive.WispSoulBody">0</stat>
+        <stat name="totalWins.AltarSkeletonBody">0</stat>
+        <stat name="totalWins.AncientWispBody">0</stat>
+        <stat name="totalWins.ArchWispBody">0</stat>
+        <stat name="totalWins.ArtifactShellBody">0</stat>
+        <stat name="totalWins.AssassinBody">0</stat>
+        <stat name="totalWins.BackupDroneBody">0</stat>
+        <stat name="totalWins.BackupDroneOldBody">0</stat>
+        <stat name="totalWins.BanditBody">0</stat>
+        <stat name="totalWins.BeetleBody">0</stat>
+        <stat name="totalWins.BeetleCrystalBody">0</stat>
+        <stat name="totalWins.BeetleGuardAllyBody">0</stat>
+        <stat name="totalWins.BeetleGuardBody">0</stat>
+        <stat name="totalWins.BeetleGuardCrystalBody">0</stat>
+        <stat name="totalWins.BeetleQueen2Body">0</stat>
+        <stat name="totalWins.BellBody">0</stat>
+        <stat name="totalWins.BirdsharkBody">0</stat>
+        <stat name="totalWins.BisonBody">0</stat>
+        <stat name="totalWins.BomberBody">0</stat>
+        <stat name="totalWins.BrotherBody">0</stat>
+        <stat name="totalWins.BrotherGlassBody">0</stat>
+        <stat name="totalWins.BrotherHauntBody">0</stat>
+        <stat name="totalWins.BrotherHurtBody">0</stat>
+        <stat name="totalWins.CaptainBody">1</stat>
+        <stat name="totalWins.ClayBody">0</stat>
+        <stat name="totalWins.ClayBossBody">0</stat>
+        <stat name="totalWins.ClayBruiserBody">0</stat>
+        <stat name="totalWins.CommandoBody">0</stat>
+        <stat name="totalWins.CommandoPerformanceTestBody">0</stat>
+        <stat name="totalWins.CrocoBody">0</stat>
+        <stat name="totalWins.Drone1Body">0</stat>
+        <stat name="totalWins.Drone2Body">0</stat>
+        <stat name="totalWins.ElectricWormBody">0</stat>
+        <stat name="totalWins.EmergencyDroneBody">0</stat>
+        <stat name="totalWins.EnforcerBody">0</stat>
+        <stat name="totalWins.EngiBeamTurretBody">0</stat>
+        <stat name="totalWins.EngiBody">0</stat>
+        <stat name="totalWins.EngiTurretBody">0</stat>
+        <stat name="totalWins.EngiWalkerTurretBody">0</stat>
+        <stat name="totalWins.EquipmentDroneBody">0</stat>
+        <stat name="totalWins.ExplosivePotDestructibleBody">0</stat>
+        <stat name="totalWins.FlameDroneBody">0</stat>
+        <stat name="totalWins.FusionCellDestructibleBody">0</stat>
+        <stat name="totalWins.GolemBody">0</stat>
+        <stat name="totalWins.GolemBodyInvincible">0</stat>
+        <stat name="totalWins.GrandParentBody">0</stat>
+        <stat name="totalWins.GravekeeperBody">0</stat>
+        <stat name="totalWins.GreaterWispBody">0</stat>
+        <stat name="totalWins.HANDBody">0</stat>
+        <stat name="totalWins.HaulerBody">0</stat>
+        <stat name="totalWins.HermitCrabBody">0</stat>
+        <stat name="totalWins.HuntressBody">5</stat>
+        <stat name="totalWins.ImpBody">0</stat>
+        <stat name="totalWins.ImpBossBody">0</stat>
+        <stat name="totalWins.JellyfishBody">0</stat>
+        <stat name="totalWins.LemurianBody">0</stat>
+        <stat name="totalWins.LemurianBruiserBody">0</stat>
+        <stat name="totalWins.LoaderBody">0</stat>
+        <stat name="totalWins.LunarGolemBody">0</stat>
+        <stat name="totalWins.LunarWispBody">0</stat>
+        <stat name="totalWins.MageBody">0</stat>
+        <stat name="totalWins.MagmaWormBody">0</stat>
+        <stat name="totalWins.MegaDroneBody">0</stat>
+        <stat name="totalWins.MercBody">1</stat>
+        <stat name="totalWins.MiniMushroomBody">0</stat>
+        <stat name="totalWins.MissileDroneBody">0</stat>
+        <stat name="totalWins.NullifierBody">0</stat>
+        <stat name="totalWins.PaladinBody">0</stat>
+        <stat name="totalWins.ParentBody">0</stat>
+        <stat name="totalWins.ParentPodBody">0</stat>
+        <stat name="totalWins.Pot2Body">0</stat>
+        <stat name="totalWins.PotMobile2Body">0</stat>
+        <stat name="totalWins.PotMobileBody">0</stat>
+        <stat name="totalWins.RoboBallBossBody">0</stat>
+        <stat name="totalWins.RoboBallMiniBody">0</stat>
+        <stat name="totalWins.ScavBody">0</stat>
+        <stat name="totalWins.ScavLunar1Body">0</stat>
+        <stat name="totalWins.ScavLunar2Body">0</stat>
+        <stat name="totalWins.ScavLunar3Body">0</stat>
+        <stat name="totalWins.ScavLunar4Body">0</stat>
+        <stat name="totalWins.ScavSackProjectile">0</stat>
+        <stat name="totalWins.ShopkeeperBody">0</stat>
+        <stat name="totalWins.SniperBody">0</stat>
+        <stat name="totalWins.SpectatorBody">0</stat>
+        <stat name="totalWins.SpectatorSlowBody">0</stat>
+        <stat name="totalWins.SquidTurretBody">0</stat>
+        <stat name="totalWins.SuperRoboBallBossBody">0</stat>
+        <stat name="totalWins.TimeCrystalBody">0</stat>
+        <stat name="totalWins.TitanBody">0</stat>
+        <stat name="totalWins.TitanGoldBody">0</stat>
+        <stat name="totalWins.ToolbotBody">2</stat>
+        <stat name="totalWins.TreebotBody">0</stat>
+        <stat name="totalWins.Turret1Body">0</stat>
+        <stat name="totalWins.UrchinTurretBody">0</stat>
+        <stat name="totalWins.VagrantBody">0</stat>
+        <stat name="totalWins.VultureBody">0</stat>
+        <stat name="totalWins.VultureEggBody">0</stat>
+        <stat name="totalWins.WispBody">0</stat>
+        <stat name="totalWins.WispSoulBody">0</stat>
+        <stat name="longestRun.AltarSkeletonBody">0</stat>
+        <stat name="longestRun.AncientWispBody">0</stat>
+        <stat name="longestRun.ArchWispBody">0</stat>
+        <stat name="longestRun.ArtifactShellBody">0</stat>
+        <stat name="longestRun.AssassinBody">0</stat>
+        <stat name="longestRun.BackupDroneBody">0</stat>
+        <stat name="longestRun.BackupDroneOldBody">0</stat>
+        <stat name="longestRun.BanditBody">0</stat>
+        <stat name="longestRun.BeetleBody">0</stat>
+        <stat name="longestRun.BeetleCrystalBody">0</stat>
+        <stat name="longestRun.BeetleGuardAllyBody">0</stat>
+        <stat name="longestRun.BeetleGuardBody">0</stat>
+        <stat name="longestRun.BeetleGuardCrystalBody">0</stat>
+        <stat name="longestRun.BeetleQueen2Body">0</stat>
+        <stat name="longestRun.BellBody">0</stat>
+        <stat name="longestRun.BirdsharkBody">0</stat>
+        <stat name="longestRun.BisonBody">0</stat>
+        <stat name="longestRun.BomberBody">0</stat>
+        <stat name="longestRun.BrotherBody">0</stat>
+        <stat name="longestRun.BrotherGlassBody">0</stat>
+        <stat name="longestRun.BrotherHauntBody">0</stat>
+        <stat name="longestRun.BrotherHurtBody">0</stat>
+        <stat name="longestRun.CaptainBody">3235.45751953125</stat>
+        <stat name="longestRun.ClayBody">0</stat>
+        <stat name="longestRun.ClayBossBody">0</stat>
+        <stat name="longestRun.ClayBruiserBody">0</stat>
+        <stat name="longestRun.CommandoBody">2954.49389648438</stat>
+        <stat name="longestRun.CommandoPerformanceTestBody">0</stat>
+        <stat name="longestRun.CrocoBody">0</stat>
+        <stat name="longestRun.Drone1Body">0</stat>
+        <stat name="longestRun.Drone2Body">0</stat>
+        <stat name="longestRun.ElectricWormBody">0</stat>
+        <stat name="longestRun.EmergencyDroneBody">0</stat>
+        <stat name="longestRun.EnforcerBody">0</stat>
+        <stat name="longestRun.EngiBeamTurretBody">0</stat>
+        <stat name="longestRun.EngiBody">259.980651855469</stat>
+        <stat name="longestRun.EngiTurretBody">0</stat>
+        <stat name="longestRun.EngiWalkerTurretBody">0</stat>
+        <stat name="longestRun.EquipmentDroneBody">0</stat>
+        <stat name="longestRun.ExplosivePotDestructibleBody">0</stat>
+        <stat name="longestRun.FlameDroneBody">0</stat>
+        <stat name="longestRun.FusionCellDestructibleBody">0</stat>
+        <stat name="longestRun.GolemBody">0</stat>
+        <stat name="longestRun.GolemBodyInvincible">0</stat>
+        <stat name="longestRun.GrandParentBody">0</stat>
+        <stat name="longestRun.GravekeeperBody">0</stat>
+        <stat name="longestRun.GreaterWispBody">0</stat>
+        <stat name="longestRun.HANDBody">0</stat>
+        <stat name="longestRun.HaulerBody">0</stat>
+        <stat name="longestRun.HermitCrabBody">0</stat>
+        <stat name="longestRun.HuntressBody">5987.9892578125</stat>
+        <stat name="longestRun.ImpBody">0</stat>
+        <stat name="longestRun.ImpBossBody">0</stat>
+        <stat name="longestRun.JellyfishBody">0</stat>
+        <stat name="longestRun.LemurianBody">0</stat>
+        <stat name="longestRun.LemurianBruiserBody">0</stat>
+        <stat name="longestRun.LoaderBody">39.4495620727539</stat>
+        <stat name="longestRun.LunarGolemBody">0</stat>
+        <stat name="longestRun.LunarWispBody">0</stat>
+        <stat name="longestRun.MageBody">4093.82055664063</stat>
+        <stat name="longestRun.MagmaWormBody">0</stat>
+        <stat name="longestRun.MegaDroneBody">0</stat>
+        <stat name="longestRun.MercBody">3007.23706054688</stat>
+        <stat name="longestRun.MiniMushroomBody">0</stat>
+        <stat name="longestRun.MissileDroneBody">0</stat>
+        <stat name="longestRun.NullifierBody">0</stat>
+        <stat name="longestRun.PaladinBody">0</stat>
+        <stat name="longestRun.ParentBody">0</stat>
+        <stat name="longestRun.ParentPodBody">0</stat>
+        <stat name="longestRun.Pot2Body">0</stat>
+        <stat name="longestRun.PotMobile2Body">0</stat>
+        <stat name="longestRun.PotMobileBody">0</stat>
+        <stat name="longestRun.RoboBallBossBody">0</stat>
+        <stat name="longestRun.RoboBallMiniBody">0</stat>
+        <stat name="longestRun.ScavBody">0</stat>
+        <stat name="longestRun.ScavLunar1Body">0</stat>
+        <stat name="longestRun.ScavLunar2Body">0</stat>
+        <stat name="longestRun.ScavLunar3Body">0</stat>
+        <stat name="longestRun.ScavLunar4Body">0</stat>
+        <stat name="longestRun.ScavSackProjectile">0</stat>
+        <stat name="longestRun.ShopkeeperBody">0</stat>
+        <stat name="longestRun.SniperBody">0</stat>
+        <stat name="longestRun.SpectatorBody">0</stat>
+        <stat name="longestRun.SpectatorSlowBody">0</stat>
+        <stat name="longestRun.SquidTurretBody">0</stat>
+        <stat name="longestRun.SuperRoboBallBossBody">0</stat>
+        <stat name="longestRun.TimeCrystalBody">0</stat>
+        <stat name="longestRun.TitanBody">0</stat>
+        <stat name="longestRun.TitanGoldBody">0</stat>
+        <stat name="longestRun.ToolbotBody">7630.86328125</stat>
+        <stat name="longestRun.TreebotBody">0</stat>
+        <stat name="longestRun.Turret1Body">0</stat>
+        <stat name="longestRun.UrchinTurretBody">0</stat>
+        <stat name="longestRun.VagrantBody">0</stat>
+        <stat name="longestRun.VultureBody">0</stat>
+        <stat name="longestRun.VultureEggBody">0</stat>
+        <stat name="longestRun.WispBody">0</stat>
+        <stat name="longestRun.WispSoulBody">0</stat>
+        <stat name="damageDealtTo.AltarSkeletonBody">0</stat>
+        <stat name="damageDealtTo.AncientWispBody">0</stat>
+        <stat name="damageDealtTo.ArchWispBody">0</stat>
+        <stat name="damageDealtTo.ArtifactShellBody">0</stat>
+        <stat name="damageDealtTo.AssassinBody">0</stat>
+        <stat name="damageDealtTo.BackupDroneBody">74763</stat>
+        <stat name="damageDealtTo.BackupDroneOldBody">0</stat>
+        <stat name="damageDealtTo.BanditBody">0</stat>
+        <stat name="damageDealtTo.BeetleBody">4245559</stat>
+        <stat name="damageDealtTo.BeetleCrystalBody">0</stat>
+        <stat name="damageDealtTo.BeetleGuardAllyBody">0</stat>
+        <stat name="damageDealtTo.BeetleGuardBody">935785</stat>
+        <stat name="damageDealtTo.BeetleGuardCrystalBody">0</stat>
+        <stat name="damageDealtTo.BeetleQueen2Body">3845792</stat>
+        <stat name="damageDealtTo.BellBody">121073510</stat>
+        <stat name="damageDealtTo.BirdsharkBody">0</stat>
+        <stat name="damageDealtTo.BisonBody">17601661</stat>
+        <stat name="damageDealtTo.BomberBody">0</stat>
+        <stat name="damageDealtTo.BrotherBody">250081144</stat>
+        <stat name="damageDealtTo.BrotherGlassBody">0</stat>
+        <stat name="damageDealtTo.BrotherHauntBody">0</stat>
+        <stat name="damageDealtTo.BrotherHurtBody">34560</stat>
+        <stat name="damageDealtTo.CaptainBody">17036</stat>
+        <stat name="damageDealtTo.ClayBody">0</stat>
+        <stat name="damageDealtTo.ClayBossBody">26427366</stat>
+        <stat name="damageDealtTo.ClayBruiserBody">147074</stat>
+        <stat name="damageDealtTo.CommandoBody">56</stat>
+        <stat name="damageDealtTo.CommandoPerformanceTestBody">0</stat>
+        <stat name="damageDealtTo.CrocoBody">1066</stat>
+        <stat name="damageDealtTo.Drone1Body">1656</stat>
+        <stat name="damageDealtTo.Drone2Body">0</stat>
+        <stat name="damageDealtTo.ElectricWormBody">360840</stat>
+        <stat name="damageDealtTo.EmergencyDroneBody">0</stat>
+        <stat name="damageDealtTo.EnforcerBody">0</stat>
+        <stat name="damageDealtTo.EngiBeamTurretBody">0</stat>
+        <stat name="damageDealtTo.EngiBody">0</stat>
+        <stat name="damageDealtTo.EngiTurretBody">0</stat>
+        <stat name="damageDealtTo.EngiWalkerTurretBody">0</stat>
+        <stat name="damageDealtTo.EquipmentDroneBody">0</stat>
+        <stat name="damageDealtTo.ExplosivePotDestructibleBody">274187</stat>
+        <stat name="damageDealtTo.FlameDroneBody">0</stat>
+        <stat name="damageDealtTo.FusionCellDestructibleBody">15993427</stat>
+        <stat name="damageDealtTo.GolemBody">93869258</stat>
+        <stat name="damageDealtTo.GolemBodyInvincible">0</stat>
+        <stat name="damageDealtTo.GrandParentBody">0</stat>
+        <stat name="damageDealtTo.GravekeeperBody">150584</stat>
+        <stat name="damageDealtTo.GreaterWispBody">45763974</stat>
+        <stat name="damageDealtTo.HANDBody">0</stat>
+        <stat name="damageDealtTo.HaulerBody">0</stat>
+        <stat name="damageDealtTo.HermitCrabBody">433743</stat>
+        <stat name="damageDealtTo.HuntressBody">616</stat>
+        <stat name="damageDealtTo.ImpBody">19959176</stat>
+        <stat name="damageDealtTo.ImpBossBody">7402477</stat>
+        <stat name="damageDealtTo.JellyfishBody">3048818</stat>
+        <stat name="damageDealtTo.LemurianBody">79205657</stat>
+        <stat name="damageDealtTo.LemurianBruiserBody">12726461</stat>
+        <stat name="damageDealtTo.LoaderBody">9721</stat>
+        <stat name="damageDealtTo.LunarGolemBody">94060431</stat>
+        <stat name="damageDealtTo.LunarWispBody">136325097</stat>
+        <stat name="damageDealtTo.MageBody">0</stat>
+        <stat name="damageDealtTo.MagmaWormBody">532049</stat>
+        <stat name="damageDealtTo.MegaDroneBody">0</stat>
+        <stat name="damageDealtTo.MercBody">116886</stat>
+        <stat name="damageDealtTo.MiniMushroomBody">2628603</stat>
+        <stat name="damageDealtTo.MissileDroneBody">1575</stat>
+        <stat name="damageDealtTo.NullifierBody">1209889002</stat>
+        <stat name="damageDealtTo.PaladinBody">0</stat>
+        <stat name="damageDealtTo.ParentBody">8871995</stat>
+        <stat name="damageDealtTo.ParentPodBody">0</stat>
+        <stat name="damageDealtTo.Pot2Body">0</stat>
+        <stat name="damageDealtTo.PotMobile2Body">0</stat>
+        <stat name="damageDealtTo.PotMobileBody">0</stat>
+        <stat name="damageDealtTo.RoboBallBossBody">104274321</stat>
+        <stat name="damageDealtTo.RoboBallMiniBody">157481</stat>
+        <stat name="damageDealtTo.ScavBody">8019661</stat>
+        <stat name="damageDealtTo.ScavLunar1Body">0</stat>
+        <stat name="damageDealtTo.ScavLunar2Body">0</stat>
+        <stat name="damageDealtTo.ScavLunar3Body">289636</stat>
+        <stat name="damageDealtTo.ScavLunar4Body">0</stat>
+        <stat name="damageDealtTo.ScavSackProjectile">0</stat>
+        <stat name="damageDealtTo.ShopkeeperBody">50299928</stat>
+        <stat name="damageDealtTo.SniperBody">0</stat>
+        <stat name="damageDealtTo.SpectatorBody">0</stat>
+        <stat name="damageDealtTo.SpectatorSlowBody">0</stat>
+        <stat name="damageDealtTo.SquidTurretBody">0</stat>
+        <stat name="damageDealtTo.SuperRoboBallBossBody">1565345</stat>
+        <stat name="damageDealtTo.TimeCrystalBody">0</stat>
+        <stat name="damageDealtTo.TitanBody">12265997</stat>
+        <stat name="damageDealtTo.TitanGoldBody">1305478</stat>
+        <stat name="damageDealtTo.ToolbotBody">0</stat>
+        <stat name="damageDealtTo.TreebotBody">0</stat>
+        <stat name="damageDealtTo.Turret1Body">197</stat>
+        <stat name="damageDealtTo.UrchinTurretBody">26556848</stat>
+        <stat name="damageDealtTo.VagrantBody">5169605</stat>
+        <stat name="damageDealtTo.VultureBody">2547680</stat>
+        <stat name="damageDealtTo.VultureEggBody">125340</stat>
+        <stat name="damageDealtTo.WispBody">51986698</stat>
+        <stat name="damageDealtTo.WispSoulBody">149506</stat>
+        <stat name="damageDealtAs.AltarSkeletonBody">0</stat>
+        <stat name="damageDealtAs.AncientWispBody">0</stat>
+        <stat name="damageDealtAs.ArchWispBody">0</stat>
+        <stat name="damageDealtAs.ArtifactShellBody">0</stat>
+        <stat name="damageDealtAs.AssassinBody">0</stat>
+        <stat name="damageDealtAs.BackupDroneBody">0</stat>
+        <stat name="damageDealtAs.BackupDroneOldBody">0</stat>
+        <stat name="damageDealtAs.BanditBody">0</stat>
+        <stat name="damageDealtAs.BeetleBody">0</stat>
+        <stat name="damageDealtAs.BeetleCrystalBody">0</stat>
+        <stat name="damageDealtAs.BeetleGuardAllyBody">0</stat>
+        <stat name="damageDealtAs.BeetleGuardBody">0</stat>
+        <stat name="damageDealtAs.BeetleGuardCrystalBody">0</stat>
+        <stat name="damageDealtAs.BeetleQueen2Body">0</stat>
+        <stat name="damageDealtAs.BellBody">0</stat>
+        <stat name="damageDealtAs.BirdsharkBody">0</stat>
+        <stat name="damageDealtAs.BisonBody">0</stat>
+        <stat name="damageDealtAs.BomberBody">0</stat>
+        <stat name="damageDealtAs.BrotherBody">0</stat>
+        <stat name="damageDealtAs.BrotherGlassBody">0</stat>
+        <stat name="damageDealtAs.BrotherHauntBody">0</stat>
+        <stat name="damageDealtAs.BrotherHurtBody">0</stat>
+        <stat name="damageDealtAs.CaptainBody">737884</stat>
+        <stat name="damageDealtAs.ClayBody">0</stat>
+        <stat name="damageDealtAs.ClayBossBody">0</stat>
+        <stat name="damageDealtAs.ClayBruiserBody">0</stat>
+        <stat name="damageDealtAs.CommandoBody">172479</stat>
+        <stat name="damageDealtAs.CommandoPerformanceTestBody">0</stat>
+        <stat name="damageDealtAs.CrocoBody">0</stat>
+        <stat name="damageDealtAs.Drone1Body">0</stat>
+        <stat name="damageDealtAs.Drone2Body">0</stat>
+        <stat name="damageDealtAs.ElectricWormBody">0</stat>
+        <stat name="damageDealtAs.EmergencyDroneBody">0</stat>
+        <stat name="damageDealtAs.EnforcerBody">0</stat>
+        <stat name="damageDealtAs.EngiBeamTurretBody">0</stat>
+        <stat name="damageDealtAs.EngiBody">1389</stat>
+        <stat name="damageDealtAs.EngiTurretBody">0</stat>
+        <stat name="damageDealtAs.EngiWalkerTurretBody">0</stat>
+        <stat name="damageDealtAs.EquipmentDroneBody">0</stat>
+        <stat name="damageDealtAs.ExplosivePotDestructibleBody">0</stat>
+        <stat name="damageDealtAs.FlameDroneBody">0</stat>
+        <stat name="damageDealtAs.FusionCellDestructibleBody">0</stat>
+        <stat name="damageDealtAs.GolemBody">0</stat>
+        <stat name="damageDealtAs.GolemBodyInvincible">0</stat>
+        <stat name="damageDealtAs.GrandParentBody">0</stat>
+        <stat name="damageDealtAs.GravekeeperBody">0</stat>
+        <stat name="damageDealtAs.GreaterWispBody">0</stat>
+        <stat name="damageDealtAs.HANDBody">0</stat>
+        <stat name="damageDealtAs.HaulerBody">0</stat>
+        <stat name="damageDealtAs.HermitCrabBody">0</stat>
+        <stat name="damageDealtAs.HuntressBody">2645192030</stat>
+        <stat name="damageDealtAs.ImpBody">0</stat>
+        <stat name="damageDealtAs.ImpBossBody">0</stat>
+        <stat name="damageDealtAs.JellyfishBody">0</stat>
+        <stat name="damageDealtAs.LemurianBody">0</stat>
+        <stat name="damageDealtAs.LemurianBruiserBody">0</stat>
+        <stat name="damageDealtAs.LoaderBody">0</stat>
+        <stat name="damageDealtAs.LunarGolemBody">0</stat>
+        <stat name="damageDealtAs.LunarWispBody">0</stat>
+        <stat name="damageDealtAs.MageBody">486999</stat>
+        <stat name="damageDealtAs.MagmaWormBody">0</stat>
+        <stat name="damageDealtAs.MegaDroneBody">0</stat>
+        <stat name="damageDealtAs.MercBody">8222976</stat>
+        <stat name="damageDealtAs.MiniMushroomBody">0</stat>
+        <stat name="damageDealtAs.MissileDroneBody">0</stat>
+        <stat name="damageDealtAs.NullifierBody">0</stat>
+        <stat name="damageDealtAs.PaladinBody">0</stat>
+        <stat name="damageDealtAs.ParentBody">0</stat>
+        <stat name="damageDealtAs.ParentPodBody">0</stat>
+        <stat name="damageDealtAs.Pot2Body">0</stat>
+        <stat name="damageDealtAs.PotMobile2Body">0</stat>
+        <stat name="damageDealtAs.PotMobileBody">0</stat>
+        <stat name="damageDealtAs.RoboBallBossBody">0</stat>
+        <stat name="damageDealtAs.RoboBallMiniBody">0</stat>
+        <stat name="damageDealtAs.ScavBody">0</stat>
+        <stat name="damageDealtAs.ScavLunar1Body">0</stat>
+        <stat name="damageDealtAs.ScavLunar2Body">0</stat>
+        <stat name="damageDealtAs.ScavLunar3Body">0</stat>
+        <stat name="damageDealtAs.ScavLunar4Body">0</stat>
+        <stat name="damageDealtAs.ScavSackProjectile">0</stat>
+        <stat name="damageDealtAs.ShopkeeperBody">0</stat>
+        <stat name="damageDealtAs.SniperBody">0</stat>
+        <stat name="damageDealtAs.SpectatorBody">0</stat>
+        <stat name="damageDealtAs.SpectatorSlowBody">0</stat>
+        <stat name="damageDealtAs.SquidTurretBody">0</stat>
+        <stat name="damageDealtAs.SuperRoboBallBossBody">0</stat>
+        <stat name="damageDealtAs.TimeCrystalBody">0</stat>
+        <stat name="damageDealtAs.TitanBody">0</stat>
+        <stat name="damageDealtAs.TitanGoldBody">0</stat>
+        <stat name="damageDealtAs.ToolbotBody">16010173</stat>
+        <stat name="damageDealtAs.TreebotBody">0</stat>
+        <stat name="damageDealtAs.Turret1Body">0</stat>
+        <stat name="damageDealtAs.UrchinTurretBody">0</stat>
+        <stat name="damageDealtAs.VagrantBody">0</stat>
+        <stat name="damageDealtAs.VultureBody">0</stat>
+        <stat name="damageDealtAs.VultureEggBody">0</stat>
+        <stat name="damageDealtAs.WispBody">0</stat>
+        <stat name="damageDealtAs.WispSoulBody">0</stat>
+        <stat name="minionDamageDealtAs.AltarSkeletonBody">0</stat>
+        <stat name="minionDamageDealtAs.AncientWispBody">0</stat>
+        <stat name="minionDamageDealtAs.ArchWispBody">0</stat>
+        <stat name="minionDamageDealtAs.ArtifactShellBody">0</stat>
+        <stat name="minionDamageDealtAs.AssassinBody">0</stat>
+        <stat name="minionDamageDealtAs.BackupDroneBody">0</stat>
+        <stat name="minionDamageDealtAs.BackupDroneOldBody">0</stat>
+        <stat name="minionDamageDealtAs.BanditBody">0</stat>
+        <stat name="minionDamageDealtAs.BeetleBody">0</stat>
+        <stat name="minionDamageDealtAs.BeetleCrystalBody">0</stat>
+        <stat name="minionDamageDealtAs.BeetleGuardAllyBody">0</stat>
+        <stat name="minionDamageDealtAs.BeetleGuardBody">0</stat>
+        <stat name="minionDamageDealtAs.BeetleGuardCrystalBody">0</stat>
+        <stat name="minionDamageDealtAs.BeetleQueen2Body">0</stat>
+        <stat name="minionDamageDealtAs.BellBody">0</stat>
+        <stat name="minionDamageDealtAs.BirdsharkBody">0</stat>
+        <stat name="minionDamageDealtAs.BisonBody">0</stat>
+        <stat name="minionDamageDealtAs.BomberBody">0</stat>
+        <stat name="minionDamageDealtAs.BrotherBody">0</stat>
+        <stat name="minionDamageDealtAs.BrotherGlassBody">0</stat>
+        <stat name="minionDamageDealtAs.BrotherHauntBody">0</stat>
+        <stat name="minionDamageDealtAs.BrotherHurtBody">0</stat>
+        <stat name="minionDamageDealtAs.CaptainBody">13324</stat>
+        <stat name="minionDamageDealtAs.ClayBody">0</stat>
+        <stat name="minionDamageDealtAs.ClayBossBody">0</stat>
+        <stat name="minionDamageDealtAs.ClayBruiserBody">0</stat>
+        <stat name="minionDamageDealtAs.CommandoBody">0</stat>
+        <stat name="minionDamageDealtAs.CommandoPerformanceTestBody">0</stat>
+        <stat name="minionDamageDealtAs.CrocoBody">0</stat>
+        <stat name="minionDamageDealtAs.Drone1Body">0</stat>
+        <stat name="minionDamageDealtAs.Drone2Body">0</stat>
+        <stat name="minionDamageDealtAs.ElectricWormBody">0</stat>
+        <stat name="minionDamageDealtAs.EmergencyDroneBody">0</stat>
+        <stat name="minionDamageDealtAs.EnforcerBody">0</stat>
+        <stat name="minionDamageDealtAs.EngiBeamTurretBody">0</stat>
+        <stat name="minionDamageDealtAs.EngiBody">0</stat>
+        <stat name="minionDamageDealtAs.EngiTurretBody">0</stat>
+        <stat name="minionDamageDealtAs.EngiWalkerTurretBody">0</stat>
+        <stat name="minionDamageDealtAs.EquipmentDroneBody">0</stat>
+        <stat name="minionDamageDealtAs.ExplosivePotDestructibleBody">0</stat>
+        <stat name="minionDamageDealtAs.FlameDroneBody">0</stat>
+        <stat name="minionDamageDealtAs.FusionCellDestructibleBody">0</stat>
+        <stat name="minionDamageDealtAs.GolemBody">0</stat>
+        <stat name="minionDamageDealtAs.GolemBodyInvincible">0</stat>
+        <stat name="minionDamageDealtAs.GrandParentBody">0</stat>
+        <stat name="minionDamageDealtAs.GravekeeperBody">0</stat>
+        <stat name="minionDamageDealtAs.GreaterWispBody">0</stat>
+        <stat name="minionDamageDealtAs.HANDBody">0</stat>
+        <stat name="minionDamageDealtAs.HaulerBody">0</stat>
+        <stat name="minionDamageDealtAs.HermitCrabBody">0</stat>
+        <stat name="minionDamageDealtAs.HuntressBody">336280</stat>
+        <stat name="minionDamageDealtAs.ImpBody">0</stat>
+        <stat name="minionDamageDealtAs.ImpBossBody">0</stat>
+        <stat name="minionDamageDealtAs.JellyfishBody">0</stat>
+        <stat name="minionDamageDealtAs.LemurianBody">0</stat>
+        <stat name="minionDamageDealtAs.LemurianBruiserBody">0</stat>
+        <stat name="minionDamageDealtAs.LoaderBody">0</stat>
+        <stat name="minionDamageDealtAs.LunarGolemBody">0</stat>
+        <stat name="minionDamageDealtAs.LunarWispBody">0</stat>
+        <stat name="minionDamageDealtAs.MageBody">163119</stat>
+        <stat name="minionDamageDealtAs.MagmaWormBody">0</stat>
+        <stat name="minionDamageDealtAs.MegaDroneBody">0</stat>
+        <stat name="minionDamageDealtAs.MercBody">3562</stat>
+        <stat name="minionDamageDealtAs.MiniMushroomBody">0</stat>
+        <stat name="minionDamageDealtAs.MissileDroneBody">0</stat>
+        <stat name="minionDamageDealtAs.NullifierBody">0</stat>
+        <stat name="minionDamageDealtAs.PaladinBody">0</stat>
+        <stat name="minionDamageDealtAs.ParentBody">0</stat>
+        <stat name="minionDamageDealtAs.ParentPodBody">0</stat>
+        <stat name="minionDamageDealtAs.Pot2Body">0</stat>
+        <stat name="minionDamageDealtAs.PotMobile2Body">0</stat>
+        <stat name="minionDamageDealtAs.PotMobileBody">0</stat>
+        <stat name="minionDamageDealtAs.RoboBallBossBody">0</stat>
+        <stat name="minionDamageDealtAs.RoboBallMiniBody">0</stat>
+        <stat name="minionDamageDealtAs.ScavBody">0</stat>
+        <stat name="minionDamageDealtAs.ScavLunar1Body">0</stat>
+        <stat name="minionDamageDealtAs.ScavLunar2Body">0</stat>
+        <stat name="minionDamageDealtAs.ScavLunar3Body">0</stat>
+        <stat name="minionDamageDealtAs.ScavLunar4Body">0</stat>
+        <stat name="minionDamageDealtAs.ScavSackProjectile">0</stat>
+        <stat name="minionDamageDealtAs.ShopkeeperBody">0</stat>
+        <stat name="minionDamageDealtAs.SniperBody">0</stat>
+        <stat name="minionDamageDealtAs.SpectatorBody">0</stat>
+        <stat name="minionDamageDealtAs.SpectatorSlowBody">0</stat>
+        <stat name="minionDamageDealtAs.SquidTurretBody">0</stat>
+        <stat name="minionDamageDealtAs.SuperRoboBallBossBody">0</stat>
+        <stat name="minionDamageDealtAs.TimeCrystalBody">0</stat>
+        <stat name="minionDamageDealtAs.TitanBody">0</stat>
+        <stat name="minionDamageDealtAs.TitanGoldBody">0</stat>
+        <stat name="minionDamageDealtAs.ToolbotBody">0</stat>
+        <stat name="minionDamageDealtAs.TreebotBody">0</stat>
+        <stat name="minionDamageDealtAs.Turret1Body">0</stat>
+        <stat name="minionDamageDealtAs.UrchinTurretBody">0</stat>
+        <stat name="minionDamageDealtAs.VagrantBody">0</stat>
+        <stat name="minionDamageDealtAs.VultureBody">0</stat>
+        <stat name="minionDamageDealtAs.VultureEggBody">0</stat>
+        <stat name="minionDamageDealtAs.WispBody">0</stat>
+        <stat name="minionDamageDealtAs.WispSoulBody">0</stat>
+        <stat name="damageTakenFrom.AltarSkeletonBody">0</stat>
+        <stat name="damageTakenFrom.AncientWispBody">0</stat>
+        <stat name="damageTakenFrom.ArchWispBody">0</stat>
+        <stat name="damageTakenFrom.ArtifactShellBody">1992</stat>
+        <stat name="damageTakenFrom.AssassinBody">0</stat>
+        <stat name="damageTakenFrom.BackupDroneBody">0</stat>
+        <stat name="damageTakenFrom.BackupDroneOldBody">0</stat>
+        <stat name="damageTakenFrom.BanditBody">0</stat>
+        <stat name="damageTakenFrom.BeetleBody">2482</stat>
+        <stat name="damageTakenFrom.BeetleCrystalBody">0</stat>
+        <stat name="damageTakenFrom.BeetleGuardAllyBody">0</stat>
+        <stat name="damageTakenFrom.BeetleGuardBody">2972</stat>
+        <stat name="damageTakenFrom.BeetleGuardCrystalBody">0</stat>
+        <stat name="damageTakenFrom.BeetleQueen2Body">21727</stat>
+        <stat name="damageTakenFrom.BellBody">8894</stat>
+        <stat name="damageTakenFrom.BirdsharkBody">0</stat>
+        <stat name="damageTakenFrom.BisonBody">2353</stat>
+        <stat name="damageTakenFrom.BomberBody">0</stat>
+        <stat name="damageTakenFrom.BrotherBody">2908</stat>
+        <stat name="damageTakenFrom.BrotherGlassBody">0</stat>
+        <stat name="damageTakenFrom.BrotherHauntBody">378</stat>
+        <stat name="damageTakenFrom.BrotherHurtBody">0</stat>
+        <stat name="damageTakenFrom.CaptainBody">1898</stat>
+        <stat name="damageTakenFrom.ClayBody">0</stat>
+        <stat name="damageTakenFrom.ClayBossBody">3012</stat>
+        <stat name="damageTakenFrom.ClayBruiserBody">1303</stat>
+        <stat name="damageTakenFrom.CommandoBody">857</stat>
+        <stat name="damageTakenFrom.CommandoPerformanceTestBody">0</stat>
+        <stat name="damageTakenFrom.CrocoBody">0</stat>
+        <stat name="damageTakenFrom.Drone1Body">0</stat>
+        <stat name="damageTakenFrom.Drone2Body">0</stat>
+        <stat name="damageTakenFrom.ElectricWormBody">6410</stat>
+        <stat name="damageTakenFrom.EmergencyDroneBody">0</stat>
+        <stat name="damageTakenFrom.EnforcerBody">0</stat>
+        <stat name="damageTakenFrom.EngiBeamTurretBody">0</stat>
+        <stat name="damageTakenFrom.EngiBody">780</stat>
+        <stat name="damageTakenFrom.EngiTurretBody">2</stat>
+        <stat name="damageTakenFrom.EngiWalkerTurretBody">0</stat>
+        <stat name="damageTakenFrom.EquipmentDroneBody">0</stat>
+        <stat name="damageTakenFrom.ExplosivePotDestructibleBody">163</stat>
+        <stat name="damageTakenFrom.FlameDroneBody">0</stat>
+        <stat name="damageTakenFrom.FusionCellDestructibleBody">857</stat>
+        <stat name="damageTakenFrom.GolemBody">16547</stat>
+        <stat name="damageTakenFrom.GolemBodyInvincible">0</stat>
+        <stat name="damageTakenFrom.GrandParentBody">0</stat>
+        <stat name="damageTakenFrom.GravekeeperBody">661</stat>
+        <stat name="damageTakenFrom.GreaterWispBody">17140</stat>
+        <stat name="damageTakenFrom.HANDBody">0</stat>
+        <stat name="damageTakenFrom.HaulerBody">0</stat>
+        <stat name="damageTakenFrom.HermitCrabBody">5686</stat>
+        <stat name="damageTakenFrom.HuntressBody">129</stat>
+        <stat name="damageTakenFrom.ImpBody">7800</stat>
+        <stat name="damageTakenFrom.ImpBossBody">9149</stat>
+        <stat name="damageTakenFrom.JellyfishBody">2744</stat>
+        <stat name="damageTakenFrom.LemurianBody">19979</stat>
+        <stat name="damageTakenFrom.LemurianBruiserBody">6745</stat>
+        <stat name="damageTakenFrom.LoaderBody">2945</stat>
+        <stat name="damageTakenFrom.LunarGolemBody">1630</stat>
+        <stat name="damageTakenFrom.LunarWispBody">270</stat>
+        <stat name="damageTakenFrom.MageBody">485</stat>
+        <stat name="damageTakenFrom.MagmaWormBody">4466</stat>
+        <stat name="damageTakenFrom.MegaDroneBody">0</stat>
+        <stat name="damageTakenFrom.MercBody">4217</stat>
+        <stat name="damageTakenFrom.MiniMushroomBody">1432</stat>
+        <stat name="damageTakenFrom.MissileDroneBody">0</stat>
+        <stat name="damageTakenFrom.NullifierBody">162</stat>
+        <stat name="damageTakenFrom.PaladinBody">0</stat>
+        <stat name="damageTakenFrom.ParentBody">1687</stat>
+        <stat name="damageTakenFrom.ParentPodBody">0</stat>
+        <stat name="damageTakenFrom.Pot2Body">0</stat>
+        <stat name="damageTakenFrom.PotMobile2Body">0</stat>
+        <stat name="damageTakenFrom.PotMobileBody">0</stat>
+        <stat name="damageTakenFrom.RoboBallBossBody">147</stat>
+        <stat name="damageTakenFrom.RoboBallMiniBody">94</stat>
+        <stat name="damageTakenFrom.ScavBody">2730</stat>
+        <stat name="damageTakenFrom.ScavLunar1Body">0</stat>
+        <stat name="damageTakenFrom.ScavLunar2Body">0</stat>
+        <stat name="damageTakenFrom.ScavLunar3Body">204</stat>
+        <stat name="damageTakenFrom.ScavLunar4Body">0</stat>
+        <stat name="damageTakenFrom.ScavSackProjectile">0</stat>
+        <stat name="damageTakenFrom.ShopkeeperBody">0</stat>
+        <stat name="damageTakenFrom.SniperBody">0</stat>
+        <stat name="damageTakenFrom.SpectatorBody">0</stat>
+        <stat name="damageTakenFrom.SpectatorSlowBody">0</stat>
+        <stat name="damageTakenFrom.SquidTurretBody">0</stat>
+        <stat name="damageTakenFrom.SuperRoboBallBossBody">454</stat>
+        <stat name="damageTakenFrom.TimeCrystalBody">0</stat>
+        <stat name="damageTakenFrom.TitanBody">15042</stat>
+        <stat name="damageTakenFrom.TitanGoldBody">2145</stat>
+        <stat name="damageTakenFrom.ToolbotBody">0</stat>
+        <stat name="damageTakenFrom.TreebotBody">0</stat>
+        <stat name="damageTakenFrom.Turret1Body">0</stat>
+        <stat name="damageTakenFrom.UrchinTurretBody">0</stat>
+        <stat name="damageTakenFrom.VagrantBody">10710</stat>
+        <stat name="damageTakenFrom.VultureBody">2837</stat>
+        <stat name="damageTakenFrom.VultureEggBody">0</stat>
+        <stat name="damageTakenFrom.WispBody">9331</stat>
+        <stat name="damageTakenFrom.WispSoulBody">29</stat>
+        <stat name="damageTakenAs.AltarSkeletonBody">0</stat>
+        <stat name="damageTakenAs.AncientWispBody">0</stat>
+        <stat name="damageTakenAs.ArchWispBody">0</stat>
+        <stat name="damageTakenAs.ArtifactShellBody">0</stat>
+        <stat name="damageTakenAs.AssassinBody">0</stat>
+        <stat name="damageTakenAs.BackupDroneBody">0</stat>
+        <stat name="damageTakenAs.BackupDroneOldBody">0</stat>
+        <stat name="damageTakenAs.BanditBody">0</stat>
+        <stat name="damageTakenAs.BeetleBody">0</stat>
+        <stat name="damageTakenAs.BeetleCrystalBody">0</stat>
+        <stat name="damageTakenAs.BeetleGuardAllyBody">0</stat>
+        <stat name="damageTakenAs.BeetleGuardBody">0</stat>
+        <stat name="damageTakenAs.BeetleGuardCrystalBody">0</stat>
+        <stat name="damageTakenAs.BeetleQueen2Body">0</stat>
+        <stat name="damageTakenAs.BellBody">0</stat>
+        <stat name="damageTakenAs.BirdsharkBody">0</stat>
+        <stat name="damageTakenAs.BisonBody">0</stat>
+        <stat name="damageTakenAs.BomberBody">0</stat>
+        <stat name="damageTakenAs.BrotherBody">0</stat>
+        <stat name="damageTakenAs.BrotherGlassBody">0</stat>
+        <stat name="damageTakenAs.BrotherHauntBody">0</stat>
+        <stat name="damageTakenAs.BrotherHurtBody">0</stat>
+        <stat name="damageTakenAs.CaptainBody">4451</stat>
+        <stat name="damageTakenAs.ClayBody">0</stat>
+        <stat name="damageTakenAs.ClayBossBody">0</stat>
+        <stat name="damageTakenAs.ClayBruiserBody">0</stat>
+        <stat name="damageTakenAs.CommandoBody">4985</stat>
+        <stat name="damageTakenAs.CommandoPerformanceTestBody">0</stat>
+        <stat name="damageTakenAs.CrocoBody">0</stat>
+        <stat name="damageTakenAs.Drone1Body">0</stat>
+        <stat name="damageTakenAs.Drone2Body">0</stat>
+        <stat name="damageTakenAs.ElectricWormBody">0</stat>
+        <stat name="damageTakenAs.EmergencyDroneBody">0</stat>
+        <stat name="damageTakenAs.EnforcerBody">0</stat>
+        <stat name="damageTakenAs.EngiBeamTurretBody">0</stat>
+        <stat name="damageTakenAs.EngiBody">228</stat>
+        <stat name="damageTakenAs.EngiTurretBody">0</stat>
+        <stat name="damageTakenAs.EngiWalkerTurretBody">0</stat>
+        <stat name="damageTakenAs.EquipmentDroneBody">0</stat>
+        <stat name="damageTakenAs.ExplosivePotDestructibleBody">0</stat>
+        <stat name="damageTakenAs.FlameDroneBody">0</stat>
+        <stat name="damageTakenAs.FusionCellDestructibleBody">0</stat>
+        <stat name="damageTakenAs.GolemBody">0</stat>
+        <stat name="damageTakenAs.GolemBodyInvincible">0</stat>
+        <stat name="damageTakenAs.GrandParentBody">0</stat>
+        <stat name="damageTakenAs.GravekeeperBody">0</stat>
+        <stat name="damageTakenAs.GreaterWispBody">0</stat>
+        <stat name="damageTakenAs.HANDBody">0</stat>
+        <stat name="damageTakenAs.HaulerBody">0</stat>
+        <stat name="damageTakenAs.HermitCrabBody">0</stat>
+        <stat name="damageTakenAs.HuntressBody">98393</stat>
+        <stat name="damageTakenAs.ImpBody">0</stat>
+        <stat name="damageTakenAs.ImpBossBody">0</stat>
+        <stat name="damageTakenAs.JellyfishBody">0</stat>
+        <stat name="damageTakenAs.LemurianBody">0</stat>
+        <stat name="damageTakenAs.LemurianBruiserBody">0</stat>
+        <stat name="damageTakenAs.LoaderBody">0</stat>
+        <stat name="damageTakenAs.LunarGolemBody">0</stat>
+        <stat name="damageTakenAs.LunarWispBody">0</stat>
+        <stat name="damageTakenAs.MageBody">9044</stat>
+        <stat name="damageTakenAs.MagmaWormBody">0</stat>
+        <stat name="damageTakenAs.MegaDroneBody">0</stat>
+        <stat name="damageTakenAs.MercBody">40887</stat>
+        <stat name="damageTakenAs.MiniMushroomBody">0</stat>
+        <stat name="damageTakenAs.MissileDroneBody">0</stat>
+        <stat name="damageTakenAs.NullifierBody">0</stat>
+        <stat name="damageTakenAs.PaladinBody">0</stat>
+        <stat name="damageTakenAs.ParentBody">0</stat>
+        <stat name="damageTakenAs.ParentPodBody">0</stat>
+        <stat name="damageTakenAs.Pot2Body">0</stat>
+        <stat name="damageTakenAs.PotMobile2Body">0</stat>
+        <stat name="damageTakenAs.PotMobileBody">0</stat>
+        <stat name="damageTakenAs.RoboBallBossBody">0</stat>
+        <stat name="damageTakenAs.RoboBallMiniBody">0</stat>
+        <stat name="damageTakenAs.ScavBody">0</stat>
+        <stat name="damageTakenAs.ScavLunar1Body">0</stat>
+        <stat name="damageTakenAs.ScavLunar2Body">0</stat>
+        <stat name="damageTakenAs.ScavLunar3Body">0</stat>
+        <stat name="damageTakenAs.ScavLunar4Body">0</stat>
+        <stat name="damageTakenAs.ScavSackProjectile">0</stat>
+        <stat name="damageTakenAs.ShopkeeperBody">0</stat>
+        <stat name="damageTakenAs.SniperBody">0</stat>
+        <stat name="damageTakenAs.SpectatorBody">0</stat>
+        <stat name="damageTakenAs.SpectatorSlowBody">0</stat>
+        <stat name="damageTakenAs.SquidTurretBody">0</stat>
+        <stat name="damageTakenAs.SuperRoboBallBossBody">0</stat>
+        <stat name="damageTakenAs.TimeCrystalBody">0</stat>
+        <stat name="damageTakenAs.TitanBody">0</stat>
+        <stat name="damageTakenAs.TitanGoldBody">0</stat>
+        <stat name="damageTakenAs.ToolbotBody">110401</stat>
+        <stat name="damageTakenAs.TreebotBody">0</stat>
+        <stat name="damageTakenAs.Turret1Body">0</stat>
+        <stat name="damageTakenAs.UrchinTurretBody">0</stat>
+        <stat name="damageTakenAs.VagrantBody">0</stat>
+        <stat name="damageTakenAs.VultureBody">0</stat>
+        <stat name="damageTakenAs.VultureEggBody">0</stat>
+        <stat name="damageTakenAs.WispBody">0</stat>
+        <stat name="damageTakenAs.WispSoulBody">0</stat>
+        <stat name="killsAgainst.AltarSkeletonBody">0</stat>
+        <stat name="killsAgainst.AncientWispBody">0</stat>
+        <stat name="killsAgainst.ArchWispBody">0</stat>
+        <stat name="killsAgainst.ArtifactShellBody">0</stat>
+        <stat name="killsAgainst.AssassinBody">0</stat>
+        <stat name="killsAgainst.BackupDroneBody">8</stat>
+        <stat name="killsAgainst.BackupDroneOldBody">0</stat>
+        <stat name="killsAgainst.BanditBody">0</stat>
+        <stat name="killsAgainst.BeetleBody">1751</stat>
+        <stat name="killsAgainst.BeetleCrystalBody">0</stat>
+        <stat name="killsAgainst.BeetleGuardAllyBody">0</stat>
+        <stat name="killsAgainst.BeetleGuardBody">92</stat>
+        <stat name="killsAgainst.BeetleGuardCrystalBody">0</stat>
+        <stat name="killsAgainst.BeetleQueen2Body">35</stat>
+        <stat name="killsAgainst.BellBody">230</stat>
+        <stat name="killsAgainst.BirdsharkBody">0</stat>
+        <stat name="killsAgainst.BisonBody">164</stat>
+        <stat name="killsAgainst.BomberBody">0</stat>
+        <stat name="killsAgainst.BrotherBody">0</stat>
+        <stat name="killsAgainst.BrotherGlassBody">0</stat>
+        <stat name="killsAgainst.BrotherHauntBody">0</stat>
+        <stat name="killsAgainst.BrotherHurtBody">1</stat>
+        <stat name="killsAgainst.CaptainBody">2</stat>
+        <stat name="killsAgainst.ClayBody">0</stat>
+        <stat name="killsAgainst.ClayBossBody">14</stat>
+        <stat name="killsAgainst.ClayBruiserBody">12</stat>
+        <stat name="killsAgainst.CommandoBody">0</stat>
+        <stat name="killsAgainst.CommandoPerformanceTestBody">0</stat>
+        <stat name="killsAgainst.CrocoBody">0</stat>
+        <stat name="killsAgainst.Drone1Body">0</stat>
+        <stat name="killsAgainst.Drone2Body">0</stat>
+        <stat name="killsAgainst.ElectricWormBody">1</stat>
+        <stat name="killsAgainst.EmergencyDroneBody">0</stat>
+        <stat name="killsAgainst.EnforcerBody">0</stat>
+        <stat name="killsAgainst.EngiBeamTurretBody">0</stat>
+        <stat name="killsAgainst.EngiBody">0</stat>
+        <stat name="killsAgainst.EngiTurretBody">0</stat>
+        <stat name="killsAgainst.EngiWalkerTurretBody">0</stat>
+        <stat name="killsAgainst.EquipmentDroneBody">0</stat>
+        <stat name="killsAgainst.ExplosivePotDestructibleBody">129</stat>
+        <stat name="killsAgainst.FlameDroneBody">0</stat>
+        <stat name="killsAgainst.FusionCellDestructibleBody">169</stat>
+        <stat name="killsAgainst.GolemBody">732</stat>
+        <stat name="killsAgainst.GolemBodyInvincible">0</stat>
+        <stat name="killsAgainst.GrandParentBody">0</stat>
+        <stat name="killsAgainst.GravekeeperBody">3</stat>
+        <stat name="killsAgainst.GreaterWispBody">167</stat>
+        <stat name="killsAgainst.HANDBody">0</stat>
+        <stat name="killsAgainst.HaulerBody">0</stat>
+        <stat name="killsAgainst.HermitCrabBody">96</stat>
+        <stat name="killsAgainst.HuntressBody">1</stat>
+        <stat name="killsAgainst.ImpBody">649</stat>
+        <stat name="killsAgainst.ImpBossBody">25</stat>
+        <stat name="killsAgainst.JellyfishBody">504</stat>
+        <stat name="killsAgainst.LemurianBody">2296</stat>
+        <stat name="killsAgainst.LemurianBruiserBody">106</stat>
+        <stat name="killsAgainst.LoaderBody">0</stat>
+        <stat name="killsAgainst.LunarGolemBody">22</stat>
+        <stat name="killsAgainst.LunarWispBody">16</stat>
+        <stat name="killsAgainst.MageBody">0</stat>
+        <stat name="killsAgainst.MagmaWormBody">12</stat>
+        <stat name="killsAgainst.MegaDroneBody">0</stat>
+        <stat name="killsAgainst.MercBody">2</stat>
+        <stat name="killsAgainst.MiniMushroomBody">145</stat>
+        <stat name="killsAgainst.MissileDroneBody">0</stat>
+        <stat name="killsAgainst.NullifierBody">16</stat>
+        <stat name="killsAgainst.PaladinBody">0</stat>
+        <stat name="killsAgainst.ParentBody">49</stat>
+        <stat name="killsAgainst.ParentPodBody">0</stat>
+        <stat name="killsAgainst.Pot2Body">0</stat>
+        <stat name="killsAgainst.PotMobile2Body">0</stat>
+        <stat name="killsAgainst.PotMobileBody">0</stat>
+        <stat name="killsAgainst.RoboBallBossBody">6</stat>
+        <stat name="killsAgainst.RoboBallMiniBody">33</stat>
+        <stat name="killsAgainst.ScavBody">13</stat>
+        <stat name="killsAgainst.ScavLunar1Body">0</stat>
+        <stat name="killsAgainst.ScavLunar2Body">0</stat>
+        <stat name="killsAgainst.ScavLunar3Body">0</stat>
+        <stat name="killsAgainst.ScavLunar4Body">0</stat>
+        <stat name="killsAgainst.ScavSackProjectile">0</stat>
+        <stat name="killsAgainst.ShopkeeperBody">5</stat>
+        <stat name="killsAgainst.SniperBody">0</stat>
+        <stat name="killsAgainst.SpectatorBody">0</stat>
+        <stat name="killsAgainst.SpectatorSlowBody">0</stat>
+        <stat name="killsAgainst.SquidTurretBody">0</stat>
+        <stat name="killsAgainst.SuperRoboBallBossBody">2</stat>
+        <stat name="killsAgainst.TimeCrystalBody">0</stat>
+        <stat name="killsAgainst.TitanBody">57</stat>
+        <stat name="killsAgainst.TitanGoldBody">2</stat>
+        <stat name="killsAgainst.ToolbotBody">0</stat>
+        <stat name="killsAgainst.TreebotBody">0</stat>
+        <stat name="killsAgainst.Turret1Body">0</stat>
+        <stat name="killsAgainst.UrchinTurretBody">34</stat>
+        <stat name="killsAgainst.VagrantBody">41</stat>
+        <stat name="killsAgainst.VultureBody">248</stat>
+        <stat name="killsAgainst.VultureEggBody">33</stat>
+        <stat name="killsAgainst.WispBody">2158</stat>
+        <stat name="killsAgainst.WispSoulBody">112</stat>
+        <stat name="killsAgainstElite.AltarSkeletonBody">0</stat>
+        <stat name="killsAgainstElite.AncientWispBody">0</stat>
+        <stat name="killsAgainstElite.ArchWispBody">0</stat>
+        <stat name="killsAgainstElite.ArtifactShellBody">0</stat>
+        <stat name="killsAgainstElite.AssassinBody">0</stat>
+        <stat name="killsAgainstElite.BackupDroneBody">0</stat>
+        <stat name="killsAgainstElite.BackupDroneOldBody">0</stat>
+        <stat name="killsAgainstElite.BanditBody">0</stat>
+        <stat name="killsAgainstElite.BeetleBody">417</stat>
+        <stat name="killsAgainstElite.BeetleCrystalBody">0</stat>
+        <stat name="killsAgainstElite.BeetleGuardAllyBody">0</stat>
+        <stat name="killsAgainstElite.BeetleGuardBody">15</stat>
+        <stat name="killsAgainstElite.BeetleGuardCrystalBody">0</stat>
+        <stat name="killsAgainstElite.BeetleQueen2Body">7</stat>
+        <stat name="killsAgainstElite.BellBody">90</stat>
+        <stat name="killsAgainstElite.BirdsharkBody">0</stat>
+        <stat name="killsAgainstElite.BisonBody">15</stat>
+        <stat name="killsAgainstElite.BomberBody">0</stat>
+        <stat name="killsAgainstElite.BrotherBody">0</stat>
+        <stat name="killsAgainstElite.BrotherGlassBody">0</stat>
+        <stat name="killsAgainstElite.BrotherHauntBody">0</stat>
+        <stat name="killsAgainstElite.BrotherHurtBody">0</stat>
+        <stat name="killsAgainstElite.CaptainBody">0</stat>
+        <stat name="killsAgainstElite.ClayBody">0</stat>
+        <stat name="killsAgainstElite.ClayBossBody">2</stat>
+        <stat name="killsAgainstElite.ClayBruiserBody">2</stat>
+        <stat name="killsAgainstElite.CommandoBody">0</stat>
+        <stat name="killsAgainstElite.CommandoPerformanceTestBody">0</stat>
+        <stat name="killsAgainstElite.CrocoBody">0</stat>
+        <stat name="killsAgainstElite.Drone1Body">0</stat>
+        <stat name="killsAgainstElite.Drone2Body">0</stat>
+        <stat name="killsAgainstElite.ElectricWormBody">0</stat>
+        <stat name="killsAgainstElite.EmergencyDroneBody">0</stat>
+        <stat name="killsAgainstElite.EnforcerBody">0</stat>
+        <stat name="killsAgainstElite.EngiBeamTurretBody">0</stat>
+        <stat name="killsAgainstElite.EngiBody">0</stat>
+        <stat name="killsAgainstElite.EngiTurretBody">0</stat>
+        <stat name="killsAgainstElite.EngiWalkerTurretBody">0</stat>
+        <stat name="killsAgainstElite.EquipmentDroneBody">0</stat>
+        <stat name="killsAgainstElite.ExplosivePotDestructibleBody">0</stat>
+        <stat name="killsAgainstElite.FlameDroneBody">0</stat>
+        <stat name="killsAgainstElite.FusionCellDestructibleBody">0</stat>
+        <stat name="killsAgainstElite.GolemBody">212</stat>
+        <stat name="killsAgainstElite.GolemBodyInvincible">0</stat>
+        <stat name="killsAgainstElite.GrandParentBody">0</stat>
+        <stat name="killsAgainstElite.GravekeeperBody">1</stat>
+        <stat name="killsAgainstElite.GreaterWispBody">40</stat>
+        <stat name="killsAgainstElite.HANDBody">0</stat>
+        <stat name="killsAgainstElite.HaulerBody">0</stat>
+        <stat name="killsAgainstElite.HermitCrabBody">8</stat>
+        <stat name="killsAgainstElite.HuntressBody">0</stat>
+        <stat name="killsAgainstElite.ImpBody">199</stat>
+        <stat name="killsAgainstElite.ImpBossBody">5</stat>
+        <stat name="killsAgainstElite.JellyfishBody">135</stat>
+        <stat name="killsAgainstElite.LemurianBody">439</stat>
+        <stat name="killsAgainstElite.LemurianBruiserBody">26</stat>
+        <stat name="killsAgainstElite.LoaderBody">0</stat>
+        <stat name="killsAgainstElite.LunarGolemBody">0</stat>
+        <stat name="killsAgainstElite.LunarWispBody">0</stat>
+        <stat name="killsAgainstElite.MageBody">0</stat>
+        <stat name="killsAgainstElite.MagmaWormBody">0</stat>
+        <stat name="killsAgainstElite.MegaDroneBody">0</stat>
+        <stat name="killsAgainstElite.MercBody">0</stat>
+        <stat name="killsAgainstElite.MiniMushroomBody">105</stat>
+        <stat name="killsAgainstElite.MissileDroneBody">0</stat>
+        <stat name="killsAgainstElite.NullifierBody">13</stat>
+        <stat name="killsAgainstElite.PaladinBody">0</stat>
+        <stat name="killsAgainstElite.ParentBody">16</stat>
+        <stat name="killsAgainstElite.ParentPodBody">0</stat>
+        <stat name="killsAgainstElite.Pot2Body">0</stat>
+        <stat name="killsAgainstElite.PotMobile2Body">0</stat>
+        <stat name="killsAgainstElite.PotMobileBody">0</stat>
+        <stat name="killsAgainstElite.RoboBallBossBody">5</stat>
+        <stat name="killsAgainstElite.RoboBallMiniBody">14</stat>
+        <stat name="killsAgainstElite.ScavBody">0</stat>
+        <stat name="killsAgainstElite.ScavLunar1Body">0</stat>
+        <stat name="killsAgainstElite.ScavLunar2Body">0</stat>
+        <stat name="killsAgainstElite.ScavLunar3Body">0</stat>
+        <stat name="killsAgainstElite.ScavLunar4Body">0</stat>
+        <stat name="killsAgainstElite.ScavSackProjectile">0</stat>
+        <stat name="killsAgainstElite.ShopkeeperBody">0</stat>
+        <stat name="killsAgainstElite.SniperBody">0</stat>
+        <stat name="killsAgainstElite.SpectatorBody">0</stat>
+        <stat name="killsAgainstElite.SpectatorSlowBody">0</stat>
+        <stat name="killsAgainstElite.SquidTurretBody">0</stat>
+        <stat name="killsAgainstElite.SuperRoboBallBossBody">0</stat>
+        <stat name="killsAgainstElite.TimeCrystalBody">0</stat>
+        <stat name="killsAgainstElite.TitanBody">6</stat>
+        <stat name="killsAgainstElite.TitanGoldBody">0</stat>
+        <stat name="killsAgainstElite.ToolbotBody">0</stat>
+        <stat name="killsAgainstElite.TreebotBody">0</stat>
+        <stat name="killsAgainstElite.Turret1Body">0</stat>
+        <stat name="killsAgainstElite.UrchinTurretBody">0</stat>
+        <stat name="killsAgainstElite.VagrantBody">6</stat>
+        <stat name="killsAgainstElite.VultureBody">215</stat>
+        <stat name="killsAgainstElite.VultureEggBody">0</stat>
+        <stat name="killsAgainstElite.WispBody">474</stat>
+        <stat name="killsAgainstElite.WispSoulBody">0</stat>
+        <stat name="deathsFrom.AltarSkeletonBody">0</stat>
+        <stat name="deathsFrom.AncientWispBody">0</stat>
+        <stat name="deathsFrom.ArchWispBody">0</stat>
+        <stat name="deathsFrom.ArtifactShellBody">0</stat>
+        <stat name="deathsFrom.AssassinBody">0</stat>
+        <stat name="deathsFrom.BackupDroneBody">0</stat>
+        <stat name="deathsFrom.BackupDroneOldBody">0</stat>
+        <stat name="deathsFrom.BanditBody">0</stat>
+        <stat name="deathsFrom.BeetleBody">3</stat>
+        <stat name="deathsFrom.BeetleCrystalBody">0</stat>
+        <stat name="deathsFrom.BeetleGuardAllyBody">0</stat>
+        <stat name="deathsFrom.BeetleGuardBody">0</stat>
+        <stat name="deathsFrom.BeetleGuardCrystalBody">0</stat>
+        <stat name="deathsFrom.BeetleQueen2Body">1</stat>
+        <stat name="deathsFrom.BellBody">2</stat>
+        <stat name="deathsFrom.BirdsharkBody">0</stat>
+        <stat name="deathsFrom.BisonBody">1</stat>
+        <stat name="deathsFrom.BomberBody">0</stat>
+        <stat name="deathsFrom.BrotherBody">3</stat>
+        <stat name="deathsFrom.BrotherGlassBody">0</stat>
+        <stat name="deathsFrom.BrotherHauntBody">0</stat>
+        <stat name="deathsFrom.BrotherHurtBody">0</stat>
+        <stat name="deathsFrom.CaptainBody">1</stat>
+        <stat name="deathsFrom.ClayBody">0</stat>
+        <stat name="deathsFrom.ClayBossBody">1</stat>
+        <stat name="deathsFrom.ClayBruiserBody">0</stat>
+        <stat name="deathsFrom.CommandoBody">1</stat>
+        <stat name="deathsFrom.CommandoPerformanceTestBody">0</stat>
+        <stat name="deathsFrom.CrocoBody">0</stat>
+        <stat name="deathsFrom.Drone1Body">0</stat>
+        <stat name="deathsFrom.Drone2Body">0</stat>
+        <stat name="deathsFrom.ElectricWormBody">1</stat>
+        <stat name="deathsFrom.EmergencyDroneBody">0</stat>
+        <stat name="deathsFrom.EnforcerBody">0</stat>
+        <stat name="deathsFrom.EngiBeamTurretBody">0</stat>
+        <stat name="deathsFrom.EngiBody">4</stat>
+        <stat name="deathsFrom.EngiTurretBody">2</stat>
+        <stat name="deathsFrom.EngiWalkerTurretBody">0</stat>
+        <stat name="deathsFrom.EquipmentDroneBody">0</stat>
+        <stat name="deathsFrom.ExplosivePotDestructibleBody">0</stat>
+        <stat name="deathsFrom.FlameDroneBody">0</stat>
+        <stat name="deathsFrom.FusionCellDestructibleBody">0</stat>
+        <stat name="deathsFrom.GolemBody">7</stat>
+        <stat name="deathsFrom.GolemBodyInvincible">0</stat>
+        <stat name="deathsFrom.GrandParentBody">0</stat>
+        <stat name="deathsFrom.GravekeeperBody">0</stat>
+        <stat name="deathsFrom.GreaterWispBody">1</stat>
+        <stat name="deathsFrom.HANDBody">0</stat>
+        <stat name="deathsFrom.HaulerBody">0</stat>
+        <stat name="deathsFrom.HermitCrabBody">0</stat>
+        <stat name="deathsFrom.HuntressBody">0</stat>
+        <stat name="deathsFrom.ImpBody">1</stat>
+        <stat name="deathsFrom.ImpBossBody">2</stat>
+        <stat name="deathsFrom.JellyfishBody">2</stat>
+        <stat name="deathsFrom.LemurianBody">6</stat>
+        <stat name="deathsFrom.LemurianBruiserBody">4</stat>
+        <stat name="deathsFrom.LoaderBody">7</stat>
+        <stat name="deathsFrom.LunarGolemBody">1</stat>
+        <stat name="deathsFrom.LunarWispBody">1</stat>
+        <stat name="deathsFrom.MageBody">1</stat>
+        <stat name="deathsFrom.MagmaWormBody">0</stat>
+        <stat name="deathsFrom.MegaDroneBody">0</stat>
+        <stat name="deathsFrom.MercBody">0</stat>
+        <stat name="deathsFrom.MiniMushroomBody">2</stat>
+        <stat name="deathsFrom.MissileDroneBody">0</stat>
+        <stat name="deathsFrom.NullifierBody">0</stat>
+        <stat name="deathsFrom.PaladinBody">0</stat>
+        <stat name="deathsFrom.ParentBody">2</stat>
+        <stat name="deathsFrom.ParentPodBody">0</stat>
+        <stat name="deathsFrom.Pot2Body">0</stat>
+        <stat name="deathsFrom.PotMobile2Body">0</stat>
+        <stat name="deathsFrom.PotMobileBody">0</stat>
+        <stat name="deathsFrom.RoboBallBossBody">1</stat>
+        <stat name="deathsFrom.RoboBallMiniBody">0</stat>
+        <stat name="deathsFrom.ScavBody">0</stat>
+        <stat name="deathsFrom.ScavLunar1Body">0</stat>
+        <stat name="deathsFrom.ScavLunar2Body">0</stat>
+        <stat name="deathsFrom.ScavLunar3Body">1</stat>
+        <stat name="deathsFrom.ScavLunar4Body">0</stat>
+        <stat name="deathsFrom.ScavSackProjectile">0</stat>
+        <stat name="deathsFrom.ShopkeeperBody">0</stat>
+        <stat name="deathsFrom.SniperBody">0</stat>
+        <stat name="deathsFrom.SpectatorBody">0</stat>
+        <stat name="deathsFrom.SpectatorSlowBody">0</stat>
+        <stat name="deathsFrom.SquidTurretBody">0</stat>
+        <stat name="deathsFrom.SuperRoboBallBossBody">0</stat>
+        <stat name="deathsFrom.TimeCrystalBody">0</stat>
+        <stat name="deathsFrom.TitanBody">4</stat>
+        <stat name="deathsFrom.TitanGoldBody">1</stat>
+        <stat name="deathsFrom.ToolbotBody">0</stat>
+        <stat name="deathsFrom.TreebotBody">0</stat>
+        <stat name="deathsFrom.Turret1Body">0</stat>
+        <stat name="deathsFrom.UrchinTurretBody">0</stat>
+        <stat name="deathsFrom.VagrantBody">0</stat>
+        <stat name="deathsFrom.VultureBody">2</stat>
+        <stat name="deathsFrom.VultureEggBody">0</stat>
+        <stat name="deathsFrom.WispBody">2</stat>
+        <stat name="deathsFrom.WispSoulBody">0</stat>
+        <stat name="killsAs.AltarSkeletonBody">0</stat>
+        <stat name="killsAs.AncientWispBody">0</stat>
+        <stat name="killsAs.ArchWispBody">0</stat>
+        <stat name="killsAs.ArtifactShellBody">0</stat>
+        <stat name="killsAs.AssassinBody">0</stat>
+        <stat name="killsAs.BackupDroneBody">0</stat>
+        <stat name="killsAs.BackupDroneOldBody">0</stat>
+        <stat name="killsAs.BanditBody">0</stat>
+        <stat name="killsAs.BeetleBody">0</stat>
+        <stat name="killsAs.BeetleCrystalBody">0</stat>
+        <stat name="killsAs.BeetleGuardAllyBody">0</stat>
+        <stat name="killsAs.BeetleGuardBody">0</stat>
+        <stat name="killsAs.BeetleGuardCrystalBody">0</stat>
+        <stat name="killsAs.BeetleQueen2Body">0</stat>
+        <stat name="killsAs.BellBody">0</stat>
+        <stat name="killsAs.BirdsharkBody">0</stat>
+        <stat name="killsAs.BisonBody">0</stat>
+        <stat name="killsAs.BomberBody">0</stat>
+        <stat name="killsAs.BrotherBody">0</stat>
+        <stat name="killsAs.BrotherGlassBody">0</stat>
+        <stat name="killsAs.BrotherHauntBody">0</stat>
+        <stat name="killsAs.BrotherHurtBody">0</stat>
+        <stat name="killsAs.CaptainBody">269</stat>
+        <stat name="killsAs.ClayBody">0</stat>
+        <stat name="killsAs.ClayBossBody">0</stat>
+        <stat name="killsAs.ClayBruiserBody">0</stat>
+        <stat name="killsAs.CommandoBody">356</stat>
+        <stat name="killsAs.CommandoPerformanceTestBody">0</stat>
+        <stat name="killsAs.CrocoBody">0</stat>
+        <stat name="killsAs.Drone1Body">0</stat>
+        <stat name="killsAs.Drone2Body">0</stat>
+        <stat name="killsAs.ElectricWormBody">0</stat>
+        <stat name="killsAs.EmergencyDroneBody">0</stat>
+        <stat name="killsAs.EnforcerBody">0</stat>
+        <stat name="killsAs.EngiBeamTurretBody">0</stat>
+        <stat name="killsAs.EngiBody">5</stat>
+        <stat name="killsAs.EngiTurretBody">0</stat>
+        <stat name="killsAs.EngiWalkerTurretBody">0</stat>
+        <stat name="killsAs.EquipmentDroneBody">0</stat>
+        <stat name="killsAs.ExplosivePotDestructibleBody">0</stat>
+        <stat name="killsAs.FlameDroneBody">0</stat>
+        <stat name="killsAs.FusionCellDestructibleBody">0</stat>
+        <stat name="killsAs.GolemBody">0</stat>
+        <stat name="killsAs.GolemBodyInvincible">0</stat>
+        <stat name="killsAs.GrandParentBody">0</stat>
+        <stat name="killsAs.GravekeeperBody">0</stat>
+        <stat name="killsAs.GreaterWispBody">0</stat>
+        <stat name="killsAs.HANDBody">0</stat>
+        <stat name="killsAs.HaulerBody">0</stat>
+        <stat name="killsAs.HermitCrabBody">0</stat>
+        <stat name="killsAs.HuntressBody">6502</stat>
+        <stat name="killsAs.ImpBody">0</stat>
+        <stat name="killsAs.ImpBossBody">0</stat>
+        <stat name="killsAs.JellyfishBody">0</stat>
+        <stat name="killsAs.LemurianBody">0</stat>
+        <stat name="killsAs.LemurianBruiserBody">0</stat>
+        <stat name="killsAs.LoaderBody">0</stat>
+        <stat name="killsAs.LunarGolemBody">0</stat>
+        <stat name="killsAs.LunarWispBody">0</stat>
+        <stat name="killsAs.MageBody">379</stat>
+        <stat name="killsAs.MagmaWormBody">0</stat>
+        <stat name="killsAs.MegaDroneBody">0</stat>
+        <stat name="killsAs.MercBody">1257</stat>
+        <stat name="killsAs.MiniMushroomBody">0</stat>
+        <stat name="killsAs.MissileDroneBody">0</stat>
+        <stat name="killsAs.NullifierBody">0</stat>
+        <stat name="killsAs.PaladinBody">0</stat>
+        <stat name="killsAs.ParentBody">0</stat>
+        <stat name="killsAs.ParentPodBody">0</stat>
+        <stat name="killsAs.Pot2Body">0</stat>
+        <stat name="killsAs.PotMobile2Body">0</stat>
+        <stat name="killsAs.PotMobileBody">0</stat>
+        <stat name="killsAs.RoboBallBossBody">0</stat>
+        <stat name="killsAs.RoboBallMiniBody">0</stat>
+        <stat name="killsAs.ScavBody">0</stat>
+        <stat name="killsAs.ScavLunar1Body">0</stat>
+        <stat name="killsAs.ScavLunar2Body">0</stat>
+        <stat name="killsAs.ScavLunar3Body">0</stat>
+        <stat name="killsAs.ScavLunar4Body">0</stat>
+        <stat name="killsAs.ScavSackProjectile">0</stat>
+        <stat name="killsAs.ShopkeeperBody">0</stat>
+        <stat name="killsAs.SniperBody">0</stat>
+        <stat name="killsAs.SpectatorBody">0</stat>
+        <stat name="killsAs.SpectatorSlowBody">0</stat>
+        <stat name="killsAs.SquidTurretBody">0</stat>
+        <stat name="killsAs.SuperRoboBallBossBody">0</stat>
+        <stat name="killsAs.TimeCrystalBody">0</stat>
+        <stat name="killsAs.TitanBody">0</stat>
+        <stat name="killsAs.TitanGoldBody">0</stat>
+        <stat name="killsAs.ToolbotBody">1760</stat>
+        <stat name="killsAs.TreebotBody">0</stat>
+        <stat name="killsAs.Turret1Body">0</stat>
+        <stat name="killsAs.UrchinTurretBody">0</stat>
+        <stat name="killsAs.VagrantBody">0</stat>
+        <stat name="killsAs.VultureBody">0</stat>
+        <stat name="killsAs.VultureEggBody">0</stat>
+        <stat name="killsAs.WispBody">0</stat>
+        <stat name="killsAs.WispSoulBody">0</stat>
+        <stat name="minionKillsAs.AltarSkeletonBody">0</stat>
+        <stat name="minionKillsAs.AncientWispBody">0</stat>
+        <stat name="minionKillsAs.ArchWispBody">0</stat>
+        <stat name="minionKillsAs.ArtifactShellBody">0</stat>
+        <stat name="minionKillsAs.AssassinBody">0</stat>
+        <stat name="minionKillsAs.BackupDroneBody">0</stat>
+        <stat name="minionKillsAs.BackupDroneOldBody">0</stat>
+        <stat name="minionKillsAs.BanditBody">0</stat>
+        <stat name="minionKillsAs.BeetleBody">0</stat>
+        <stat name="minionKillsAs.BeetleCrystalBody">0</stat>
+        <stat name="minionKillsAs.BeetleGuardAllyBody">0</stat>
+        <stat name="minionKillsAs.BeetleGuardBody">0</stat>
+        <stat name="minionKillsAs.BeetleGuardCrystalBody">0</stat>
+        <stat name="minionKillsAs.BeetleQueen2Body">0</stat>
+        <stat name="minionKillsAs.BellBody">0</stat>
+        <stat name="minionKillsAs.BirdsharkBody">0</stat>
+        <stat name="minionKillsAs.BisonBody">0</stat>
+        <stat name="minionKillsAs.BomberBody">0</stat>
+        <stat name="minionKillsAs.BrotherBody">0</stat>
+        <stat name="minionKillsAs.BrotherGlassBody">0</stat>
+        <stat name="minionKillsAs.BrotherHauntBody">0</stat>
+        <stat name="minionKillsAs.BrotherHurtBody">0</stat>
+        <stat name="minionKillsAs.CaptainBody">6</stat>
+        <stat name="minionKillsAs.ClayBody">0</stat>
+        <stat name="minionKillsAs.ClayBossBody">0</stat>
+        <stat name="minionKillsAs.ClayBruiserBody">0</stat>
+        <stat name="minionKillsAs.CommandoBody">0</stat>
+        <stat name="minionKillsAs.CommandoPerformanceTestBody">0</stat>
+        <stat name="minionKillsAs.CrocoBody">0</stat>
+        <stat name="minionKillsAs.Drone1Body">0</stat>
+        <stat name="minionKillsAs.Drone2Body">0</stat>
+        <stat name="minionKillsAs.ElectricWormBody">0</stat>
+        <stat name="minionKillsAs.EmergencyDroneBody">0</stat>
+        <stat name="minionKillsAs.EnforcerBody">0</stat>
+        <stat name="minionKillsAs.EngiBeamTurretBody">0</stat>
+        <stat name="minionKillsAs.EngiBody">0</stat>
+        <stat name="minionKillsAs.EngiTurretBody">0</stat>
+        <stat name="minionKillsAs.EngiWalkerTurretBody">0</stat>
+        <stat name="minionKillsAs.EquipmentDroneBody">0</stat>
+        <stat name="minionKillsAs.ExplosivePotDestructibleBody">0</stat>
+        <stat name="minionKillsAs.FlameDroneBody">0</stat>
+        <stat name="minionKillsAs.FusionCellDestructibleBody">0</stat>
+        <stat name="minionKillsAs.GolemBody">0</stat>
+        <stat name="minionKillsAs.GolemBodyInvincible">0</stat>
+        <stat name="minionKillsAs.GrandParentBody">0</stat>
+        <stat name="minionKillsAs.GravekeeperBody">0</stat>
+        <stat name="minionKillsAs.GreaterWispBody">0</stat>
+        <stat name="minionKillsAs.HANDBody">0</stat>
+        <stat name="minionKillsAs.HaulerBody">0</stat>
+        <stat name="minionKillsAs.HermitCrabBody">0</stat>
+        <stat name="minionKillsAs.HuntressBody">55</stat>
+        <stat name="minionKillsAs.ImpBody">0</stat>
+        <stat name="minionKillsAs.ImpBossBody">0</stat>
+        <stat name="minionKillsAs.JellyfishBody">0</stat>
+        <stat name="minionKillsAs.LemurianBody">0</stat>
+        <stat name="minionKillsAs.LemurianBruiserBody">0</stat>
+        <stat name="minionKillsAs.LoaderBody">0</stat>
+        <stat name="minionKillsAs.LunarGolemBody">0</stat>
+        <stat name="minionKillsAs.LunarWispBody">0</stat>
+        <stat name="minionKillsAs.MageBody">168</stat>
+        <stat name="minionKillsAs.MagmaWormBody">0</stat>
+        <stat name="minionKillsAs.MegaDroneBody">0</stat>
+        <stat name="minionKillsAs.MercBody">18</stat>
+        <stat name="minionKillsAs.MiniMushroomBody">0</stat>
+        <stat name="minionKillsAs.MissileDroneBody">0</stat>
+        <stat name="minionKillsAs.NullifierBody">0</stat>
+        <stat name="minionKillsAs.PaladinBody">0</stat>
+        <stat name="minionKillsAs.ParentBody">0</stat>
+        <stat name="minionKillsAs.ParentPodBody">0</stat>
+        <stat name="minionKillsAs.Pot2Body">0</stat>
+        <stat name="minionKillsAs.PotMobile2Body">0</stat>
+        <stat name="minionKillsAs.PotMobileBody">0</stat>
+        <stat name="minionKillsAs.RoboBallBossBody">0</stat>
+        <stat name="minionKillsAs.RoboBallMiniBody">0</stat>
+        <stat name="minionKillsAs.ScavBody">0</stat>
+        <stat name="minionKillsAs.ScavLunar1Body">0</stat>
+        <stat name="minionKillsAs.ScavLunar2Body">0</stat>
+        <stat name="minionKillsAs.ScavLunar3Body">0</stat>
+        <stat name="minionKillsAs.ScavLunar4Body">0</stat>
+        <stat name="minionKillsAs.ScavSackProjectile">0</stat>
+        <stat name="minionKillsAs.ShopkeeperBody">0</stat>
+        <stat name="minionKillsAs.SniperBody">0</stat>
+        <stat name="minionKillsAs.SpectatorBody">0</stat>
+        <stat name="minionKillsAs.SpectatorSlowBody">0</stat>
+        <stat name="minionKillsAs.SquidTurretBody">0</stat>
+        <stat name="minionKillsAs.SuperRoboBallBossBody">0</stat>
+        <stat name="minionKillsAs.TimeCrystalBody">0</stat>
+        <stat name="minionKillsAs.TitanBody">0</stat>
+        <stat name="minionKillsAs.TitanGoldBody">0</stat>
+        <stat name="minionKillsAs.ToolbotBody">0</stat>
+        <stat name="minionKillsAs.TreebotBody">0</stat>
+        <stat name="minionKillsAs.Turret1Body">0</stat>
+        <stat name="minionKillsAs.UrchinTurretBody">0</stat>
+        <stat name="minionKillsAs.VagrantBody">0</stat>
+        <stat name="minionKillsAs.VultureBody">0</stat>
+        <stat name="minionKillsAs.VultureEggBody">0</stat>
+        <stat name="minionKillsAs.WispBody">0</stat>
+        <stat name="minionKillsAs.WispSoulBody">0</stat>
+        <stat name="deathsAs.AltarSkeletonBody">0</stat>
+        <stat name="deathsAs.AncientWispBody">0</stat>
+        <stat name="deathsAs.ArchWispBody">0</stat>
+        <stat name="deathsAs.ArtifactShellBody">0</stat>
+        <stat name="deathsAs.AssassinBody">0</stat>
+        <stat name="deathsAs.BackupDroneBody">0</stat>
+        <stat name="deathsAs.BackupDroneOldBody">0</stat>
+        <stat name="deathsAs.BanditBody">0</stat>
+        <stat name="deathsAs.BeetleBody">0</stat>
+        <stat name="deathsAs.BeetleCrystalBody">0</stat>
+        <stat name="deathsAs.BeetleGuardAllyBody">0</stat>
+        <stat name="deathsAs.BeetleGuardBody">0</stat>
+        <stat name="deathsAs.BeetleGuardCrystalBody">0</stat>
+        <stat name="deathsAs.BeetleQueen2Body">0</stat>
+        <stat name="deathsAs.BellBody">0</stat>
+        <stat name="deathsAs.BirdsharkBody">0</stat>
+        <stat name="deathsAs.BisonBody">0</stat>
+        <stat name="deathsAs.BomberBody">0</stat>
+        <stat name="deathsAs.BrotherBody">0</stat>
+        <stat name="deathsAs.BrotherGlassBody">0</stat>
+        <stat name="deathsAs.BrotherHauntBody">0</stat>
+        <stat name="deathsAs.BrotherHurtBody">0</stat>
+        <stat name="deathsAs.CaptainBody">1</stat>
+        <stat name="deathsAs.ClayBody">0</stat>
+        <stat name="deathsAs.ClayBossBody">0</stat>
+        <stat name="deathsAs.ClayBruiserBody">0</stat>
+        <stat name="deathsAs.CommandoBody">2</stat>
+        <stat name="deathsAs.CommandoPerformanceTestBody">0</stat>
+        <stat name="deathsAs.CrocoBody">0</stat>
+        <stat name="deathsAs.Drone1Body">0</stat>
+        <stat name="deathsAs.Drone2Body">0</stat>
+        <stat name="deathsAs.ElectricWormBody">0</stat>
+        <stat name="deathsAs.EmergencyDroneBody">0</stat>
+        <stat name="deathsAs.EnforcerBody">0</stat>
+        <stat name="deathsAs.EngiBeamTurretBody">0</stat>
+        <stat name="deathsAs.EngiBody">1</stat>
+        <stat name="deathsAs.EngiTurretBody">0</stat>
+        <stat name="deathsAs.EngiWalkerTurretBody">0</stat>
+        <stat name="deathsAs.EquipmentDroneBody">0</stat>
+        <stat name="deathsAs.ExplosivePotDestructibleBody">0</stat>
+        <stat name="deathsAs.FlameDroneBody">0</stat>
+        <stat name="deathsAs.FusionCellDestructibleBody">0</stat>
+        <stat name="deathsAs.GolemBody">0</stat>
+        <stat name="deathsAs.GolemBodyInvincible">0</stat>
+        <stat name="deathsAs.GrandParentBody">0</stat>
+        <stat name="deathsAs.GravekeeperBody">0</stat>
+        <stat name="deathsAs.GreaterWispBody">0</stat>
+        <stat name="deathsAs.HANDBody">0</stat>
+        <stat name="deathsAs.HaulerBody">0</stat>
+        <stat name="deathsAs.HermitCrabBody">0</stat>
+        <stat name="deathsAs.HuntressBody">61</stat>
+        <stat name="deathsAs.ImpBody">0</stat>
+        <stat name="deathsAs.ImpBossBody">0</stat>
+        <stat name="deathsAs.JellyfishBody">0</stat>
+        <stat name="deathsAs.LemurianBody">0</stat>
+        <stat name="deathsAs.LemurianBruiserBody">0</stat>
+        <stat name="deathsAs.LoaderBody">0</stat>
+        <stat name="deathsAs.LunarGolemBody">0</stat>
+        <stat name="deathsAs.LunarWispBody">0</stat>
+        <stat name="deathsAs.MageBody">2</stat>
+        <stat name="deathsAs.MagmaWormBody">0</stat>
+        <stat name="deathsAs.MegaDroneBody">0</stat>
+        <stat name="deathsAs.MercBody">5</stat>
+        <stat name="deathsAs.MiniMushroomBody">0</stat>
+        <stat name="deathsAs.MissileDroneBody">0</stat>
+        <stat name="deathsAs.NullifierBody">0</stat>
+        <stat name="deathsAs.PaladinBody">0</stat>
+        <stat name="deathsAs.ParentBody">0</stat>
+        <stat name="deathsAs.ParentPodBody">0</stat>
+        <stat name="deathsAs.Pot2Body">0</stat>
+        <stat name="deathsAs.PotMobile2Body">0</stat>
+        <stat name="deathsAs.PotMobileBody">0</stat>
+        <stat name="deathsAs.RoboBallBossBody">0</stat>
+        <stat name="deathsAs.RoboBallMiniBody">0</stat>
+        <stat name="deathsAs.ScavBody">0</stat>
+        <stat name="deathsAs.ScavLunar1Body">0</stat>
+        <stat name="deathsAs.ScavLunar2Body">0</stat>
+        <stat name="deathsAs.ScavLunar3Body">0</stat>
+        <stat name="deathsAs.ScavLunar4Body">0</stat>
+        <stat name="deathsAs.ScavSackProjectile">0</stat>
+        <stat name="deathsAs.ShopkeeperBody">0</stat>
+        <stat name="deathsAs.SniperBody">0</stat>
+        <stat name="deathsAs.SpectatorBody">0</stat>
+        <stat name="deathsAs.SpectatorSlowBody">0</stat>
+        <stat name="deathsAs.SquidTurretBody">0</stat>
+        <stat name="deathsAs.SuperRoboBallBossBody">0</stat>
+        <stat name="deathsAs.TimeCrystalBody">0</stat>
+        <stat name="deathsAs.TitanBody">0</stat>
+        <stat name="deathsAs.TitanGoldBody">0</stat>
+        <stat name="deathsAs.ToolbotBody">5</stat>
+        <stat name="deathsAs.TreebotBody">0</stat>
+        <stat name="deathsAs.Turret1Body">0</stat>
+        <stat name="deathsAs.UrchinTurretBody">0</stat>
+        <stat name="deathsAs.VagrantBody">0</stat>
+        <stat name="deathsAs.VultureBody">0</stat>
+        <stat name="deathsAs.VultureEggBody">0</stat>
+        <stat name="deathsAs.WispBody">0</stat>
+        <stat name="deathsAs.WispSoulBody">0</stat>
+        <stat name="timesPicked.AltarSkeletonBody">0</stat>
+        <stat name="timesPicked.AncientWispBody">0</stat>
+        <stat name="timesPicked.ArchWispBody">0</stat>
+        <stat name="timesPicked.ArtifactShellBody">0</stat>
+        <stat name="timesPicked.AssassinBody">0</stat>
+        <stat name="timesPicked.BackupDroneBody">0</stat>
+        <stat name="timesPicked.BackupDroneOldBody">0</stat>
+        <stat name="timesPicked.BanditBody">0</stat>
+        <stat name="timesPicked.BeetleBody">0</stat>
+        <stat name="timesPicked.BeetleCrystalBody">0</stat>
+        <stat name="timesPicked.BeetleGuardAllyBody">0</stat>
+        <stat name="timesPicked.BeetleGuardBody">0</stat>
+        <stat name="timesPicked.BeetleGuardCrystalBody">0</stat>
+        <stat name="timesPicked.BeetleQueen2Body">0</stat>
+        <stat name="timesPicked.BellBody">0</stat>
+        <stat name="timesPicked.BirdsharkBody">0</stat>
+        <stat name="timesPicked.BisonBody">0</stat>
+        <stat name="timesPicked.BomberBody">0</stat>
+        <stat name="timesPicked.BrotherBody">0</stat>
+        <stat name="timesPicked.BrotherGlassBody">0</stat>
+        <stat name="timesPicked.BrotherHauntBody">0</stat>
+        <stat name="timesPicked.BrotherHurtBody">0</stat>
+        <stat name="timesPicked.CaptainBody">2</stat>
+        <stat name="timesPicked.ClayBody">0</stat>
+        <stat name="timesPicked.ClayBossBody">0</stat>
+        <stat name="timesPicked.ClayBruiserBody">0</stat>
+        <stat name="timesPicked.CommandoBody">4</stat>
+        <stat name="timesPicked.CommandoPerformanceTestBody">0</stat>
+        <stat name="timesPicked.CrocoBody">0</stat>
+        <stat name="timesPicked.Drone1Body">0</stat>
+        <stat name="timesPicked.Drone2Body">0</stat>
+        <stat name="timesPicked.ElectricWormBody">0</stat>
+        <stat name="timesPicked.EmergencyDroneBody">0</stat>
+        <stat name="timesPicked.EnforcerBody">0</stat>
+        <stat name="timesPicked.EngiBeamTurretBody">0</stat>
+        <stat name="timesPicked.EngiBody">2</stat>
+        <stat name="timesPicked.EngiTurretBody">0</stat>
+        <stat name="timesPicked.EngiWalkerTurretBody">0</stat>
+        <stat name="timesPicked.EquipmentDroneBody">0</stat>
+        <stat name="timesPicked.ExplosivePotDestructibleBody">0</stat>
+        <stat name="timesPicked.FlameDroneBody">0</stat>
+        <stat name="timesPicked.FusionCellDestructibleBody">0</stat>
+        <stat name="timesPicked.GolemBody">0</stat>
+        <stat name="timesPicked.GolemBodyInvincible">0</stat>
+        <stat name="timesPicked.GrandParentBody">0</stat>
+        <stat name="timesPicked.GravekeeperBody">0</stat>
+        <stat name="timesPicked.GreaterWispBody">0</stat>
+        <stat name="timesPicked.HANDBody">0</stat>
+        <stat name="timesPicked.HaulerBody">0</stat>
+        <stat name="timesPicked.HermitCrabBody">0</stat>
+        <stat name="timesPicked.HuntressBody">34</stat>
+        <stat name="timesPicked.ImpBody">0</stat>
+        <stat name="timesPicked.ImpBossBody">0</stat>
+        <stat name="timesPicked.JellyfishBody">0</stat>
+        <stat name="timesPicked.LemurianBody">0</stat>
+        <stat name="timesPicked.LemurianBruiserBody">0</stat>
+        <stat name="timesPicked.LoaderBody">1</stat>
+        <stat name="timesPicked.LunarGolemBody">0</stat>
+        <stat name="timesPicked.LunarWispBody">0</stat>
+        <stat name="timesPicked.MageBody">4</stat>
+        <stat name="timesPicked.MagmaWormBody">0</stat>
+        <stat name="timesPicked.MegaDroneBody">0</stat>
+        <stat name="timesPicked.MercBody">7</stat>
+        <stat name="timesPicked.MiniMushroomBody">0</stat>
+        <stat name="timesPicked.MissileDroneBody">0</stat>
+        <stat name="timesPicked.NullifierBody">0</stat>
+        <stat name="timesPicked.PaladinBody">0</stat>
+        <stat name="timesPicked.ParentBody">0</stat>
+        <stat name="timesPicked.ParentPodBody">0</stat>
+        <stat name="timesPicked.Pot2Body">0</stat>
+        <stat name="timesPicked.PotMobile2Body">0</stat>
+        <stat name="timesPicked.PotMobileBody">0</stat>
+        <stat name="timesPicked.RoboBallBossBody">0</stat>
+        <stat name="timesPicked.RoboBallMiniBody">0</stat>
+        <stat name="timesPicked.ScavBody">0</stat>
+        <stat name="timesPicked.ScavLunar1Body">0</stat>
+        <stat name="timesPicked.ScavLunar2Body">0</stat>
+        <stat name="timesPicked.ScavLunar3Body">0</stat>
+        <stat name="timesPicked.ScavLunar4Body">0</stat>
+        <stat name="timesPicked.ScavSackProjectile">0</stat>
+        <stat name="timesPicked.ShopkeeperBody">0</stat>
+        <stat name="timesPicked.SniperBody">0</stat>
+        <stat name="timesPicked.SpectatorBody">0</stat>
+        <stat name="timesPicked.SpectatorSlowBody">0</stat>
+        <stat name="timesPicked.SquidTurretBody">0</stat>
+        <stat name="timesPicked.SuperRoboBallBossBody">0</stat>
+        <stat name="timesPicked.TimeCrystalBody">0</stat>
+        <stat name="timesPicked.TitanBody">0</stat>
+        <stat name="timesPicked.TitanGoldBody">0</stat>
+        <stat name="timesPicked.ToolbotBody">5</stat>
+        <stat name="timesPicked.TreebotBody">0</stat>
+        <stat name="timesPicked.Turret1Body">0</stat>
+        <stat name="timesPicked.UrchinTurretBody">0</stat>
+        <stat name="timesPicked.VagrantBody">0</stat>
+        <stat name="timesPicked.VultureBody">0</stat>
+        <stat name="timesPicked.VultureEggBody">0</stat>
+        <stat name="timesPicked.WispBody">0</stat>
+        <stat name="timesPicked.WispSoulBody">0</stat>
+        <stat name="totalCollected.Syringe">80</stat>
+        <stat name="totalCollected.Bear">402</stat>
+        <stat name="totalCollected.Behemoth">30</stat>
+        <stat name="totalCollected.Missile">50</stat>
+        <stat name="totalCollected.ExplodeOnDeath">81</stat>
+        <stat name="totalCollected.Dagger">8</stat>
+        <stat name="totalCollected.Tooth">40</stat>
+        <stat name="totalCollected.CritGlasses">58</stat>
+        <stat name="totalCollected.Hoof">50</stat>
+        <stat name="totalCollected.Feather">76</stat>
+        <stat name="totalCollected.AACannon">0</stat>
+        <stat name="totalCollected.ChainLightning">82</stat>
+        <stat name="totalCollected.PlasmaCore">0</stat>
+        <stat name="totalCollected.Seed">28</stat>
+        <stat name="totalCollected.Icicle">11</stat>
+        <stat name="totalCollected.GhostOnKill">6</stat>
+        <stat name="totalCollected.Mushroom">52</stat>
+        <stat name="totalCollected.Crowbar">91</stat>
+        <stat name="totalCollected.LevelBonus">0</stat>
+        <stat name="totalCollected.AttackSpeedOnCrit">16</stat>
+        <stat name="totalCollected.BleedOnHit">66</stat>
+        <stat name="totalCollected.SprintOutOfCombat">51</stat>
+        <stat name="totalCollected.FallBoots">8</stat>
+        <stat name="totalCollected.CooldownOnCrit">0</stat>
+        <stat name="totalCollected.WardOnLevel">38</stat>
+        <stat name="totalCollected.Phasing">45</stat>
+        <stat name="totalCollected.HealOnCrit">0</stat>
+        <stat name="totalCollected.HealWhileSafe">63</stat>
+        <stat name="totalCollected.TempestOnKill">0</stat>
+        <stat name="totalCollected.PersonalShield">54</stat>
+        <stat name="totalCollected.EquipmentMagazine">22</stat>
+        <stat name="totalCollected.NovaOnHeal">6</stat>
+        <stat name="totalCollected.ShockNearby">3</stat>
+        <stat name="totalCollected.Infusion">18</stat>
+        <stat name="totalCollected.WarCryOnCombat">0</stat>
+        <stat name="totalCollected.Clover">17</stat>
+        <stat name="totalCollected.Medkit">51</stat>
+        <stat name="totalCollected.Bandolier">27</stat>
+        <stat name="totalCollected.BounceNearby">9</stat>
+        <stat name="totalCollected.IgniteOnKill">54</stat>
+        <stat name="totalCollected.PlantOnHit">0</stat>
+        <stat name="totalCollected.StunChanceOnHit">47</stat>
+        <stat name="totalCollected.Firework">35</stat>
+        <stat name="totalCollected.LunarDagger">73</stat>
+        <stat name="totalCollected.GoldOnHit">3</stat>
+        <stat name="totalCollected.MageAttunement">0</stat>
+        <stat name="totalCollected.WarCryOnMultiKill">0</stat>
+        <stat name="totalCollected.BoostHp">0</stat>
+        <stat name="totalCollected.BoostDamage">0</stat>
+        <stat name="totalCollected.ShieldOnly">3</stat>
+        <stat name="totalCollected.AlienHead">6</stat>
+        <stat name="totalCollected.Talisman">7</stat>
+        <stat name="totalCollected.Knurl">16</stat>
+        <stat name="totalCollected.BeetleGland">3</stat>
+        <stat name="totalCollected.BurnNearby">0</stat>
+        <stat name="totalCollected.CritHeal">0</stat>
+        <stat name="totalCollected.CrippleWardOnLevel">0</stat>
+        <stat name="totalCollected.SprintBonus">62</stat>
+        <stat name="totalCollected.SecondarySkillMagazine">22</stat>
+        <stat name="totalCollected.StickyBomb">44</stat>
+        <stat name="totalCollected.TreasureCache">19</stat>
+        <stat name="totalCollected.BossDamageBonus">42</stat>
+        <stat name="totalCollected.SprintArmor">29</stat>
+        <stat name="totalCollected.IceRing">1</stat>
+        <stat name="totalCollected.FireRing">0</stat>
+        <stat name="totalCollected.SlowOnHit">37</stat>
+        <stat name="totalCollected.ExtraLife">16</stat>
+        <stat name="totalCollected.ExtraLifeConsumed">7</stat>
+        <stat name="totalCollected.UtilitySkillMagazine">6</stat>
+        <stat name="totalCollected.HeadHunter">9</stat>
+        <stat name="totalCollected.KillEliteFrenzy">5</stat>
+        <stat name="totalCollected.RepeatHeal">1</stat>
+        <stat name="totalCollected.Ghost">0</stat>
+        <stat name="totalCollected.HealthDecay">0</stat>
+        <stat name="totalCollected.AutoCastEquipment">0</stat>
+        <stat name="totalCollected.IncreaseHealing">0</stat>
+        <stat name="totalCollected.JumpBoost">17</stat>
+        <stat name="totalCollected.DrizzlePlayerHelper">22</stat>
+        <stat name="totalCollected.ExecuteLowHealthElite">60</stat>
+        <stat name="totalCollected.EnergizedOnEquipmentUse">9</stat>
+        <stat name="totalCollected.BarrierOnOverHeal">3</stat>
+        <stat name="totalCollected.TonicAffliction">0</stat>
+        <stat name="totalCollected.TitanGoldDuringTP">6</stat>
+        <stat name="totalCollected.SprintWisp">2</stat>
+        <stat name="totalCollected.BarrierOnKill">32</stat>
+        <stat name="totalCollected.ArmorReductionOnHit">4</stat>
+        <stat name="totalCollected.TPHealingNova">11</stat>
+        <stat name="totalCollected.NearbyDamageBonus">22</stat>
+        <stat name="totalCollected.LunarUtilityReplacement">1</stat>
+        <stat name="totalCollected.MonsoonPlayerHelper">0</stat>
+        <stat name="totalCollected.Thorns">12</stat>
+        <stat name="totalCollected.RegenOnKill">23</stat>
+        <stat name="totalCollected.Pearl">0</stat>
+        <stat name="totalCollected.ShinyPearl">0</stat>
+        <stat name="totalCollected.BonusGoldPackOnKill">10</stat>
+        <stat name="totalCollected.LaserTurbine">7</stat>
+        <stat name="totalCollected.LunarPrimaryReplacement">3</stat>
+        <stat name="totalCollected.NovaOnLowHealth">6</stat>
+        <stat name="totalCollected.LunarTrinket">3</stat>
+        <stat name="totalCollected.InvadingDoppelganger">0</stat>
+        <stat name="totalCollected.CutHp">0</stat>
+        <stat name="totalCollected.ArtifactKey">24</stat>
+        <stat name="totalCollected.ArmorPlate">27</stat>
+        <stat name="totalCollected.Squid">2</stat>
+        <stat name="totalCollected.DeathMark">8</stat>
+        <stat name="totalCollected.Plant">3</stat>
+        <stat name="totalCollected.Incubator">0</stat>
+        <stat name="totalCollected.FocusConvergence">2</stat>
+        <stat name="totalCollected.BoostAttackSpeed">0</stat>
+        <stat name="totalCollected.AdaptiveArmor">0</stat>
+        <stat name="totalCollected.CaptainDefenseMatrix">3</stat>
+        <stat name="totalCollected.FireballsOnHit">3</stat>
+        <stat name="totalCollected.BleedOnHitAndExplode">3</stat>
+        <stat name="totalCollected.SiphonOnLowHealth">1</stat>
+        <stat name="totalCollected.MonstersOnShrineUse">2</stat>
+        <stat name="totalCollected.RandomDamageZone">0</stat>
+        <stat name="totalCollected.ScrapWhite">16</stat>
+        <stat name="totalCollected.ScrapGreen">3</stat>
+        <stat name="totalCollected.ScrapRed">2</stat>
+        <stat name="totalCollected.ScrapYellow">2</stat>
+        <stat name="totalCollected.LunarBadLuck">1</stat>
+        <stat name="totalCollected.BoostEquipmentRecharge">0</stat>
+        <stat name="highestCollected.Syringe">21</stat>
+        <stat name="highestCollected.Bear">47</stat>
+        <stat name="highestCollected.Behemoth">14</stat>
+        <stat name="highestCollected.Missile">11</stat>
+        <stat name="highestCollected.ExplodeOnDeath">7</stat>
+        <stat name="highestCollected.Dagger">3</stat>
+        <stat name="highestCollected.Tooth">8</stat>
+        <stat name="highestCollected.CritGlasses">16</stat>
+        <stat name="highestCollected.Hoof">14</stat>
+        <stat name="highestCollected.Feather">7</stat>
+        <stat name="highestCollected.AACannon">0</stat>
+        <stat name="highestCollected.ChainLightning">13</stat>
+        <stat name="highestCollected.PlasmaCore">0</stat>
+        <stat name="highestCollected.Seed">5</stat>
+        <stat name="highestCollected.Icicle">8</stat>
+        <stat name="highestCollected.GhostOnKill">4</stat>
+        <stat name="highestCollected.Mushroom">11</stat>
+        <stat name="highestCollected.Crowbar">24</stat>
+        <stat name="highestCollected.LevelBonus">0</stat>
+        <stat name="highestCollected.AttackSpeedOnCrit">4</stat>
+        <stat name="highestCollected.BleedOnHit">17</stat>
+        <stat name="highestCollected.SprintOutOfCombat">7</stat>
+        <stat name="highestCollected.FallBoots">5</stat>
+        <stat name="highestCollected.CooldownOnCrit">0</stat>
+        <stat name="highestCollected.WardOnLevel">7</stat>
+        <stat name="highestCollected.Phasing">10</stat>
+        <stat name="highestCollected.HealOnCrit">0</stat>
+        <stat name="highestCollected.HealWhileSafe">14</stat>
+        <stat name="highestCollected.TempestOnKill">0</stat>
+        <stat name="highestCollected.PersonalShield">14</stat>
+        <stat name="highestCollected.EquipmentMagazine">6</stat>
+        <stat name="highestCollected.NovaOnHeal">4</stat>
+        <stat name="highestCollected.ShockNearby">2</stat>
+        <stat name="highestCollected.Infusion">3</stat>
+        <stat name="highestCollected.WarCryOnCombat">0</stat>
+        <stat name="highestCollected.Clover">3</stat>
+        <stat name="highestCollected.Medkit">15</stat>
+        <stat name="highestCollected.Bandolier">5</stat>
+        <stat name="highestCollected.BounceNearby">7</stat>
+        <stat name="highestCollected.IgniteOnKill">12</stat>
+        <stat name="highestCollected.PlantOnHit">0</stat>
+        <stat name="highestCollected.StunChanceOnHit">11</stat>
+        <stat name="highestCollected.Firework">13</stat>
+        <stat name="highestCollected.LunarDagger">17</stat>
+        <stat name="highestCollected.GoldOnHit">1</stat>
+        <stat name="highestCollected.MageAttunement">0</stat>
+        <stat name="highestCollected.WarCryOnMultiKill">0</stat>
+        <stat name="highestCollected.BoostHp">0</stat>
+        <stat name="highestCollected.BoostDamage">0</stat>
+        <stat name="highestCollected.ShieldOnly">1</stat>
+        <stat name="highestCollected.AlienHead">4</stat>
+        <stat name="highestCollected.Talisman">7</stat>
+        <stat name="highestCollected.Knurl">5</stat>
+        <stat name="highestCollected.BeetleGland">1</stat>
+        <stat name="highestCollected.BurnNearby">0</stat>
+        <stat name="highestCollected.CritHeal">0</stat>
+        <stat name="highestCollected.CrippleWardOnLevel">0</stat>
+        <stat name="highestCollected.SprintBonus">16</stat>
+        <stat name="highestCollected.SecondarySkillMagazine">13</stat>
+        <stat name="highestCollected.StickyBomb">10</stat>
+        <stat name="highestCollected.TreasureCache">14</stat>
+        <stat name="highestCollected.BossDamageBonus">15</stat>
+        <stat name="highestCollected.SprintArmor">6</stat>
+        <stat name="highestCollected.IceRing">1</stat>
+        <stat name="highestCollected.FireRing">0</stat>
+        <stat name="highestCollected.SlowOnHit">7</stat>
+        <stat name="highestCollected.ExtraLife">6</stat>
+        <stat name="highestCollected.ExtraLifeConsumed">4</stat>
+        <stat name="highestCollected.UtilitySkillMagazine">5</stat>
+        <stat name="highestCollected.HeadHunter">7</stat>
+        <stat name="highestCollected.KillEliteFrenzy">1</stat>
+        <stat name="highestCollected.RepeatHeal">1</stat>
+        <stat name="highestCollected.Ghost">0</stat>
+        <stat name="highestCollected.HealthDecay">0</stat>
+        <stat name="highestCollected.AutoCastEquipment">0</stat>
+        <stat name="highestCollected.IncreaseHealing">0</stat>
+        <stat name="highestCollected.JumpBoost">4</stat>
+        <stat name="highestCollected.DrizzlePlayerHelper">1</stat>
+        <stat name="highestCollected.ExecuteLowHealthElite">13</stat>
+        <stat name="highestCollected.EnergizedOnEquipmentUse">7</stat>
+        <stat name="highestCollected.BarrierOnOverHeal">3</stat>
+        <stat name="highestCollected.TonicAffliction">0</stat>
+        <stat name="highestCollected.TitanGoldDuringTP">2</stat>
+        <stat name="highestCollected.SprintWisp">1</stat>
+        <stat name="highestCollected.BarrierOnKill">19</stat>
+        <stat name="highestCollected.ArmorReductionOnHit">3</stat>
+        <stat name="highestCollected.TPHealingNova">4</stat>
+        <stat name="highestCollected.NearbyDamageBonus">16</stat>
+        <stat name="highestCollected.LunarUtilityReplacement">1</stat>
+        <stat name="highestCollected.MonsoonPlayerHelper">0</stat>
+        <stat name="highestCollected.Thorns">5</stat>
+        <stat name="highestCollected.RegenOnKill">13</stat>
+        <stat name="highestCollected.Pearl">0</stat>
+        <stat name="highestCollected.ShinyPearl">0</stat>
+        <stat name="highestCollected.BonusGoldPackOnKill">7</stat>
+        <stat name="highestCollected.LaserTurbine">7</stat>
+        <stat name="highestCollected.LunarPrimaryReplacement">2</stat>
+        <stat name="highestCollected.NovaOnLowHealth">2</stat>
+        <stat name="highestCollected.LunarTrinket">2</stat>
+        <stat name="highestCollected.InvadingDoppelganger">0</stat>
+        <stat name="highestCollected.CutHp">0</stat>
+        <stat name="highestCollected.ArtifactKey">2</stat>
+        <stat name="highestCollected.ArmorPlate">18</stat>
+        <stat name="highestCollected.Squid">1</stat>
+        <stat name="highestCollected.DeathMark">4</stat>
+        <stat name="highestCollected.Plant">2</stat>
+        <stat name="highestCollected.Incubator">0</stat>
+        <stat name="highestCollected.FocusConvergence">1</stat>
+        <stat name="highestCollected.BoostAttackSpeed">0</stat>
+        <stat name="highestCollected.AdaptiveArmor">0</stat>
+        <stat name="highestCollected.CaptainDefenseMatrix">1</stat>
+        <stat name="highestCollected.FireballsOnHit">1</stat>
+        <stat name="highestCollected.BleedOnHitAndExplode">1</stat>
+        <stat name="highestCollected.SiphonOnLowHealth">1</stat>
+        <stat name="highestCollected.MonstersOnShrineUse">2</stat>
+        <stat name="highestCollected.RandomDamageZone">0</stat>
+        <stat name="highestCollected.ScrapWhite">13</stat>
+        <stat name="highestCollected.ScrapGreen">2</stat>
+        <stat name="highestCollected.ScrapRed">2</stat>
+        <stat name="highestCollected.ScrapYellow">2</stat>
+        <stat name="highestCollected.LunarBadLuck">1</stat>
+        <stat name="highestCollected.BoostEquipmentRecharge">0</stat>
+        <stat name="totalTimeHeld.CommandMissile">5240.48360664584</stat>
+        <stat name="totalTimeHeld.Fruit">7976.5504160095</stat>
+        <stat name="totalTimeHeld.Meteor">528.066694207489</stat>
+        <stat name="totalTimeHeld.SoulJar">0</stat>
+        <stat name="totalTimeHeld.AffixRed">0</stat>
+        <stat name="totalTimeHeld.AffixBlue">0</stat>
+        <stat name="totalTimeHeld.AffixYellow">0</stat>
+        <stat name="totalTimeHeld.AffixGold">0</stat>
+        <stat name="totalTimeHeld.AffixWhite">0</stat>
+        <stat name="totalTimeHeld.AffixPoison">0</stat>
+        <stat name="totalTimeHeld.Blackhole">2729.81680903769</stat>
+        <stat name="totalTimeHeld.GhostGun">0</stat>
+        <stat name="totalTimeHeld.CritOnUse">8225.85042901151</stat>
+        <stat name="totalTimeHeld.DroneBackup">1073.76672266796</stat>
+        <stat name="totalTimeHeld.OrbitalLaser">0</stat>
+        <stat name="totalTimeHeld.BFG">1006.40005248785</stat>
+        <stat name="totalTimeHeld.Enigma">0</stat>
+        <stat name="totalTimeHeld.Jetpack">3783.53353065997</stat>
+        <stat name="totalTimeHeld.Lightning">21321.8177786861</stat>
+        <stat name="totalTimeHeld.GoldGat">591.950030872598</stat>
+        <stat name="totalTimeHeld.PassiveHealing">0</stat>
+        <stat name="totalTimeHeld.LunarPotion">0</stat>
+        <stat name="totalTimeHeld.BurnNearby">113.000005893409</stat>
+        <stat name="totalTimeHeld.SoulCorruptor">0</stat>
+        <stat name="totalTimeHeld.Scanner">1237.41673120297</stat>
+        <stat name="totalTimeHeld.CrippleWard">0</stat>
+        <stat name="totalTimeHeld.Gateway">371.133352689445</stat>
+        <stat name="totalTimeHeld.Tonic">0</stat>
+        <stat name="totalTimeHeld.QuestVolatileBattery">0</stat>
+        <stat name="totalTimeHeld.Cleanse">73.783337181434</stat>
+        <stat name="totalTimeHeld.FireBallDash">570.333363078535</stat>
+        <stat name="totalTimeHeld.AffixHaunted">0</stat>
+        <stat name="totalTimeHeld.GainArmor">4.25000022165477</stat>
+        <stat name="totalTimeHeld.Saw">1026.80005355179</stat>
+        <stat name="totalTimeHeld.Recycle">1824.28342847712</stat>
+        <stat name="totalTimeHeld.LifestealOnHit">0</stat>
+        <stat name="totalTimeHeld.TeamWarCry">3.31666683964431</stat>
+        <stat name="totalTimeHeld.DeathProjectile">1737.35009060986</stat>
+        <stat name="totalTimesFired.CommandMissile">35</stat>
+        <stat name="totalTimesFired.Fruit">30</stat>
+        <stat name="totalTimesFired.Meteor">2</stat>
+        <stat name="totalTimesFired.SoulJar">0</stat>
+        <stat name="totalTimesFired.AffixRed">0</stat>
+        <stat name="totalTimesFired.AffixBlue">0</stat>
+        <stat name="totalTimesFired.AffixYellow">0</stat>
+        <stat name="totalTimesFired.AffixGold">0</stat>
+        <stat name="totalTimesFired.AffixWhite">0</stat>
+        <stat name="totalTimesFired.AffixPoison">0</stat>
+        <stat name="totalTimesFired.Blackhole">19</stat>
+        <stat name="totalTimesFired.GhostGun">0</stat>
+        <stat name="totalTimesFired.CritOnUse">122</stat>
+        <stat name="totalTimesFired.DroneBackup">11</stat>
+        <stat name="totalTimesFired.OrbitalLaser">0</stat>
+        <stat name="totalTimesFired.BFG">5</stat>
+        <stat name="totalTimesFired.Enigma">0</stat>
+        <stat name="totalTimesFired.Jetpack">38</stat>
+        <stat name="totalTimesFired.Lightning">610</stat>
+        <stat name="totalTimesFired.GoldGat">0</stat>
+        <stat name="totalTimesFired.PassiveHealing">3</stat>
+        <stat name="totalTimesFired.LunarPotion">0</stat>
+        <stat name="totalTimesFired.BurnNearby">1</stat>
+        <stat name="totalTimesFired.SoulCorruptor">0</stat>
+        <stat name="totalTimesFired.Scanner">21</stat>
+        <stat name="totalTimesFired.CrippleWard">3</stat>
+        <stat name="totalTimesFired.Gateway">4</stat>
+        <stat name="totalTimesFired.Tonic">3</stat>
+        <stat name="totalTimesFired.QuestVolatileBattery">0</stat>
+        <stat name="totalTimesFired.Cleanse">1</stat>
+        <stat name="totalTimesFired.FireBallDash">4</stat>
+        <stat name="totalTimesFired.AffixHaunted">0</stat>
+        <stat name="totalTimesFired.GainArmor">0</stat>
+        <stat name="totalTimesFired.Saw">8</stat>
+        <stat name="totalTimesFired.Recycle">1</stat>
+        <stat name="totalTimesFired.LifestealOnHit">1</stat>
+        <stat name="totalTimesFired.TeamWarCry">1</stat>
+        <stat name="totalTimesFired.DeathProjectile">4</stat>
+        <stat name="totalTimesVisited.arena">5</stat>
+        <stat name="totalTimesVisited.artifactworld">14</stat>
+        <stat name="totalTimesVisited.bazaar">26</stat>
+        <stat name="totalTimesVisited.blackbeach">41</stat>
+        <stat name="totalTimesVisited.crystalworld">0</stat>
+        <stat name="totalTimesVisited.dampcavesimple">26</stat>
+        <stat name="totalTimesVisited.eclipseworld">0</stat>
+        <stat name="totalTimesVisited.foggyswamp">33</stat>
+        <stat name="totalTimesVisited.frozenwall">39</stat>
+        <stat name="totalTimesVisited.goldshores">6</stat>
+        <stat name="totalTimesVisited.golemplains">48</stat>
+        <stat name="totalTimesVisited.goolake">25</stat>
+        <stat name="totalTimesVisited.intro">0</stat>
+        <stat name="totalTimesVisited.limbo">1</stat>
+        <stat name="totalTimesVisited.lobby">0</stat>
+        <stat name="totalTimesVisited.logbook">0</stat>
+        <stat name="totalTimesVisited.moon">7</stat>
+        <stat name="totalTimesVisited.mysteryspace">9</stat>
+        <stat name="totalTimesVisited.outro">5</stat>
+        <stat name="totalTimesVisited.rootjungle">0</stat>
+        <stat name="totalTimesVisited.shipgraveyard">16</stat>
+        <stat name="totalTimesVisited.skymeadow">23</stat>
+        <stat name="totalTimesVisited.splash">0</stat>
+        <stat name="totalTimesVisited.title">0</stat>
+        <stat name="totalTimesVisited.wispgraveyard">13</stat>
+        <stat name="totalTimesCleared.arena">4</stat>
+        <stat name="totalTimesCleared.artifactworld">14</stat>
+        <stat name="totalTimesCleared.bazaar">26</stat>
+        <stat name="totalTimesCleared.blackbeach">24</stat>
+        <stat name="totalTimesCleared.crystalworld">0</stat>
+        <stat name="totalTimesCleared.dampcavesimple">21</stat>
+        <stat name="totalTimesCleared.eclipseworld">0</stat>
+        <stat name="totalTimesCleared.foggyswamp">30</stat>
+        <stat name="totalTimesCleared.frozenwall">36</stat>
+        <stat name="totalTimesCleared.goldshores">4</stat>
+        <stat name="totalTimesCleared.golemplains">36</stat>
+        <stat name="totalTimesCleared.goolake">23</stat>
+        <stat name="totalTimesCleared.intro">0</stat>
+        <stat name="totalTimesCleared.limbo">1</stat>
+        <stat name="totalTimesCleared.lobby">0</stat>
+        <stat name="totalTimesCleared.logbook">0</stat>
+        <stat name="totalTimesCleared.moon">5</stat>
+        <stat name="totalTimesCleared.mysteryspace">9</stat>
+        <stat name="totalTimesCleared.outro">0</stat>
+        <stat name="totalTimesCleared.rootjungle">0</stat>
+        <stat name="totalTimesCleared.shipgraveyard">16</stat>
+        <stat name="totalTimesCleared.skymeadow">23</stat>
+        <stat name="totalTimesCleared.splash">0</stat>
+        <stat name="totalTimesCleared.title">0</stat>
+        <stat name="totalTimesCleared.wispgraveyard">10</stat>
+        <unlock>Logs.WispBody.0</unlock>
+        <unlock>Items.Medkit</unlock>
+        <unlock>Items.BossDamageBonus</unlock>
+        <unlock>Items.ExtraLife</unlock>
+        <unlock>Items.Crowbar</unlock>
+        <unlock>Characters.Huntress</unlock>
+        <unlock>Logs.GolemBody.0</unlock>
+        <unlock>Logs.LemurianBody.0</unlock>
+        <unlock>Items.BounceNearby</unlock>
+        <unlock>Items.GoldGat</unlock>
+        <unlock>NewtStatue.goolake.0</unlock>
+        <unlock>Items.BurnNearby</unlock>
+        <unlock>Items.Bear</unlock>
+        <unlock>Characters.Toolbot</unlock>
+        <unlock>Items.EquipmentMagazine</unlock>
+        <unlock>Items.Hoof</unlock>
+        <unlock>NewtStatue.foggyswamp.0</unlock>
+        <unlock>Items.ShockNearby</unlock>
+        <unlock>Characters.Mercenary</unlock>
+        <unlock>Characters.Engineer</unlock>
+        <unlock>Logs.Stages.bazaar</unlock>
+        <unlock>NewtStatue.foggyswamp.2</unlock>
+        <unlock>Items.Infusion</unlock>
+        <unlock>Logs.Stages.goolake</unlock>
+        <unlock>Logs.Stages.frozenwall</unlock>
+        <unlock>Items.Lightning</unlock>
+        <unlock>Items.Firework</unlock>
+        <unlock>Items.JumpBoost</unlock>
+        <unlock>Items.DroneBackup</unlock>
+        <unlock>Items.Clover</unlock>
+        <unlock>Items.Tonic</unlock>
+        <unlock>Logs.Stages.wispgraveyard</unlock>
+        <unlock>Logs.GreaterWispBody.0</unlock>
+        <unlock>Logs.BeetleBody.0</unlock>
+        <unlock>Logs.VagrantBody.0</unlock>
+        <unlock>Items.Scanner</unlock>
+        <unlock>Logs.BellBody.0</unlock>
+        <unlock>Logs.BeetleGuardBody.0</unlock>
+        <unlock>Items.DeathProjectile</unlock>
+        <unlock>Items.EnergizedOnEquipmentUse</unlock>
+        <unlock>Logs.Parent.0</unlock>
+        <unlock>Logs.BisonBody.0</unlock>
+        <unlock>Characters.Croco</unlock>
+        <unlock>Skills.Huntress.MiniBlink</unlock>
+        <unlock>Logs.ImpBody.0</unlock>
+        <unlock>Logs.HermitCrabBody.0</unlock>
+        <unlock>NewtStatue.dampcavesimple.1</unlock>
+        <unlock>Items.TreasureCache</unlock>
+        <unlock>Items.SecondarySkillMagazine</unlock>
+        <unlock>Logs.Stages.artifactworld</unlock>
+        <unlock>Artifacts.Command</unlock>
+        <unlock>Items.Gateway</unlock>
+        <unlock>Logs.TitanBody.0</unlock>
+        <unlock>Items.Recycle</unlock>
+        <unlock>Items.Meteor</unlock>
+        <unlock>Items.LunarSkillReplacements</unlock>
+        <unlock>Characters.Captain</unlock>
+        <unlock>Items.AttackSpeedOnCrit</unlock>
+        <unlock>Characters.Loader</unlock>
+        <unlock>Artifacts.EliteOnly</unlock>
+        <unlock>Items.FocusConvergence</unlock>
+        <unlock>Logs.LemurianBruiserBody.0</unlock>
+        <unlock>Artifacts.Glass</unlock>
+        <unlock>Skills.Huntress.Snipe</unlock>
+        <unlock>Artifacts.RandomSurvivorOnRespawn</unlock>
+        <unlock>Artifacts.ShadowClone</unlock>
+        <unlock>Logs.GravekeeperBody.0</unlock>
+        <unlock>Artifacts.MixEnemy</unlock>
+        <unlock>Artifacts.FriendlyFire</unlock>
+        <unlock>Items.PassiveHealing</unlock>
+        <unlock>Logs.ImpBossBody.0</unlock>
+        <unlock>Items.ExecuteLowHealthElite</unlock>
+        <unlock>Items.BFG</unlock>
+        <unlock>Logs.JellyfishBody.0</unlock>
+        <unlock>Artifacts.Enigma</unlock>
+        <unlock>Artifacts.Bomb</unlock>
+        <unlock>Artifacts.WispOnDeath</unlock>
+        <unlock>Logs.Scav.0</unlock>
+        <unlock>Artifacts.TeamDeath</unlock>
+        <unlock>Artifacts.WeakAssKnees</unlock>
+        <unlock>Logs.ClayBossBody.0</unlock>
+        <unlock>Artifacts.SingleMonsterType</unlock>
+        <unlock>Characters.Mage</unlock>
+        <unlock>Logs.RoboBallBossBody.0</unlock>
+        <unlock>Artifacts.Sacrifice</unlock>
+        <unlock>Logs.BeetleQueenBody.0</unlock>
+        <unlock>Logs.ClayBruiserBody.0</unlock>
+        <unlock>NewtStatue.goolake.2</unlock>
+        <unlock>Logs.VultureBody.0</unlock>
+        <unlock>Items.NovaOnHeal</unlock>
+        <unlock>Logs.MiniMushroom.0</unlock>
+        <unlock>NewtStatue.golemplains.2</unlock>
+        <unlock>Logs.RoboBallMiniBody.0</unlock>
+        <unlock>Items.Cleanse</unlock>
+        <unlock>Logs.Stages.skymeadow</unlock>
+        <unlock>Logs.LunarWisp.0</unlock>
+        <unlock>Logs.LunarGolem.0</unlock>
+        <unlock>NewtStatue.blackbeach2.2</unlock>
+    </stats>
+    <tutorialDifficulty>3</tutorialDifficulty>
+    <tutorialEquipment>3</tutorialEquipment>
+    <tutorialSprint>3</tutorialSprint>
+    <loadout>
+        <BodyLoadouts>
+            <BodyLoadout bodyName="HuntressBody">
+                <Skin>0</Skin>
+                <SkillPreference skillFamily="HuntressBodyPrimaryFamily">HuntressBodyFireSeekingArrow</SkillPreference>
+                <SkillPreference skillFamily="HuntressBodySecondaryFamily">HuntressBodyGlaive</SkillPreference>
+                <SkillPreference skillFamily="HuntressBodyUtilityFamily">HuntressBodyBlink</SkillPreference>
+                <SkillPreference skillFamily="HuntressBodySpecialFamily">AimArrowSnipe</SkillPreference>
+            </BodyLoadout>
+        </BodyLoadouts>
+    </loadout>
+</UserProfile>

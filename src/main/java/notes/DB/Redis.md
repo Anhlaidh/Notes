@@ -1,4 +1,5 @@
 # Redis
+@[TOC]
 ## 安装&启动
 ### server
 -  redis_6379

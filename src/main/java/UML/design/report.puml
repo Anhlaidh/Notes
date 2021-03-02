@@ -1,0 +1,17 @@
+@startuml
+Actor 用户
+autonumber
+activate 用户
+用户->岗位信息页面:提交简历
+activate 岗位信息页面
+岗位信息页面->消息队列:提交岗位申请
+岗位信息页面->职业分析模块:调用服务
+deactivate 岗位信息页面
+activate 职业分析模块
+Database 数据库
+职业分析模块->数据库:获取数据原型
+职业分析模块->职业分析模块:对比岗位分析数据
+职业分析模块-->用户:可视化渲染
+deactivate 职业分析模块
+deactivate 用户
+@enduml

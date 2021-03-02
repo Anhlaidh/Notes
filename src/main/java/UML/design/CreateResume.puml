@@ -1,0 +1,35 @@
+@startuml
+Actor 用户
+Database MySQL
+Database MongoDB
+
+autonumber
+用户->编辑页面:新增简历
+activate 用户
+编辑页面->MySQL:简历信息
+activate 编辑页面
+编辑页面->简历分析模块:调用分析服务
+activate 简历分析模块
+简历分析模块->MongoDB:获取数据原型
+简历分析模块->简历分析模块:简历分析
+简历分析模块->MySQL:用户画像
+简历分析模块-->用户:可视化渲染
+deactivate 简历分析模块
+deactivate 编辑页面
+用户->编辑页面:编辑页面
+activate 编辑页面
+编辑页面->MySQL:简历信息
+编辑页面-->用户:反馈结果
+deactivate 用户
+编辑页面->简历分析模块:调用更新服务
+deactivate 编辑页面
+activate 简历分析模块
+简历分析模块->MongoDB:获取数据原型
+简历分析模块->简历分析模块:简历分析
+简历分析模块->MongoDB:用户画像
+deactivate
+box "DB" #LightBlue
+participant MySQL
+participant MongoDB
+endbox
+@enduml

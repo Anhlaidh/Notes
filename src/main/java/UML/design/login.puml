@@ -1,0 +1,28 @@
+@startuml
+Actor 用户
+autonumber
+用户->登录页面:输入手机号,请求验证码
+activate 用户
+登录页面->认证信息: 提交认证请求
+activate 登录页面
+activate 认证信息
+认证信息->认证信息:生成验证码
+认证信息->短信服务:请求消息服务
+activate 短信服务
+短信服务-->用户:发送验证码短信
+deactivate 短信服务
+deactivate 认证信息
+deactivate 登录页面
+用户->登录页面:输入验证码,登录
+activate 登录页面
+登录页面->认证信息:确认验证码有效
+activate 认证信息
+认证信息-->登录页面:验证结果
+deactivate 认证信息
+deactivate 登录页面
+登录页面-->用户:页面跳转提示
+deactivate 用户
+
+
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+start
+
+if (支付申请办理) then (成功)
+else (退回)
+  if(验证错误信息) then(其他错误)
+  else (款项被退回);
+  :返回付款单,关联支付申请明细;
+  :提交信息至二开;
+  :二开将支付明细转化为负并推送给jde和元资金平台;
+
+endif
+endif
+stop
+@enduml

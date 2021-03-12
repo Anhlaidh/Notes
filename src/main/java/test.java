@@ -1,4 +1,7 @@
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.PriorityQueue;
 
 /**
  * @Description:
@@ -8,6 +11,7 @@ import java.util.Arrays;
 public class test {
 
     public static void main(String[] args) {
+        PriorityQueue<Integer> heap = new PriorityQueue<>();
         String a = new String("aaa");
         StringBuffer b = new StringBuffer(a);
         b.append(a).append(a);
@@ -19,6 +23,9 @@ public class test {
             b = b.append(i);
             System.out.println(b.toString());
         }
+
+
+
 
     }
 }

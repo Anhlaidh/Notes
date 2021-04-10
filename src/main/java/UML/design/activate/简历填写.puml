@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:校验登录信息;
+if (登录状态) then (已登录)
+    :填写简历;
+else (未登录)
+    #pink:error;
+    kill
+endif
+:生成用户画像;
+:Echarts可视化;
+
+stop
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+|应聘者|
+start
+:填写简历;
+:生成词云;
+|招聘者|
+:词云比对;
+:城市分析;
+|应聘者|
+:岗位推荐;
+stop
+
+@enduml

@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://192.168.2.106:3306</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="cloud" uuid="5942a7d7-8495-498d-8c86-c39bc9a10ac8">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://47.94.224.197:3306</jdbc-url>
+    </data-source>
   </component>
 </project>

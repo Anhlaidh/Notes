@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:输入手机号;
+if (手机号格式) then (不正确)
+     #pink:失败;
+    kill;
+else (正确)
+endif
+:输入验证码;
+if (验证码) then(正确)
+    stop;
+else (不正确)
+
+#pink:验证码错误;
+kill
+
+@enduml

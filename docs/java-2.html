@@ -1,0 +1,1802 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2024-04-30T19:18:20.898962"><title>Java-2 | Notes</title><script type="application/json" id="virtual-toc-data">[{"id":"java-advanced","level":0,"title":"Java_Advanced","anchor":"#java-advanced"},{"id":"maven","level":0,"title":"Maven","anchor":"#maven"},{"id":"junit","level":0,"title":"Junit","anchor":"#junit"},{"id":"java","level":0,"title":"Java字符编码","anchor":"#java"},{"id":"i8i87da_14931","level":0,"title":"国际化","anchor":"#i8i87da_14931"},{"id":"i8i87da_14947","level":0,"title":"高级字符编码","anchor":"#i8i87da_14947"},{"id":"xml","level":0,"title":"xml","anchor":"#xml"},{"id":"json","level":0,"title":"JSON","anchor":"#json"},{"id":"i8i87da_15039","level":0,"title":"图片","anchor":"#i8i87da_15039"},{"id":"i8i87da_15042","level":0,"title":"多进程和多线程","anchor":"#i8i87da_15042"},{"id":"java","level":0,"title":"Java网络编程","anchor":"#java"},{"id":"java","level":0,"title":"Java调用其他语言","anchor":"#java"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Java-2 | Notes"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Notes Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/notes/0.1/java-2.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Java-2 | Notes"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/notes/0.1/java-2.html#webpage",
+    "url": "writerside-documentation/notes/0.1/java-2.html",
+    "name": "Java-2 | Notes",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentationnotes/#website",
+    "url": "writerside-documentationnotes/",
+    "name": "Notes Help"
+}</script><!-- End Schema.org --></head><body data-id="Java-2" data-main-title="Java-2" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="README.md|Notes///java///notes///Java"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Notes 0.1 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Java-2" id="Java-2.md">Java-2</h1><ul class="list _bullet" id="i8i87da_14792"><li class="list__item" id="i8i87da_14793"><p><span id="i8i87da_14794">Java_Advanced</span></p><ul class="list _bullet" id="i8i87da_14795"><li class="list__item" id="i8i87da_14796"><p><span id="i8i87da_14797">Maven</span></p></li><li class="list__item" id="i8i87da_14798"><p><span id="i8i87da_14799">Junit</span></p><ul class="list _bullet" id="i8i87da_14800"><li class="list__item" id="i8i87da_14801"><p><span id="i8i87da_14802">测试</span></p><ul class="list _bullet" id="i8i87da_14803"><li class="list__item" id="i8i87da_14804"><p><span id="i8i87da_14805">Junit</span></p></li></ul></li></ul></li><li class="list__item" id="i8i87da_14806"><p><span id="i8i87da_14807">Java字符编码</span></p></li><li class="list__item" id="i8i87da_14808"><p><span id="i8i87da_14809">国际化</span></p></li><li class="list__item" id="i8i87da_14810"><p><span id="i8i87da_14811">高级字符编码</span></p><ul class="list _bullet" id="i8i87da_14812"><li class="list__item" id="i8i87da_14813"><p><span id="i8i87da_14814">正则表达式</span></p></li></ul></li><li class="list__item" id="i8i87da_14815"><p><span id="i8i87da_14816">xml</span></p><ul class="list _bullet" id="i8i87da_14817"><li class="list__item" id="i8i87da_14818"><p><span id="i8i87da_14819">xml解析</span></p></li></ul></li><li class="list__item" id="i8i87da_14820"><p><span id="i8i87da_14821">JSON</span></p></li><li class="list__item" id="i8i87da_14822"><p><span id="i8i87da_14823">图片</span></p></li><li class="list__item" id="i8i87da_14824"><p><span id="i8i87da_14825">多进程和多线程</span></p><ul class="list _bullet" id="i8i87da_14826"><li class="list__item" id="i8i87da_14827"><p><span id="i8i87da_14828">概念</span></p><ul class="list _bullet" id="i8i87da_14829"><li class="list__item" id="i8i87da_14830"><p><span id="i8i87da_14831">多进程</span></p></li><li class="list__item" id="i8i87da_14832"><p><span id="i8i87da_14833">多线程</span></p><ul class="list _bullet" id="i8i87da_14834"><li class="list__item" id="i8i87da_14835"><p><span id="i8i87da_14836">启动</span></p></li><li class="list__item" id="i8i87da_14837"><p><span id="i8i87da_14838">规则</span></p></li></ul></li><li class="list__item" id="i8i87da_14839"><p><span id="i8i87da_14840">多进程和多线程的对比</span></p></li></ul></li><li class="list__item" id="i8i87da_14841"><p><span id="i8i87da_14842">多线程信息共享</span></p></li><li class="list__item" id="i8i87da_14843"><p><span id="i8i87da_14844">多线程管理</span></p></li><li class="list__item" id="i8i87da_14845"><p><span id="i8i87da_14846">并发框架</span></p></li><li class="list__item" id="i8i87da_14847"><p><span id="i8i87da_14848">并行计算</span></p></li><li class="list__item" id="i8i87da_14849"><p><span id="i8i87da_14850">线程组管理</span></p></li><li class="list__item" id="i8i87da_14851"><p><span id="i8i87da_14852">Executor*</span></p></li><li class="list__item" id="i8i87da_14853"><p><span id="i8i87da_14854">Fork-Join</span></p><ul class="list _bullet" id="i8i87da_14855"><li class="list__item" id="i8i87da_14856"><p><span id="i8i87da_14857">主要类</span></p></li></ul></li><li class="list__item" id="i8i87da_14858"><p><span id="i8i87da_14859">并发数据结构</span></p></li><li class="list__item" id="i8i87da_14860"><p><span id="i8i87da_14861">并发协作与控制</span></p><ul class="list _bullet" id="i8i87da_14862"><li class="list__item" id="i8i87da_14863"><p><span id="i8i87da_14864">Lock</span></p></li><li class="list__item" id="i8i87da_14865"><p><span id="i8i87da_14866">Semaphore</span></p></li><li class="list__item" id="i8i87da_14867"><p><span id="i8i87da_14868">latch</span></p></li><li class="list__item" id="i8i87da_14869"><p><span id="i8i87da_14870">Barrier</span></p></li><li class="list__item" id="i8i87da_14871"><p><span id="i8i87da_14872">Phaser</span></p></li></ul></li></ul></li><li class="list__item" id="i8i87da_14873"><p><span id="i8i87da_14874">Java网络编程</span></p><ul class="list _bullet" id="i8i87da_14875"><li class="list__item" id="i8i87da_14876"><p><span id="i8i87da_14877">网络基础知识</span></p></li><li class="list__item" id="i8i87da_14878"><p><span id="i8i87da_14879">UDP</span></p><ul class="list _bullet" id="i8i87da_14880"><li class="list__item" id="i8i87da_14881"><p><span id="i8i87da_14882">实例</span></p></li></ul></li><li class="list__item" id="i8i87da_14883"><p><span id="i8i87da_14884">TCP</span></p></li><li class="list__item" id="i8i87da_14885"><p><span id="i8i87da_14886">HTTP</span></p><ul class="list _bullet" id="i8i87da_14887"><li class="list__item" id="i8i87da_14888"><p><span id="i8i87da_14889">实例</span></p></li></ul></li><li class="list__item" id="i8i87da_14890"><p><span id="i8i87da_14891">JDK HttpClient (JDK9新增，JDK10更新，JDK11正式发布)</span></p></li><li class="list__item" id="i8i87da_14892"><p><span id="i8i87da_14893">HttpComponent</span></p></li></ul></li><li class="list__item" id="i8i87da_14894"><p><span id="i8i87da_14895">Java调用其他语言</span></p><ul class="list _bullet" id="i8i87da_14896"><li class="list__item" id="i8i87da_14897"><p><span id="i8i87da_14898">Python</span></p></li></ul></li></ul></li></ul><section class="chapter"><h2 id="java-advanced" data-toc="java-advanced">Java_Advanced</h2></section><section class="chapter"><h2 id="maven" data-toc="maven">Maven</h2></section><section class="chapter"><h2 id="junit" data-toc="junit">Junit</h2><section class="chapter"><h3 id="i8i87da_14899" data-toc="i8i87da_14899">测试</h3><ul class="list _bullet" id="i8i87da_14900"><li class="list__item" id="i8i87da_14901"><p id="i8i87da_14902">单元测试：对软件中最小可测试单元进行检查和验证，通常是一个函数/方法（属于白盒测试）</p><ul class="list _bullet" id="i8i87da_14903"><li class="list__item" id="i8i87da_14904"><p>集成测试： 将多个单元相互作用，形成一个整体，对整体协调性进行测试</p></li></ul></li><li class="list__item" id="i8i87da_14905"><p id="i8i87da_14906">白盒测试： 全面了解程序内部逻辑结构，对所有的逻辑路径都进行测试，一般由程序员完成</p><ul class="list _bullet" id="i8i87da_14907"><li class="list__item" id="i8i87da_14908"><p>黑盒测试：又名功能测试，将程序看作不可打开的盒子，一般由独立使用者完成</p></li></ul></li><li class="list__item" id="i8i87da_14909"><p id="i8i87da_14910">自动测试：用程序批量、反复的测试程序，并可自动检查程序结果是否满足预定的要求</p><ul class="list _bullet" id="i8i87da_14911"><li class="list__item" id="i8i87da_14912"><p>手动测试：手动执行程序，手动输入所需要的参数，手动检查程序结果是否满足预定的要求</p></li></ul></li><li class="list__item" id="i8i87da_14913"><p id="i8i87da_14914">回归测试：修改旧代码后，重新进行测试以确认修改没有引入新的错误或导致其他代码产生错误</p></li><li class="list__item" id="i8i87da_14915"><p id="i8i87da_14916">深入学习：软件测试-基于问题驱动模式 朱少民</p></li></ul><section class="chapter"><h4 id="junit" data-toc="junit">Junit</h4><ul class="list _bullet" id="i8i87da_14917"><li class="list__item" id="i8i87da_14918"><p id="i8i87da_14919">import static 导入该包内的所有静态方法，使用时可不加类名</p></li><li class="list__item" id="i8i87da_14920"><p id="i8i87da_14921">Triangle</p></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.Maven;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/23 0023 13:42
+ */
+public class Triangle {
+    public boolean judgeEdges(int a, int b, int c) {
+        boolean result = true;
+        //边长非负性
+        if (a &lt;= 0 || b &lt;= 0 || c &lt;= 0) {
+            return false;
+        }
+        //两边和大于第三边
+        if (a+b&lt;=c) {
+return false;}
+        if (b+c&lt;=a) {
+return false;}
+        if (c+a&lt;=b) {
+return false;}
+
+        return true;
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_14923"><li class="list__item" id="i8i87da_14924"><p>testTriangle</p></li></ul><div class="code-block" data-lang="java">
+import JavaLearning_Advanced.Maven.Triangle;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/23 0023 13:44
+ */
+public class testTriangle {
+    @Test
+    public void test() {
+        assertEquals(false,new Triangle().judgeEdges(1,2,3));
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_14926"><li class="list__item" id="i8i87da_14927"><p>深入学习：Junit实战（第二版），PetarTahchiey</p></li></ul></section></section></section><section class="chapter"><h2 id="java" data-toc="java">Java字符编码</h2><ul class="list _bullet" id="i8i87da_14928"><li class="list__item" id="i8i87da_14929"><p>尽可能使用UTF-8</p></li><li class="list__item" id="i8i87da_14930"><p>读取写入编码保持一致</p></li></ul></section><section class="chapter"><h2 id="i8i87da_14931" data-toc="i8i87da_14931">国际化</h2><ul class="list _bullet" id="i8i87da_14932"><li class="list__item" id="i8i87da_14933"><p id="i8i87da_14934">Locale 方法</p><ul class="list _bullet" id="i8i87da_14935"><li class="list__item" id="i8i87da_14936"><p>getAvailableLocales()获取所有可用的locale</p></li><li class="list__item" id="i8i87da_14937"><p>getDefault()返回默认的Locale</p></li></ul></li><li class="list__item" id="i8i87da_14938"><p id="i8i87da_14939">native2ascii.exe</p></li><li class="list__item" id="i8i87da_14940"><p id="i8i87da_14941">ResourceBundle</p><ul class="list _bullet" id="i8i87da_14942"><li class="list__item" id="i8i87da_14943"><p>根据Locale要求，加载语言文件</p></li><li class="list__item" id="i8i87da_14944"><p>存储语言集合中的K-V对</p></li><li class="list__item" id="i8i87da_14945"><p>getString(String key) 返回对应的value</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.International;
+
+import java.util.Locale;
+import java.util.ResourceBundle;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/23 0023 14:34
+ */
+public class HelloWorld {
+    public static void main(String[] args) {
+        //取得系统默认的国家/语言环境
+        Locale myLocale = Locale.getDefault();
+        System.out.println(myLocale);//zh_CN
+        //根据指定语言，国家环境，加载资源文件
+        ResourceBundle bundle = ResourceBundle.getBundle(&quot;message&quot;, myLocale);
+        //从资源文件中获取信息
+        System.out.println(bundle.getString(&quot;hello&quot;));
+
+    }
+}
+</div></section><section class="chapter"><h2 id="i8i87da_14947" data-toc="i8i87da_14947">高级字符编码</h2><section class="chapter"><h3 id="i8i87da_14948" data-toc="i8i87da_14948">正则表达式</h3><ul class="list _bullet" id="i8i87da_14949"><li class="list__item" id="i8i87da_14950"><p id="i8i87da_14951">学习正则表达式： 精通正则表达式（第三版） Jefferry E.F.Friedl</p></li><li class="list__item" id="i8i87da_14952"><p id="i8i87da_14953">java.util.regex包</p><ul class="list _bullet" id="i8i87da_14954"><li class="list__item" id="i8i87da_14955"><p>Pattern 正则表达式的编译表示 </p><ul class="list _bullet" id="i8i87da_14956"><li class="list__item" id="i8i87da_14957"><p>compile编译一个正则表达式喂Pattern对象</p></li><li class="list__item" id="i8i87da_14958"><p>matcher用Pattern对象匹配一个字符串，返回匹配结果</p></li></ul></li><li class="list__item" id="i8i87da_14959"><p>Matcher </p><ul class="list _bullet" id="i8i87da_14960"><li class="list__item" id="i8i87da_14961"><p>IndexMethod(位置方法) //start(),start(int group),end(),end(group)</p></li><li class="list__item" id="i8i87da_14962"><p>StudyMethod(查找方法) //lookingAt(),find(),find(int start),matches()</p></li><li class="list__item" id="i8i87da_14963"><p>Replacement(替换方法) //replaceAll(String replacement)</p></li></ul></li></ul></li></ul><p id="i8i87da_14964">Matcher</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/23 0023 19:21
+ */
+public class MatcherDemo {
+    private static final String REGEX = &quot;\\bdog\\b&quot;;//\b表示边界
+    private static final String INPUT = &quot;dog dog dog doggie dogg&quot;;
+
+    public static void main(String[] args) {
+        //检查字符串里有多少个dog
+        Pattern pattern = Pattern.compile(REGEX);
+        Matcher matcher = pattern.matcher(INPUT);
+        int count = 0;
+        while (matcher.find()) {
+            count++;
+            System.out.println(&quot;Match number&quot; + count);
+            System.out.println(&quot;start()&quot; + matcher.start());
+            System.out.println(&quot;end()&quot; + matcher.end());
+//        String f = &quot;fooooooooooooo&quot;;
+//        matcher.lookingAt();//不完全匹配,匹配foo为true
+//        matcher.find();//完全匹配，匹配foo为false
+        }
+    }
+}
+
+</div><p id="i8i87da_14966">Replace</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/23 0023 19:39
+ */
+public class ReplaceDemo {
+    public static void Replace_1() {
+        String REGEX = &quot;a*b&quot;;//*表示限定前面的a可以有0个或者多个
+        String INPUT = &quot;aavfooabfooabafoobcdd&quot;;
+        String REPLACE = &quot;-&quot;;
+        Pattern pattern = Pattern.compile(REGEX);
+        Matcher matcher = pattern.matcher(INPUT);
+        StringBuffer stringBuffer = new StringBuffer();
+        // 全部替换
+        while (matcher.find()) {
+            matcher.appendReplacement(stringBuffer, REPLACE);
+        }
+        //最后将尾巴字符串附加上
+        matcher.appendTail(stringBuffer);
+        System.out.println(stringBuffer.toString());
+
+    }
+
+    public static void Replace_2() {
+        String REGEX = &quot;dog&quot;;//*表示限定前面的a可以有0个或者多个
+        String INPUT = &quot;The dog says meow.All dogs say meow&quot;;
+        String REPLACE = &quot;cat&quot;;
+        Pattern pattern = Pattern.compile(REGEX);
+        Matcher matcher = pattern.matcher(INPUT);
+        INPUT = matcher.replaceAll(REPLACE);
+        System.out.println(INPUT);
+
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_14968"><li class="list__item" id="i8i87da_14969"><p>OJ</p></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.regex;
+
+import org.apache.commons.io.Charsets;
+import org.apache.commons.io.IOUtils;
+
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/23 0023 19:55
+ */
+public class String2inputStream {
+    public static void main(String[] args) {
+        //构造字符串列表
+        List&lt;String&gt; names = new LinkedList&lt;&gt;();
+        names.add(&quot;xiaohong&quot;);
+        names.add(&quot;xiaoming&quot;);
+        names.add(&quot;Daming&quot;);
+        names.add(&quot;xiaohei&quot;);
+        //合并为一个字符串，以逗号相连
+        String nameStr = String.join(&quot;,&quot;, names);
+        //将字符串作为默认输入流
+        InputStream in = IOUtils.toInputStream(nameStr, Charsets.toCharset(&quot;UTF-8&quot;));
+        //重置系统的输入流
+        System.setIn(in);
+        //模拟键盘输入，这也是OJ平台测试用例输入的原理
+        //此处也可以换成一个文件的输入流
+        Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter(&quot;,&quot;);
+        while (scanner.hasNext()) {
+            System.out.println(scanner.next());
+        }
+    }
+}
+</div></section></section><section class="chapter"><h2 id="xml" data-toc="xml">xml</h2><ul class="list _bullet" id="i8i87da_14971"><li class="list__item" id="i8i87da_14972"><p>常规语法 </p><ul class="list _bullet" id="i8i87da_14973"><li class="list__item" id="i8i87da_14974"><p>任何的起始标签都必须有一个结束标签</p></li><li class="list__item" id="i8i87da_14975"><p>简化写法，例如， </p><p> 可以写为</p></li><li class="list__item" id="i8i87da_14978"><p>大小写敏感，name和Name不一样</p></li><li class="list__item" id="i8i87da_14979"><p>每个文件都要有一个根元素</p></li><li class="list__item" id="i8i87da_14980"><p>标签必须按合适的顺序进行嵌套，不可错位</p></li><li class="list__item" id="i8i87da_14981"><p>所有的特性都必须有值，且在值的周围加上引号</p></li><li class="list__item" id="i8i87da_14982"><p>需要转义字符，如&quot;&lt;&quot;需要用&lt;代替 </p><ul class="list _bullet" id="i8i87da_14983"><li class="list__item" id="i8i87da_14984"><div class="table-wrapper"><table class="wide" id="i8i87da_14985"><thead><tr class="ijRowHead" id="i8i87da_14986"><th id="i8i87da_14987"><p>转义</p></th><th id="i8i87da_14988"><p>符号</p></th><th id="i8i87da_14989"><p>意思</p></th></tr></thead><tbody><tr id="i8i87da_14990"><td id="i8i87da_14991"><p>\&amp;lt;</p></td><td id="i8i87da_14992"><p>&lt;</p></td><td id="i8i87da_14993"><p>小于</p></td></tr><tr id="i8i87da_14994"><td id="i8i87da_14995"><p>\&amp;gt;</p></td><td id="i8i87da_14996"><p>\&gt;</p></td><td id="i8i87da_14997"><p>大于</p></td></tr><tr id="i8i87da_14998"><td id="i8i87da_14999"><p>\&amp;amp;</p></td><td id="i8i87da_15000"><p>&amp;</p></td><td id="i8i87da_15001"><p>和号</p></td></tr><tr id="i8i87da_15002"><td id="i8i87da_15003"><p>\&amp;apos;</p></td><td id="i8i87da_15004"><p>'</p></td><td id="i8i87da_15005"><p>单引号</p></td></tr><tr id="i8i87da_15006"><td id="i8i87da_15007"><p>\&amp;quot;</p></td><td id="i8i87da_15008"><p>&quot;</p></td><td id="i8i87da_15009"><p>双引号</p></td></tr></tbody></table></div></li></ul></li><li class="list__item" id="i8i87da_15010"><p>注释：&lt;!-- 内容 --&gt;</p></li></ul></li></ul><section class="chapter"><h3 id="xml" data-toc="xml">xml解析</h3><p id="i8i87da_15011">未完成</p></section></section><section class="chapter"><h2 id="json" data-toc="json">JSON</h2><ul class="list _bullet" id="i8i87da_15012"><li class="list__item" id="i8i87da_15013"><p>概念 </p><ul class="list _bullet" id="i8i87da_15014"><li class="list__item" id="i8i87da_15015"><p>JavaScript Object Notation ，JS对象表示法</p></li><li class="list__item" id="i8i87da_15016"><p>是一种轻量级的数据交换格式</p></li><li class="list__item" id="i8i87da_15017"><p>类似XML，更小、更快、更易解析</p></li><li class="list__item" id="i8i87da_15018"><p>最早用于JavaScript中，容易解析，最后推广到全语言</p></li><li class="list__item" id="i8i87da_15019"><p>尽管使用JavaScript语法，但是独立于编程语言</p></li></ul></li><li class="list__item" id="i8i87da_15020"><p>用途 </p><ul class="list _bullet" id="i8i87da_15021"><li class="list__item" id="i8i87da_15022"><p>JSON生成</p></li><li class="list__item" id="i8i87da_15023"><p>JSON解析</p></li><li class="list__item" id="i8i87da_15024"><p>JSON校验</p></li><li class="list__item" id="i8i87da_15025"><p>和JavaBean对象进行互解析 </p><ul class="list _bullet" id="i8i87da_15026"><li class="list__item" id="i8i87da_15027"><p>具有一个无参的构造函数</p></li><li class="list__item" id="i8i87da_15028"><p>可以包括多个属性，所有属性都是private</p></li><li class="list__item" id="i8i87da_15029"><p>每个属性都有对应的Getter/Setter方法</p></li><li class="list__item" id="i8i87da_15030"><p>JavaBean 用于封装数据，有可称为POJO(Plain Old notes.Java Object)</p></li></ul></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.Json;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/26 0026 21:42
+ */
+public class testJackson {
+    public static void main(String[] args) throws IOException {
+        testJsonObject();
+        System.out.println(&quot;分割线=====================================================&quot;);
+        testJsonFile();
+
+    }
+
+    private static void testJsonFile() throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        //从json文件中加载，并重构为java对象
+        File json = new File(&quot;temp/json/books.json&quot;);
+        List&lt;Book&gt; books = objectMapper.readValue(json, new TypeReference&lt;List&lt;Book&gt;&gt;() {
+        });
+        for (Book book : books) {
+            System.out.println(book.getAuthor());
+            System.out.println(book.getTitle());
+        }
+
+    }
+
+    private static void testJsonObject() throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        //构造对象
+        Person person = new Person();
+        person.setName(&quot;TOM&quot;);
+        person.setAge(20);
+        person.setScores(Arrays.asList(60, 70, 80));
+        //将对象解析为json字符串
+        String jsonStr = objectMapper.writeValueAsString(person);
+        System.out.println(jsonStr);
+        //json字符串重构对象
+        Person p2 = objectMapper.readValue(jsonStr, Person.class);
+        System.out.println(p2.getName());
+        System.out.println(p2.getAge());
+        System.out.println(p2.getScores());
+        //从json字符串重构JsonNode对象
+        JsonNode node = objectMapper.readTree(jsonStr);
+        System.out.println(node.get(&quot;name&quot;).asText());
+        System.out.println(node.get(&quot;age&quot;).asText());
+        System.out.println(node.get(&quot;scores&quot;));
+
+    }
+}
+</div><div class="code-block" data-lang="json">
+[
+  {
+    &quot;category&quot;: &quot;COOKING&quot;,
+    &quot;tools.title&quot;: &quot;Everyday Italian&quot;,
+    &quot;author&quot;: &quot;Giada De Laurentiis&quot;,
+    &quot;year&quot;: &quot;2005&quot;,
+    &quot;price&quot;: 30
+  },
+  {
+    &quot;category&quot;: &quot;CHILDREN&quot;,
+    &quot;tools.title&quot;: &quot;Harry Potter&quot;,
+    &quot;author&quot;: &quot;J K Rowling&quot;,
+    &quot;year&quot;: &quot;2005&quot;,
+    &quot;price&quot;: 29
+  },
+  {
+    &quot;category&quot;: &quot;WEB&quot;,
+    &quot;tools.title&quot;: &quot;Learning XML&quot;,
+    &quot;author&quot;: &quot;Erik T.Ray&quot;,
+    &quot;year&quot;: &quot;2003&quot;,
+    &quot;price&quot;: 39
+  }
+]
+</div><ul class="list _bullet" id="i8i87da_15033"><li class="list__item" id="i8i87da_15034"><p>总结 </p><ul class="list _bullet" id="i8i87da_15035"><li class="list__item" id="i8i87da_15036"><p>JSON是一种独立于编程语言的、轻量的、数据交换格式</p></li><li class="list__item" id="i8i87da_15037"><p>有多种第三方库辅助我们进行JSON生成和解析</p></li><li class="list__item" id="i8i87da_15038"><p>JSON会丢失顺序性</p></li></ul></li></ul></section><section class="chapter"><h2 id="i8i87da_15039" data-toc="i8i87da_15039">图片</h2><div class="code-block" data-lang="none">- imageIO
+- 验证码
+</div><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.picture;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.Random;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/28 0028 19:56
+ */
+public class ValidateCode {
+    static char[] codeSequence= {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','2','3','4','5','6','7','8','9'};
+    static int charNum = codeSequence.length;
+    public static void main(String[] args) throws IOException {
+        generateCode(&quot;./temp/validateCode/code.jpg&quot;);
+    }
+
+    private static void generateCode(String filePath) throws IOException {
+        //首先定义验证码图片库
+        int width = 140;//验证码图片的宽度
+        int height = 40;//验证码图片的高度
+        BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        //定义图片上的图形和干扰线
+        Graphics2D graphics2D = bufferedImage.createGraphics();
+        graphics2D.setColor(Color.GRAY);//将图像填充为浅灰色
+        graphics2D.fillRect(0, 0, width, height);
+        graphics2D.setColor(Color.BLACK);//画边框
+        graphics2D.drawRect(0, 0, width - 1, height - 1);
+        //随机产生16条灰色干扰线
+        graphics2D.setColor(Color.darkGray);
+        //创建一个随机数生成器类，用于随机产生干扰线
+        Random random = new Random();
+        for (int i = 0; i &lt; 16; i++) {
+            int x = random.nextInt(width);
+            int y = random.nextInt(height);
+            int x1 = random.nextInt(50);
+            int y1 = random.nextInt(50);
+            graphics2D.drawLine(x, y, x1, y1);
+
+        }
+        //计算字的位置坐标
+        int codeCount = 4;//字的个数
+        int fontHeight ;//字体高度
+        int codeX;//第一个字符的x坐标，因为后面的字符坐标依次递增，所以他们的x轴值是codeX+i的值
+        int codeY;//验证字符的y坐标，因为并排所以值一样
+        //width-4除去左右多余的位置，使验证码更加集中显示，减的越多越集中
+        //codeCount+1//等比分配显示的宽度，包括左右两边的空格
+        codeX = (width - 4) / (codeCount + 1);//第一个字母的起始位置
+        fontHeight = height - 10;//height-10高度中间区域显示验证码
+        codeY = height - 7;
+        //创建字体，字体的大小应该根据图片的高度来定
+        Font font = new Font(&quot;Fixedsys&quot;, Font.PLAIN, fontHeight);
+        graphics2D.setFont(font);
+        //随机产生codeCount数字的验证码
+        for (int i = 0; i &lt; codeCount; i++) {
+            //每次随机拿一个字母，赋予随机的颜色
+            String strRand = String.valueOf(codeSequence[random.nextInt(charNum)]);
+            int red = random.nextInt(255);
+            int blue = random.nextInt(255);
+            int green = random.nextInt(255);
+            graphics2D.setColor(new Color(red, green, blue));
+            //把字放到图片上
+            graphics2D.drawString(strRand, (i + 1) * codeX, codeY);
+        }
+        ImageIO.write(bufferedImage, &quot;jpg&quot;, new File(filePath));
+
+    }
+}
+
+</div></section><section class="chapter"><h2 id="i8i87da_15042" data-toc="i8i87da_15042">多进程和多线程</h2><section class="chapter"><h3 id="i8i87da_15043" data-toc="i8i87da_15043">概念</h3><section class="chapter"><h4 id="i8i87da_15044" data-toc="i8i87da_15044">多进程</h4><ul class="list _bullet" id="i8i87da_15045"><li class="list__item" id="i8i87da_15046"><p>当前的操作系统都是多任务OS</p></li><li class="list__item" id="i8i87da_15047"><p>每个独立执行的任务就是一个进程</p></li><li class="list__item" id="i8i87da_15048"><p>OS将时间划分为多个时间片（时间很短）</p></li><li class="list__item" id="i8i87da_15049"><p>每个时间片内将CPU分配给某一个任务，时间片结束，CPU自动回收，再分配给另外任务。从外部看，所有任务都是同时在执行。 但是在CPU上，任务是按照串行依次运行（单核CPU ）。如果多核，多个进程任务可以并行。但是单个核上，多进程只能串行执行</p></li><li class="list__item" id="i8i87da_15050"><p>多进程的优点 </p><ul class="list _bullet" id="i8i87da_15051"><li class="list__item" id="i8i87da_15052"><p>可以同时运行多个任务</p></li><li class="list__item" id="i8i87da_15053"><p>程序因IO堵塞时，可以释放CPU，让CPU为其他程序服务</p></li><li class="list__item" id="i8i87da_15054"><p>当系统有多个CPU时，可以为多个程序同时服务 </p><ul class="list _bullet" id="i8i87da_15055"><li class="list__item" id="i8i87da_15056"><p>我们的CPU不再提高频率，而是提高核数</p></li><li class="list__item" id="i8i87da_15057"><p>多核和并行程序才是提高程序性能的唯一办法</p></li></ul></li></ul></li><li class="list__item" id="i8i87da_15058"><p>多进程的缺点 </p><ul class="list _bullet" id="i8i87da_15059"><li class="list__item" id="i8i87da_15060"><p>太笨重，不好管理</p></li><li class="list__item" id="i8i87da_15061"><p>太笨重，不好切换</p></li></ul></li></ul></section><section class="chapter"><h4 id="i8i87da_15062" data-toc="i8i87da_15062">多线程</h4><ul class="list _bullet" id="i8i87da_15063"><li class="list__item" id="i8i87da_15064"><p>一个程序可以包括多个子任务，可串/并行</p></li><li class="list__item" id="i8i87da_15065"><p>每个子任务可以称为一个线程</p></li><li class="list__item" id="i8i87da_15066"><p>如果一个子任务阻塞，程序可以将CPU调度另外一个子任务进行工作，这样CPU还是保留在本程序中，而不是被调度到别的程序（进程）去， 这样，提高本程序获得CPU时间和利用率</p></li></ul><section class="chapter"><h5 id="i8i87da_15067" data-toc="i8i87da_15067">启动</h5><ul class="list _bullet" id="i8i87da_15068"><li class="list__item" id="i8i87da_15069"><p>start方法，会自动以新进程调用run方法</p></li><li class="list__item" id="i8i87da_15070"><p>直接调用run方法，会编程串行执行</p></li><li class="list__item" id="i8i87da_15071"><p>同一个线程，多次start会报错，只执行第一次start方法</p></li><li class="list__item" id="i8i87da_15072"><p>多个线程启动，其启动的先后顺序是随机的</p></li><li class="list__item" id="i8i87da_15073"><p>线程无需关闭，只要其run方法执行结束后，自动关闭</p></li><li class="list__item" id="i8i87da_15074"><p>main函数（线程）可能早于新线程结束，整个程序并不终止</p></li><li class="list__item" id="i8i87da_15075"><p>整个程序终止是等所有的线程都终止（包括main函数线程）</p></li></ul><p id="i8i87da_15076">####多线程实现的对比</p><ul class="list _bullet" id="i8i87da_15077"><li class="list__item" id="i8i87da_15078"><p>Thread占据了父类名额，不如Runnable方便</p></li><li class="list__item" id="i8i87da_15079"><p>Thread类实现Runnable</p></li><li class="list__item" id="i8i87da_15080"><p>Runnable启动时需要Thread类的支持</p></li><li class="list__item" id="i8i87da_15081"><p>Runnable更容易实现多线程中资源共享</p></li></ul><p id="i8i87da_15082">结论：建议实现Runnable接口来完成多线程</p></section><section class="chapter"><h5 id="i8i87da_15083" data-toc="i8i87da_15083">规则</h5><p id="i8i87da_15084">规则一： 1.调用run方法来启动run方法，将会是串行运行 2. 调用start方法，来启动run方法，将会是并行运行（多线程运行） 规则二：</p><ol class="list _decimal" id="i8i87da_15085" type="1"><li class="list__item" id="i8i87da_15086"><p>main线程可能早于子线程结束</p></li><li class="list__item" id="i8i87da_15087"><p>main线程和子线程都结束了，整个程序才算终止 规则三： 1.实现Runnable的对象必须包装在Thread类里面，才可以启</p></li><li class="list__item" id="i8i87da_15088"><p>不能直接对Runnable对象进行start方法 规则四：</p></li><li class="list__item" id="i8i87da_15089"><p>一个线程对象不能多次start，多次start将报异常</p></li><li class="list__item" id="i8i87da_15090"><p>多个线程对象都start后，哪一个先执行，完全由JVM/操作系统来主导，程序员无法指定</p></li></ol><p id="i8i87da_15091">一：</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.rules;
+
+/**
+ * @Description:
+ *  规则一：
+ *  1.调用run方法来启动run方法，将会是串行运行
+ *  2. 调用start方法，来启动run方法，将会是并行运行（多线程运行）
+ *
+ * @author: Anhlaidh
+ * @date: 2020/3/28 0028 22:59
+ */
+
+public class first {
+    public static void main(String[] args) throws InterruptedException {
+        new TestThread0().run();
+        while (true) {
+            System.out.println(&quot;main&quot;);
+            Thread.sleep(10);
+        }
+    }
+
+}
+
+class TestThread0 extends Thread{
+    @Override
+    public void run() {
+        while (true) {
+            System.out.println(&quot;testThread0&quot;);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+</div><p id="i8i87da_15093">二：</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.rules;
+
+/**
+ * @Description:
+ * 规则二：
+ * 1. main线程可能早于子线程结束
+ * 2. main线程和子线程都结束了，整个程序才算终止
+ * @author: Anhlaidh
+ * @date: 2020/3/28 0028 23:06
+ */
+public class second {
+    public static void main(String[] args) throws InterruptedException {
+        new TestThread1().start();
+//        while (true) {
+//            System.out.println(&quot;main&quot;);
+//            Thread.sleep(10);
+//        }
+    }
+
+}
+
+class TestThread1 extends Thread{
+    @Override
+    public void run() {
+        while (true) {
+            System.out.println(&quot;testThread1&quot;);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+</div><p id="i8i87da_15095">三:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.rules;
+
+/**
+ * @Description:
+ * 规则三：
+ * 1.实现Runnable的对象必须包装在Thread类里面，才可以启动
+ * 2. 不能直接对Runnable对象进行start方法
+ * @author: Anhlaidh
+ * @date: 2020/3/28 0028 23:33
+ */
+public class third {
+    public static void main(String[] args) throws InterruptedException {
+//        new TestThread2().start();
+        //runnable对象必须放在一个Thread类中才能运行
+        TestThread2 tt = new TestThread2();
+        Thread thread = new Thread(tt);
+        thread.start();
+        while (true) {
+            System.out.println(&quot;main&quot;);
+            Thread.sleep(1000);
+//        }
+        }
+
+    }
+}
+
+class TestThread2 implements Runnable {
+    @Override
+    public void run() {
+        while (true) {
+            System.out.println(Thread.currentThread().getName());
+            //输出当前线程名
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+</div><p id="i8i87da_15097">四：</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.rules;
+
+/**
+ * @Description:
+ * 规则四：
+ * 1. 一个线程对象不能多次start，多次start将报异常
+ * 2. 多个线程对象都start后，哪一个先执行，完全由JVM/操作系统来主导，程序员无法指定
+ * @author: Anhlaidh
+ * @date: 2020/3/28 0028 23:39
+ */
+public class Fourth {
+    public static void main(String[] args) {
+        TestThread4 t1 = new TestThread4();
+        t1.start();
+//        t1.start();
+        TestThread4 t2 = new TestThread4();
+        t2.start();
+    }
+}
+
+class TestThread4 extends Thread {
+    @Override
+    public void run() {
+        while (true) {
+            System.out.println(Thread.currentThread().getName()+&quot;is running&quot;);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+</div></section></section><section class="chapter"><h4 id="i8i87da_15099" data-toc="i8i87da_15099">多进程和多线程的对比</h4><ul class="list _bullet" id="i8i87da_15100"><li class="list__item" id="i8i87da_15101"><p>线程共享数据</p></li><li class="list__item" id="i8i87da_15102"><p>线程通讯更高效</p></li><li class="list__item" id="i8i87da_15103"><p>线程更轻量级，更容易切换</p></li><li class="list__item" id="i8i87da_15104"><p>多个线程更容易管理</p></li></ul></section></section><section class="chapter"><h3 id="i8i87da_15105" data-toc="i8i87da_15105">多线程信息共享</h3><ul class="list _bullet" id="i8i87da_15106"><li class="list__item" id="i8i87da_15107"><p>线程类 </p><ul class="list _bullet" id="i8i87da_15108"><li class="list__item" id="i8i87da_15109"><p>通过继承Thread或实现Runnable</p></li><li class="list__item" id="i8i87da_15110"><p>通过start方法，调用run方法，run方法工作</p></li><li class="list__item" id="i8i87da_15111"><p>线程run结束后，线程退出</p></li></ul></li><li class="list__item" id="i8i87da_15112"><p>粗粒度：子线程与子线程之间、和main线程之间缺乏交流</p></li><li class="list__item" id="i8i87da_15113"><p>细粒度：线程之间有信息交流通讯 </p><ul class="list _bullet" id="i8i87da_15114"><li class="list__item" id="i8i87da_15115"><p>通过共享变量达到信息共享</p></li><li class="list__item" id="i8i87da_15116"><p>Jdk原生库不支持发送消息</p></li></ul></li><li class="list__item" id="i8i87da_15117"><p>通过共享变量在多个线程中共享消息 </p><ul class="list _bullet" id="i8i87da_15118"><li class="list__item" id="i8i87da_15119"><p>static变量</p></li><li class="list__item" id="i8i87da_15120"><p>同一个Runnable类的成员变量</p></li></ul></li></ul><p id="i8i87da_15121">test1:继承thread，static修饰的变量可以共享，但是会造成数据重复</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.message;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 20:23
+ */
+public class ThreadDemo0 {
+    public static void main(String[] args) {
+        new TestThread0().start();
+        new TestThread0().start();
+        new TestThread0().start();
+        new TestThread0().start();
+    }
+
+    private static class TestThread0 extends Thread {
+//        private int tickets = 100; 每个线程卖100张，没有共享
+        private static int tickets = 100;  //static变量是共享的，所有的线程共享
+        @Override
+        public void run() {
+            while (tickets&gt;0) {
+                System.out.println(Thread.currentThread().getName() + &quot; is selling tickets&quot; + tickets);
+                tickets = tickets - 1;
+
+            }
+        }
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_15123"><li class="list__item" id="i8i87da_15124"><p>多线程信息共享问题 </p><ul class="list _bullet" id="i8i87da_15125"><li class="list__item" id="i8i87da_15126"><p>工作缓存副本</p></li><li class="list__item" id="i8i87da_15127"><p>关键步骤缺乏加锁限制</p></li></ul></li><li class="list__item" id="i8i87da_15128"><p>i++，并非原子性操作 </p><ul class="list _bullet" id="i8i87da_15129"><li class="list__item" id="i8i87da_15130"><p>读取主存i（正本）到工作缓存（副本）中</p></li><li class="list__item" id="i8i87da_15131"><p>每个CPU执行（副本）i+1操作</p></li><li class="list__item" id="i8i87da_15132"><p>CPU将结果写入到缓存（副本）中</p></li><li class="list__item" id="i8i87da_15133"><p>数据从工作缓存（副本）刷到主存（正本）中</p></li></ul></li><li class="list__item" id="i8i87da_15134"><p>变量副本问题的解决办法 </p><ul class="list _bullet" id="i8i87da_15135"><li class="list__item" id="i8i87da_15136"><p>采用volatile关键字修饰变量</p></li><li class="list__item" id="i8i87da_15137"><p>保证不同线程对共享变量操作时的可见性</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.message;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 20:55
+ */
+public class ThreadDemo2 {
+    public static void main(String[] args) throws InterruptedException {
+        TestTread3 testTread3 = new TestTread3();
+        testTread3.start();
+
+        Thread.sleep(1000);
+        testTread3.flag = false;
+        System.out.println(&quot;main thread is exiting&quot;);
+
+    }
+
+    private static class TestTread3 extends Thread {
+        //        boolean flag = true;//子线程不会停止
+        volatile boolean flag = true;//用volatile修饰的变量可以及时在各线程里面通知
+        @Override
+        public void run() {
+            int i = 0;
+            while (flag) {
+                i++;
+            }
+            System.out.println(&quot;test thread is exiting&quot;);
+
+        }
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_15139"><li class="list__item" id="i8i87da_15140"><p>关键步骤加锁限制 </p><ul class="list _bullet" id="i8i87da_15141"><li class="list__item" id="i8i87da_15142"><p>互斥：某一个线程运行一个代码段（关键区），其他线程不能同时运行这个代码段</p></li><li class="list__item" id="i8i87da_15143"><p>同步：多个线程的运行，必须按照某一种规定的先后顺序来运行</p></li><li class="list__item" id="i8i87da_15144"><p>互斥是同步的一种特例</p></li></ul></li><li class="list__item" id="i8i87da_15145"><p>互斥的关键字是synchronized </p><ul class="list _bullet" id="i8i87da_15146"><li class="list__item" id="i8i87da_15147"><p>synchronized代码块/函数，只能一个线程进入</p></li><li class="list__item" id="i8i87da_15148"><p>synchronized能加大性能负担，但是使用简便</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.message;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 21:16
+ */
+public class ThreadDemo3 {
+    public static void main(String[] args) {
+        TestThread3 testThread3 = new TestThread3();
+        new Thread(testThread3).start();
+        new Thread(testThread3).start();
+        new Thread(testThread3).start();
+        new Thread(testThread3).start();
+
+    }
+
+    private static class TestThread3 implements Runnable {
+        private volatile int tickets = 100;
+
+        @Override
+        public void run() {
+            while (tickets&gt;0) {
+                sale();
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        }
+
+        private synchronized void sale() {
+            System.out.println(Thread.currentThread().getName() + &quot; sale &quot; + tickets--);
+        }
+    }
+}
+
+</div></section><section class="chapter"><h3 id="i8i87da_15150" data-toc="i8i87da_15150">多线程管理</h3><ul class="list _bullet" id="i8i87da_15151"><li class="list__item" id="i8i87da_15152"><p id="i8i87da_15153">线程状态</p><ul class="list _bullet" id="i8i87da_15154"><li class="list__item" id="i8i87da_15155"><p>NEW 刚创建（new）</p></li><li class="list__item" id="i8i87da_15156"><p>RUNNABLE就绪态（start）</p></li><li class="list__item" id="i8i87da_15157"><p>RUNNING运行中（run）</p></li><li class="list__item" id="i8i87da_15158"><p>BLOCK阻塞（sleep）</p></li><li class="list__item" id="i8i87da_15159"><p>TERMINATED 结束</p></li></ul></li><li class="list__item" id="i8i87da_15160"><p id="i8i87da_15161">Thread的部分API已经废弃</p><ul class="list _bullet" id="i8i87da_15162"><li class="list__item" id="i8i87da_15163"><p>暂停和恢复：suspend/resume</p></li><li class="list__item" id="i8i87da_15164"><p>消亡：stop/destroy</p></li></ul></li><li class="list__item" id="i8i87da_15165"><p id="i8i87da_15166">线程阻塞/和唤醒</p><ul class="list _bullet" id="i8i87da_15167"><li class="list__item" id="i8i87da_15168"><p>sleep，时间一到，自己就会醒来</p></li><li class="list__item" id="i8i87da_15169"><p>wait/notify/notifyAll，等待，需要别人来唤醒</p></li><li class="list__item" id="i8i87da_15170"><p>join，等待另一个线程结束</p></li><li class="list__item" id="i8i87da_15171"><p>interrupt，向另外一个线程发送中断信号，该线程收到信号，会触发 Interrupted Exception（可接触阻塞），并进入下一步处理</p></li></ul></li><li class="list__item" id="i8i87da_15172"><p id="i8i87da_15173">线程类</p></li><li class="list__item" id="i8i87da_15174"><p id="i8i87da_15175">主动interrupt</p></li><li class="list__item" id="i8i87da_15176"><p id="i8i87da_15177">被动interrupt</p></li><li class="list__item" id="i8i87da_15178"><p id="i8i87da_15179">多线程死锁</p><ul class="list _bullet" id="i8i87da_15180"><li class="list__item" id="i8i87da_15181"><p>每个线程相互持有别人需要的锁（哲学家吃面问题）</p></li><li class="list__item" id="i8i87da_15182"><p>预防死锁，对资源进行等级排序</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.Interrupt;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/4/7 0007 22:05
+ */
+public class DeadLock {
+    public static Integer r1 = 1;
+    public static Integer r2 = 2;
+    public static void main(String[] args) {
+        Thread1 t1 = new Thread1();
+        t1.start();
+        Thread2 t2 = new Thread2();
+        t2.start();
+
+    }
+
+}
+
+class Thread1 extends Thread {
+    @Override
+    public void run() {
+        //先要r1再要r2
+        synchronized (DeadLock.r1) {
+            try {
+                TimeUnit.SECONDS.sleep(3);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            synchronized (DeadLock.r2) {
+                System.out.println(&quot;Thread1 is running&quot;);
+            }
+        }
+    }
+}
+class Thread2 extends Thread {
+    @Override
+    public void run() {
+        //先要r2再要r1
+        synchronized (DeadLock.r2) {
+            try {
+                TimeUnit.SECONDS.sleep(3);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            synchronized (DeadLock.r1) {
+                System.out.println(&quot;Thread2 is running&quot;);
+            }
+        }
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_15184"><li class="list__item" id="i8i87da_15185"><p>守护（后台）线程 </p><ul class="list _bullet" id="i8i87da_15186"><li class="list__item" id="i8i87da_15187"><p>普通线程的结束，是run方法运行结束</p></li><li class="list__item" id="i8i87da_15188"><p>守护线程的结束，是run方法运行结束，或main函数结束</p></li><li class="list__item" id="i8i87da_15189"><p>守护线程永远不要访问资源，如文件或数据库等</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.Interrupt;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/4/7 0007 22:19
+ */
+public class protect {
+    public static void main(String[] args) throws InterruptedException {
+        Thread3 t = new Thread3();
+        t.setDaemon(true);
+        t.start();
+        Thread.sleep(2000);
+        System.out.println(&quot;main thread is exiting&quot;);
+
+    }
+}
+
+class Thread3 extends Thread {
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(&quot;running&quot;);
+        }
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_15191"><li class="list__item" id="i8i87da_15192"><p>线程查看工具jvisualvm</p></li></ul></section><section class="chapter"><h3 id="i8i87da_15193" data-toc="i8i87da_15193">并发框架</h3><ul class="list _bullet" id="i8i87da_15194"><li class="list__item" id="i8i87da_15195"><p id="i8i87da_15196">业务：任务多，数据量大</p></li><li class="list__item" id="i8i87da_15197"><p id="i8i87da_15198">串行 并行</p><ul class="list _bullet" id="i8i87da_15199"><li class="list__item" id="i8i87da_15200"><p>串行编程简单，并行编程困难</p></li><li class="list__item" id="i8i87da_15201"><p>单个计算核频率下降，计算核数增多，整体性能变高</p></li></ul></li><li class="list__item" id="i8i87da_15202"><p id="i8i87da_15203">并行困难（任务分配和执行过程高度耦合）</p><ul class="list _bullet" id="i8i87da_15204"><li class="list__item" id="i8i87da_15205"><p>如何控制粒度，切割任务</p></li><li class="list__item" id="i8i87da_15206"><p>如何分配任务给线程，监督线程执行过程</p></li></ul></li></ul></section><section class="chapter"><h3 id="i8i87da_15207" data-toc="i8i87da_15207">并行计算</h3><ul class="list _bullet" id="i8i87da_15208"><li class="list__item" id="i8i87da_15209"><p>并行模式 </p><ul class="list _bullet" id="i8i87da_15210"><li class="list__item" id="i8i87da_15211"><p>主从模式(Master-Slave)</p></li><li class="list__item" id="i8i87da_15212"><p>Worker模式(Worker-Worker)</p></li></ul></li><li class="list__item" id="i8i87da_15213"><p>Java并发编程 </p><ul class="list _bullet" id="i8i87da_15214"><li class="list__item" id="i8i87da_15215"><p>Thread/Runnable/Thread组管理</p></li><li class="list__item" id="i8i87da_15216"><p>Executor(重点)</p></li><li class="list__item" id="i8i87da_15217"><p>Fork-Join框架</p></li></ul></li></ul></section><section class="chapter"><h3 id="i8i87da_15218" data-toc="i8i87da_15218">线程组管理</h3><ul class="list _bullet" id="i8i87da_15219"><li class="list__item" id="i8i87da_15220"><p>线程组ThreadGroup </p><ul class="list _bullet" id="i8i87da_15221"><li class="list__item" id="i8i87da_15222"><p>线程的集合</p></li><li class="list__item" id="i8i87da_15223"><p>树形结构,大线程可以包括小线程组</p></li><li class="list__item" id="i8i87da_15224"><p>可以通过enumerate方法遍历组内的线程,执行操作</p></li><li class="list__item" id="i8i87da_15225"><p>能够有效管理多个线程,但是管理效率低</p></li><li class="list__item" id="i8i87da_15226"><p>任务分配和执行过程高度耦合</p></li><li class="list__item" id="i8i87da_15227"><p>重复创建线程,关闭线程操作,无法重用线程</p></li></ul></li></ul></section><section class="chapter"><h3 id="executor" data-toc="executor">Executor*</h3><ul class="list _bullet" id="i8i87da_15228"><li class="list__item" id="i8i87da_15229"><p>从jdk5开始提供Executor FrameWork </p><ul class="list _bullet" id="i8i87da_15230"><li class="list__item" id="i8i87da_15231"><p>分离任务的创建和执行者的创建</p></li><li class="list__item" id="i8i87da_15232"><p>线程重复利用(new线程代价很大)</p></li></ul></li><li class="list__item" id="i8i87da_15233"><p>理解共享线程池的概念 </p><ul class="list _bullet" id="i8i87da_15234"><li class="list__item" id="i8i87da_15235"><p>预设好的多个Thread,可弹性增加</p></li><li class="list__item" id="i8i87da_15236"><p>多次执行很多很小的任务</p></li><li class="list__item" id="i8i87da_15237"><p>任务创建和执行过程解耦</p></li><li class="list__item" id="i8i87da_15238"><p>程序员无需关心线程池执行任务过程</p></li></ul></li></ul><p id="i8i87da_15239">Main:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.Executor.example2;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.ThreadPoolExecutor;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-04-08 22:15
+ */
+public class SumTest {
+    public static void main(String[] args) {
+        //执行线程池
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(8);
+        List&lt;Future&lt;Integer&gt;&gt; resultList = new ArrayList&lt;&gt;();
+        //统计1-1000总和,分成10个任务计算,提交任务
+        for (int i = 0; i &lt; 10; i++) {
+            SumTask calculator = new SumTask(i*100+1,(i+1)*100);
+            Future&lt;Integer&gt; result = executor.submit(calculator);
+            resultList.add(result);
+        }
+        //每隔50毫秒,轮询等待10个任务结束
+        do {
+            System.out.printf(&quot;Main:已经完成了多少个任务:%d\n&quot;, executor.getCompletedTaskCount());
+            for (int i = 0; i &lt; resultList.size(); i++) {
+                Future&lt;Integer&gt; result = resultList.get(i);
+                System.out.printf(&quot;Main Task %d:%s\n&quot;, i, result.isDone());
+            }
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        } while (executor.getCompletedTaskCount() &lt; resultList.size());
+        //所有任务都已经结束,综合计算结果
+        int total = 0;
+        for (int i = 0; i &lt; resultList.size(); i++) {
+            Future&lt;Integer&gt; result = resultList.get(i);
+            Integer sum = null;
+            try {
+                sum = result.get();
+                total = total + sum;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(&quot;1-1000的总和&quot; + total);
+    }
+}
+
+</div><p id="i8i87da_15241">SumTask:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.Executor.example2;
+
+import java.util.Random;
+import java.util.concurrent.Callable;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-04-08 22:17
+ */
+public class SumTask implements Callable {
+    private int startNumber;
+    private int endNumber;
+
+    public SumTask(int startNumber, int endNumber) {
+        this.startNumber = startNumber;
+        this.endNumber = endNumber;
+    }
+
+    @Override
+    public Integer call() throws Exception {
+        int sum = 0;
+        for (int i = startNumber; i &lt;= endNumber; i++) {
+            sum = sum + i;
+        }
+        Thread.sleep(new Random().nextInt(1000));
+        System.out.printf(&quot;%s:%d&quot;, Thread.currentThread().getName(), sum);
+        return sum;
+    }
+}
+
+</div></section><section class="chapter"><h3 id="fork-join" data-toc="fork-join">Fork-Join</h3><ul class="list _bullet" id="i8i87da_15243"><li class="list__item" id="i8i87da_15244"><p>关键类 </p><ul class="list _bullet" id="i8i87da_15245"><li class="list__item" id="i8i87da_15246"><p>ForkJoinPool 任务池</p></li><li class="list__item" id="i8i87da_15247"><p>RecursiveAction</p></li><li class="list__item" id="i8i87da_15248"><p>RecursiveTask Main:</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.Fork_Join;
+
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ForkJoinTask;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-04-09 13:37
+ */
+public class SumTest {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        //创建执行线程池
+        ForkJoinPool pool = new ForkJoinPool(8);
+        //创建任务
+        SumTask task = new SumTask(1,1000000);
+        //提交任务
+        ForkJoinTask&lt;Long&gt; result = pool.submit(task);
+        //等待结果
+        do {
+            System.out.printf(&quot;Main:Thread Count:%d\n&quot;, pool.getActiveThreadCount());
+            System.out.printf(&quot;Main:Parallelism:%d\n&quot;, pool.getParallelism());
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } while (!task.isDone());
+        //输出结果
+        System.out.println(result.get().toString());
+
+    }
+}
+
+</div><p id="i8i87da_15250">SumTask</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.thread.Fork_Join;
+
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ForkJoinTask;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-04-09 13:37
+ */
+public class SumTest {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        //创建执行线程池
+        ForkJoinPool pool = new ForkJoinPool(8);
+        //创建任务
+        SumTask task = new SumTask(1,1000000);
+        //提交任务
+        ForkJoinTask&lt;Long&gt; result = pool.submit(task);
+        //等待结果
+        do {
+            System.out.printf(&quot;Main:Thread Count:%d\n&quot;, pool.getActiveThreadCount());
+            System.out.printf(&quot;Main:Parallelism:%d\n&quot;, pool.getParallelism());
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } while (!task.isDone());
+        //输出结果
+        System.out.println(result.get().toString());
+
+    }
+}
+
+</div><section class="chapter"><h4 id="i8i87da_15252" data-toc="i8i87da_15252">主要类</h4><ul class="list _bullet" id="i8i87da_15253"><li class="list__item" id="i8i87da_15254"><p>ExecutorService,ThreadPoolExecutor,Future </p><ul class="list _bullet" id="i8i87da_15255"><li class="list__item" id="i8i87da_15256"><p>Executors.newCachedThreadPool/newFixedThreadPool创建线程池</p></li><li class="list__item" id="i8i87da_15257"><p>ExecutorService线程池服务</p></li><li class="list__item" id="i8i87da_15258"><p>Callable 具体的逻辑对象(线程类)</p></li><li class="list__item" id="i8i87da_15259"><p>Future返回结果</p></li></ul></li></ul></section></section><section class="chapter"><h3 id="i8i87da_15260" data-toc="i8i87da_15260">并发数据结构</h3><ul class="list _bullet" id="i8i87da_15261"><li class="list__item" id="i8i87da_15262"><p>阻塞式集合:当集合为空或者满时,等待</p></li><li class="list__item" id="i8i87da_15263"><p>非阻塞式集合:当集合为空或者满时,不等待,返回null或异常</p></li></ul><p id="i8i87da_15264">-List - Vector 同步安全,写多读少 - ArrayList 不安全 - Collections.synchronizedList(List list) 基于synchronized,效率差 - CopyOnWriteArrayList 读多写少,基于复制机制,非阻塞</p><ul class="list _bullet" id="i8i87da_15265"><li class="list__item" id="i8i87da_15266"><p>Set </p><ul class="list _bullet" id="i8i87da_15267"><li class="list__item" id="i8i87da_15268"><p>HashSet不安全</p></li><li class="list__item" id="i8i87da_15269"><p>Collections.synchronizedSet(Set set)基于synchronized,效率差</p></li><li class="list__item" id="i8i87da_15270"><p>CopyOnWriteArraySet (基于CopyOnWriteArrayList实现),读多写少,非阻塞</p></li></ul></li><li class="list__item" id="i8i87da_15271"><p>Map </p><ul class="list _bullet" id="i8i87da_15272"><li class="list__item" id="i8i87da_15273"><p>Hashtable 同步安全,写多读少</p></li><li class="list__item" id="i8i87da_15274"><p>HashMap 不安全</p></li><li class="list__item" id="i8i87da_15275"><p>Collections.synchronizedMap(Map map)基于synchronized,效率差</p></li><li class="list__item" id="i8i87da_15276"><p>ConcurrentHashMap,读多写少,非阻塞</p></li></ul></li><li class="list__item" id="i8i87da_15277"><p>Queue&amp;Deque </p><ul class="list _bullet" id="i8i87da_15278"><li class="list__item" id="i8i87da_15279"><p>ConcurrentLinkedQueue非阻塞</p></li><li class="list__item" id="i8i87da_15280"><p>ArrayBlockingQueue/LinkedBlockingQueue阻塞</p></li></ul></li></ul></section><section class="chapter"><h3 id="i8i87da_15281" data-toc="i8i87da_15281">并发协作与控制</h3><section class="chapter"><h4 id="lock" data-toc="lock">Lock</h4><aside class="prompt" data-type="tip" data-title="" id="i8i87da_15282"><p id="i8i87da_15283">买奶茶,读写锁,互斥锁</p></aside><ul class="list _bullet" id="i8i87da_15284"><li class="list__item" id="i8i87da_15285"><p>Lock也可以实现同步的效果 </p><ul class="list _bullet" id="i8i87da_15286"><li class="list__item" id="i8i87da_15287"><p>实现更复杂的临界区结构</p></li><li class="list__item" id="i8i87da_15288"><p>tryLock方法可以预判锁是否空闲</p></li><li class="list__item" id="i8i87da_15289"><p>允许分离读写的操作,多个读,一个写</p></li><li class="list__item" id="i8i87da_15290"><p>性能更好</p></li></ul></li><li class="list__item" id="i8i87da_15291"><p>ReentrantLock 类,可重入的互斥锁</p></li><li class="list__item" id="i8i87da_15292"><p>ReentrantReadWriteLock类,可重入的读写锁</p></li><li class="list__item" id="i8i87da_15293"><p>lock和unlock函数</p></li></ul><div class="code-block" data-lang="java">
+package notes.Java.JavaLearning_Advanced.thread.Lock;
+
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-07 16:41
+ */
+public class LockExample {
+    private static final ReentrantLock queueLock = new ReentrantLock();//可重入锁
+    private static final ReentrantReadWriteLock orderLock = new ReentrantReadWriteLock();//可读写锁
+
+    /**
+     * 有家奶茶店,点单时需要排队
+     * 假设想买奶茶的人如果看到需要排队就等等
+     * 假设奶茶店又老板和多名员工,记单方式比较原始,只有一个订单本
+     * 老板负责写新订单,员工不断查看订单本得到信息来制作奶茶,在老板写订单时员工不可以看订单本
+     * 多个员工可同时看订单本,但此时老板不可写入订单本
+     * @param args args
+     */
+    public static void main(String[] args)  {
+//        byMilkTea();
+        handleOrder();
+
+    }
+
+    private static void byMilkTea() {
+        LockExample lockExample = new LockExample();
+        int CUSTOMER_CNT = 10;
+        Thread[] customers = new Thread[CUSTOMER_CNT];
+        for (int i = 0; i &lt; CUSTOMER_CNT; i++) {
+            customers[i] = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        long walkingTime = (long) (Math.random() * 1000);
+                        Thread.sleep(walkingTime);
+                        lockExample.tryToBuyMilkTea();
+                    } catch (InterruptedException e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+            });
+            customers[i].start();
+        }
+
+    }
+
+    private void tryToBuyMilkTea() throws InterruptedException {
+        boolean flag = true;
+        while (flag) {
+            if (queueLock.tryLock()) {
+//                queueLock.lock();
+                long thinkingTime = (long) (Math.random() * 500);
+                Thread.sleep(thinkingTime);
+                System.out.println(Thread.currentThread().getName() + &quot;:来一杯奶茶,不要珍珠&quot;);
+                flag = false;
+                queueLock.unlock();
+            } else {
+                System.out.println(Thread.currentThread().getName()+&quot;:再等等&quot;);
+            }
+            if (flag) {
+                Thread.sleep(1000);
+            }
+        }
+    }
+
+    private static void handleOrder() {
+        LockExample lockExample = new LockExample();
+        Thread boss = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+                    try {
+                        lockExample.addOrder();
+                        long waitingTime = (long) (Math.random() * 1000);
+                        Thread.sleep(waitingTime);
+                    } catch (InterruptedException e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+
+            }
+
+        });
+        boss.start();
+        int WORKER_CNT = 3;
+        Thread[] workers = new Thread[WORKER_CNT];
+        for (int i = 0; i &lt; WORKER_CNT; i++) {
+            workers[i] = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true) {
+                        try {
+                            lockExample.viewOrder();
+                            long workingTime = (long) (Math.random() * 5000);
+                            Thread.sleep(workingTime);
+                        } catch (InterruptedException e) {
+                            System.out.println(e.getMessage());
+                        }
+                    }
+                }
+            });
+            workers[i].start();
+
+        }
+
+    }
+
+    private void viewOrder() throws InterruptedException {
+        orderLock.readLock().lock();
+        long readingTime = (long) (Math.random() * 500);
+        Thread.sleep(readingTime);
+        System.out.println(Thread.currentThread().getName()+&quot;:查看订单&quot;);
+        orderLock.readLock().unlock();
+    }
+
+    private void addOrder() throws InterruptedException {
+        orderLock.writeLock().lock();
+        long writingTime = (long) (Math.random() * 1000);
+        Thread.sleep(writingTime);
+        System.out.println(&quot;老板新加一笔订单&quot;);
+        orderLock.writeLock().unlock();
+    }
+}
+
+</div></section><section class="chapter"><h4 id="semaphore" data-toc="semaphore">Semaphore</h4><aside class="prompt" data-type="tip" data-title="" id="i8i87da_15295"><p id="i8i87da_15296">抢车位,车位满了不可停车,其他等着</p></aside><ul class="list _bullet" id="i8i87da_15297"><li class="list__item" id="i8i87da_15298"><p>信号量:由1965年Dijkstra提出</p></li><li class="list__item" id="i8i87da_15299"><p>信号量:本质上是一个计数器</p></li><li class="list__item" id="i8i87da_15300"><p>计数器大于0,可以使用,等于0不能使用</p></li><li class="list__item" id="i8i87da_15301"><p>可以设置多个并发量,例如限制10个访问</p></li><li class="list__item" id="i8i87da_15302"><p>Semaphore </p><ul class="list _bullet" id="i8i87da_15303"><li class="list__item" id="i8i87da_15304"><p>acquire获取</p></li><li class="list__item" id="i8i87da_15305"><p>release释放</p></li></ul></li><li class="list__item" id="i8i87da_15306"><p>比lock更进一步,可以控制多个同时访问关键区</p></li></ul><div class="code-block" data-lang="java">
+package notes.Java.JavaLearning_Advanced.thread.Semaphore;
+
+import java.util.concurrent.Semaphore;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-07 17:48
+ */
+public class SemaphoreExample {
+    private final Semaphore placeSemaphore = new Semaphore(5);
+    public boolean parking() {
+        if (placeSemaphore.tryAcquire()) {
+            System.out.println(Thread.currentThread().getName() + &quot;停车成功&quot;);
+            return true;
+        } else {
+            System.out.println(Thread.currentThread().getName() + &quot;没有空位&quot;);
+            return false;
+        }
+    }
+    public void leaving() {
+        placeSemaphore.release();
+        System.out.println(Thread.currentThread().getName()+&quot;:开走&quot;);
+    }
+
+    /**
+     * 一个车库,五个车位,十辆车需要停放,每次停放时,申请信号量
+     * @param args args
+     * @throws InterruptedException exception
+     */
+    public static void main(String[] args) throws InterruptedException {
+        int tryToParkCnt = 10;
+        SemaphoreExample semaphoreExample = new SemaphoreExample();
+        Thread[] parkers = new Thread[tryToParkCnt];
+        for (int i = 0; i &lt; tryToParkCnt; i++) {
+            parkers[i] = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        long randomTime = (long) (Math.random() * 1000);
+                        Thread.sleep(randomTime);
+                        if (semaphoreExample.parking()) {
+                            long parkingTime = (long) (Math.random() * 1000);
+                            Thread.sleep(parkingTime);
+                            semaphoreExample.leaving();
+                        }
+                    } catch (InterruptedException e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+            });
+            parkers[i].start();
+
+        }
+        for (int i = 0; i &lt; tryToParkCnt; i++) {
+            parkers[i].join();
+        }
+
+
+    }
+}
+
+</div></section><section class="chapter"><h4 id="latch" data-toc="latch">latch</h4><aside class="prompt" data-type="tip" data-title="" id="i8i87da_15308"><p id="i8i87da_15309">百米赛跑,发令枪归零同时起跑(startSignal),运动员依次就位(doneSignal)</p></aside><ul class="list _bullet" id="i8i87da_15310"><li class="list__item" id="i8i87da_15311"><p>等待锁,是一个同步辅助类</p></li><li class="list__item" id="i8i87da_15312"><p>用来同步执行任务的一个或者多个线程</p></li><li class="list__item" id="i8i87da_15313"><p>不是用来保护临界区或者资源共享</p></li><li class="list__item" id="i8i87da_15314"><p>CountDownLatch </p><ul class="list _bullet" id="i8i87da_15315"><li class="list__item" id="i8i87da_15316"><p>countDown() 计数-1</p></li><li class="list__item" id="i8i87da_15317"><p>await() 等待latch变成0</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package notes.Java.JavaLearning_Advanced.thread.CountDownLatch;
+
+import java.util.concurrent.CountDownLatch;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-08 10:58
+ */
+public class CountDownLatchExample {
+    /**
+     * 设想百米赛跑比赛,发令枪发出信号后选手开始跑,全部选手跑到终点后比赛结束
+     * @param args args
+     * @throws InterruptedException Interrupted Exception
+     */
+    public static void main(String[] args) throws InterruptedException {
+        int runnerCnt = 10;
+        CountDownLatch startSignal = new CountDownLatch(1);
+        CountDownLatch doneSignal = new CountDownLatch(runnerCnt);
+        for (int i = 0; i &lt; runnerCnt; i++) {//create and start threads
+            new Thread(new Worker(startSignal,doneSignal)).start();
+        }
+        System.out.println(&quot;准备工作&quot;);
+        System.out.println(&quot;准备工作就绪&quot;);
+        startSignal.countDown();//let all thread proceed
+        System.out.println(&quot;比赛开始&quot;);
+        doneSignal.await();//wait for all to finish
+
+    }
+
+    private static class Worker implements Runnable {
+        private final CountDownLatch startSignal;
+        private final CountDownLatch downSignal;
+
+        public Worker(CountDownLatch startSignal, CountDownLatch downSignal) {
+            this.startSignal = startSignal;
+            this.downSignal = downSignal;
+        }
+
+        @Override
+        public void run() {
+            try {
+                startSignal.await();
+                Thread.sleep((long)(Math.random()*500));
+                doWork();
+                downSignal.countDown();
+            } catch (InterruptedException e) {
+                //return;
+            }
+
+        }
+
+        private void doWork() {
+            System.out.println(Thread.currentThread().getName()+&quot;:跑完全程&quot;);
+        }
+    }
+}
+
+</div></section><section class="chapter"><h4 id="barrier" data-toc="barrier">Barrier</h4><aside class="prompt" data-type="tip" data-title="" id="i8i87da_15319"><p id="i8i87da_15320">分步计算总和</p></aside><ul class="list _bullet" id="i8i87da_15321"><li class="list__item" id="i8i87da_15322"><p>集合点,也是一个同步辅助类</p></li><li class="list__item" id="i8i87da_15323"><p>允许多个线程在某一个点上进行同步</p></li><li class="list__item" id="i8i87da_15324"><p>CyclicBarrier </p><ul class="list _bullet" id="i8i87da_15325"><li class="list__item" id="i8i87da_15326"><p>构造函数是需要同步的线程数量</p></li><li class="list__item" id="i8i87da_15327"><p>await等待其他线程,达到数量后就放行</p></li></ul></li></ul></section><section class="chapter"><h4 id="phaser" data-toc="phaser">Phaser</h4><ul class="list _bullet" id="i8i87da_15328"><li class="list__item" id="i8i87da_15329"><p>允许执行并发多阶段任务,同步辅助类</p></li><li class="list__item" id="i8i87da_15330"><p>在每一个阶段结束的位置对线程进行同步,当所有线程都到达这步,再进行下一步</p></li><li class="list__item" id="i8i87da_15331"><p>Phaser </p><ul class="list _bullet" id="i8i87da_15332"><li class="list__item" id="i8i87da_15333"><p>arrive()</p></li><li class="list__item" id="i8i87da_15334"><p>arriveAndAwaitAdvance()</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package notes.Java.JavaLearning_Advanced.thread.Phaser;
+
+import java.util.concurrent.Phaser;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-08 19:46
+ */
+public class PhaserExample {
+    /**
+     * 假设举行考试,总共三个答题,每次下发一道题目,等所有学生完成后再进行下一道
+     * @param args
+     */
+    public static void main(String[] args) {
+        int STUDENT_CNT = 5;
+        Phaser phaser = new Phaser(STUDENT_CNT);
+        for (int i = 0; i &lt; STUDENT_CNT; i++) {
+            new Thread(new Student(phaser)).start();
+        }
+
+    }
+
+    private static class Student implements Runnable {
+        private final Phaser phaser;
+        public Student(Phaser phaser) {
+            this.phaser = phaser;
+        }
+
+        @Override
+        public void run() {
+            try {
+                doTesting(1);
+                phaser.arriveAndAwaitAdvance();
+                doTesting(2);
+                phaser.arriveAndAwaitAdvance();
+                doTesting(3);
+                phaser.arriveAndAwaitAdvance();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        private void doTesting(int i) throws InterruptedException {
+            String name = Thread.currentThread().getName();
+            System.out.println(name + &quot;开始第&quot; + i + &quot;题&quot;);
+            long thinkingTime = (long) (Math.random() * 1000);
+            Thread.sleep(thinkingTime);
+            System.out.printf(&quot;%s第%d到题答题结束\n&quot;,name,i);
+        }
+    }
+}
+
+</div></section><section class="chapter"><h4 id="exchanger" data-toc="exchanger">Exchanger</h4><aside class="prompt" data-type="tip" data-title="" id="i8i87da_15336"><p id="i8i87da_15337">双向交换数据</p></aside><ul class="list _bullet" id="i8i87da_15338"><li class="list__item" id="i8i87da_15339"><p>允许在并发线程中相互交换消息</p></li><li class="list__item" id="i8i87da_15340"><p>允许在2个线程种定义同步点,当两个线程都达到同步点,他们交换数据结构</p></li><li class="list__item" id="i8i87da_15341"><p>Exchanger </p><ul class="list _bullet" id="i8i87da_15342"><li class="list__item" id="i8i87da_15343"><p>exchange(),线程双方互相交换数据</p></li><li class="list__item" id="i8i87da_15344"><p>交换数据是双向的</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package notes.Java.JavaLearning_Advanced.thread.Exchanger;
+
+import java.util.Scanner;
+import java.util.concurrent.Exchanger;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-10 17:16
+ */
+public class ExchangerExample {
+    /**
+     * 通过Exchanger实现学生成绩查询,简单线程间的数据交换
+     * @param args
+     */
+    public static void main(String[] args) throws InterruptedException {
+        Exchanger&lt;String&gt; exchanger = new Exchanger&lt;String&gt;();
+        BackgroundWorker worker = new BackgroundWorker(exchanger);
+        new Thread(worker).start();
+        Scanner reader = new Scanner(System.in);
+        while (true) {
+            System.out.println(&quot;输出要查询的的属性学生姓名:&quot;);
+            String input = reader.nextLine().trim();
+            exchanger.exchange(input);
+            String value = exchanger.exchange(null);
+            if (&quot;exit&quot;.equals(value)) {
+                break;
+            }
+            System.out.println(&quot;查询结果&quot; + value);
+
+        }
+        reader.close();
+
+    }
+
+    private static class BackgroundWorker implements Runnable{
+        final Exchanger&lt;String&gt; exchanger;
+
+        public BackgroundWorker(Exchanger&lt;String&gt; exchanger) {
+            this.exchanger = exchanger;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                try {
+                    String item = exchanger.exchange(null);
+                    switch (item) {
+                        case &quot;zhangsan&quot;:
+                            exchanger.exchange(&quot;90&quot;);
+                            break;
+                        case &quot;lisi&quot;:
+                            exchanger.exchange(&quot;80&quot;);
+                            break;
+                        case &quot;wangwu&quot;:
+                            exchanger.exchange(&quot;70&quot;);
+                            break;
+                        case &quot;exit&quot;:
+                            exchanger.exchange(&quot;exit&quot;);
+                        default:
+                            exchanger.exchange(&quot;none&quot;);
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+
+                }
+            }
+
+        }
+    }
+}
+
+</div></section></section><section class="chapter"><h3 id="i8i87da_15346" data-toc="i8i87da_15346">定时任务</h3><ul class="list _bullet" id="i8i87da_15347"><li class="list__item" id="i8i87da_15348"><p>简单定时机制 </p><ul class="list _bullet" id="i8i87da_15349"><li class="list__item" id="i8i87da_15350"><p>设置计划任务,也就是在指定的时间开始执行某一个任务</p></li><li class="list__item" id="i8i87da_15351"><p>TimerTask封装任务</p></li><li class="list__item" id="i8i87da_15352"><p>Timer类 定时器</p></li></ul></li><li class="list__item" id="i8i87da_15353"><p>Timer</p></li></ul><div class="code-block" data-lang="java">
+package notes.Java.JavaLearning_Advanced.thread.Timer;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020-05-10 17:42
+ */
+public class TimerTest {
+    public static void main(String[] args) throws InterruptedException {
+        MyTask myTask = new MyTask();
+        Timer timer = new Timer();
+        System.out.println(&quot;当前时间:&quot; + new Date().toLocaleString());
+        //当前时间一秒后,每两秒执行一次
+        timer.schedule(myTask,1000,2000);
+        Thread.sleep(10000);
+        myTask.cancel();//取消当前任务
+        System.out.println(&quot;==============&quot;);
+        Calendar now = Calendar.getInstance();
+        now.set(Calendar.SECOND, now.get(Calendar.SECOND) + 3);
+        Date runDate = now.getTime();
+        MyTask2 myTask2 = new MyTask2();
+        timer.scheduleAtFixedRate(myTask2,runDate,3000);
+    }
+
+    private static class MyTask extends TimerTask {
+        @Override
+        public void run() {
+            System.out.println(&quot;运行了!时间为:&quot;+new Date());
+        }
+
+    }
+
+    private static class MyTask2 extends TimerTask{
+        @Override
+        public void run() {
+            System.out.println(&quot;运行了!时间为:&quot;+new Date());
+            try {
+                Thread.sleep(4000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+</div><ul class="list _bullet" id="i8i87da_15355"><li class="list__item" id="i8i87da_15356"><p>Executor+定时器机制</p></li><li class="list__item" id="i8i87da_15357"><p>ScheduledExecutorService </p><ul class="list _bullet" id="i8i87da_15358"><li class="list__item" id="i8i87da_15359"><p>定时任务</p></li><li class="list__item" id="i8i87da_15360"><p>周期任务</p></li></ul></li><li class="list__item" id="i8i87da_15361"><p>Quartz </p><ul class="list _bullet" id="i8i87da_15362"><li class="list__item" id="i8i87da_15363"><p>Quartz是一个较为完善的任务调度框架</p></li><li class="list__item" id="i8i87da_15364"><p>解决程序中Timer零散管理的问题</p></li><li class="list__item" id="i8i87da_15365"><p>功能更加强大 </p><ul class="list _bullet" id="i8i87da_15366"><li class="list__item" id="i8i87da_15367"><p>Timer执行周期任务,如果中间有一次有一场,整个任务终止执行</p></li><li class="list__item" id="i8i87da_15368"><p>Quartz执行周期任务,如果中间某一次有异常,不影响下次任务执行</p></li></ul></li></ul></li></ul></section></section><section class="chapter"><h2 id="java" data-toc="java">Java网络编程</h2><section class="chapter"><h3 id="i8i87da_15369" data-toc="i8i87da_15369">网络基础知识</h3><ul class="list _bullet" id="i8i87da_15370"><li class="list__item" id="i8i87da_15371"><p id="i8i87da_15372">网络是当前信息技术的第一推动力</p></li><li class="list__item" id="i8i87da_15373"><p id="i8i87da_15374">每个计算设备上都有若干个网卡</p></li><li class="list__item" id="i8i87da_15375"><p id="i8i87da_15376">每个网卡上有（全球唯一）单独的硬件地址，MAC地址</p></li><li class="list__item" id="i8i87da_15377"><p id="i8i87da_15378">ip地址</p><ul class="list _bullet" id="i8i87da_15379"><li class="list__item" id="i8i87da_15380"><p>IPV4 192.169.0.1每段0-255</p></li><li class="list__item" id="i8i87da_15381"><p>IPV6 128bit长，8段，每段4个16进制数</p></li><li class="list__item" id="i8i87da_15382"><p>ipconfig ifconfig</p></li></ul></li><li class="list__item" id="i8i87da_15383"><p id="i8i87da_15384">port:端口 0~65535</p><ul class="list _bullet" id="i8i87da_15385"><li class="list__item" id="i8i87da_15386"><p>0~1023OS已经占用了，80是web，23是telnet</p></li><li class="list__item" id="i8i87da_15387"><p>1024~65535，一般程序可使用（谨防冲突）</p></li></ul></li><li class="list__item" id="i8i87da_15388"><p id="i8i87da_15389">两台机器通讯就是在IP+port上进行的</p><ul class="list _bullet" id="i8i87da_15390"><li class="list__item" id="i8i87da_15391"><p>netstat -an</p></li></ul></li><li class="list__item" id="i8i87da_15392"><p id="i8i87da_15393">保留ip：127.0.0.1 本机</p></li><li class="list__item" id="i8i87da_15394"><p id="i8i87da_15395">公网（万维网/互联网）和内网（局域网）</p><ul class="list _bullet" id="i8i87da_15396"><li class="list__item" id="i8i87da_15397"><p>网络上分层的</p></li><li class="list__item" id="i8i87da_15398"><p>最外层的是外网/互联网</p></li><li class="list__item" id="i8i87da_15399"><p>底下每层都是内网</p></li><li class="list__item" id="i8i87da_15400"><p>ip地址可以在每个层次的网重用</p></li><li class="list__item" id="i8i87da_15401"><p>tracert 看当前及其和目标机器的访问中继</p></li></ul></li><li class="list__item" id="i8i87da_15402"><p id="i8i87da_15403">通讯协议TCP UDP</p><ul class="list _bullet" id="i8i87da_15404"><li class="list__item" id="i8i87da_15405"><p>TCP(Transmission Control Protocol) </p><ul class="list _bullet" id="i8i87da_15406"><li class="list__item" id="i8i87da_15407"><p>传输控制协议，面向连接的协议</p></li><li class="list__item" id="i8i87da_15408"><p>两台机器的可靠无差错的数据传输</p></li><li class="list__item" id="i8i87da_15409"><p>双向字节流传递</p></li></ul></li><li class="list__item" id="i8i87da_15410"><p>UDP(User Datagram Protocol) --&gt;QQ(多次UDP模仿TCP)</p></li><li class="list__item" id="i8i87da_15411"><p>用户数据报协议，面向无连接协议</p></li><li class="list__item" id="i8i87da_15412"><p>不保证可靠的数据传输</p></li><li class="list__item" id="i8i87da_15413"><p>速度快，也可以在较差的网络下使用</p></li></ul></li></ul></section><section class="chapter"><h3 id="udp" data-toc="udp">UDP</h3><ul class="list _bullet" id="i8i87da_15414"><li class="list__item" id="i8i87da_15415"><p>计算机通讯：数据从一个IP的port出发（发送方），运输到另外一个IP的port（接收方）</p></li><li class="list__item" id="i8i87da_15416"><p>UDP：无连接无状态的通讯协议 </p><ul class="list _bullet" id="i8i87da_15417"><li class="list__item" id="i8i87da_15418"><p>发送方发送消息，如果接收方刚好在目的地，则可以接受，如果不在 那这个消息就丢失了</p></li><li class="list__item" id="i8i87da_15419"><p>发送方也无法得知是否发送成功</p></li><li class="list__item" id="i8i87da_15420"><p>UDP的好处就是简单节省，经济</p></li></ul></li></ul><section class="chapter"><h4 id="i8i87da_15421" data-toc="i8i87da_15421">实例</h4><ul class="list _bullet" id="i8i87da_15422"><li class="list__item" id="i8i87da_15423"><p>DatagramSocket:通讯的数据管道 </p><ul class="list _bullet" id="i8i87da_15424"><li class="list__item" id="i8i87da_15425"><p>send和receive方法</p></li><li class="list__item" id="i8i87da_15426"><p>（可选，多网卡）绑定一个IP和Port</p></li></ul></li><li class="list__item" id="i8i87da_15427"><p>DatagramPacket </p><ul class="list _bullet" id="i8i87da_15428"><li class="list__item" id="i8i87da_15429"><p>集装箱：封装数据</p></li><li class="list__item" id="i8i87da_15430"><p>地址标签：目的地IP+Port Receive:</p></li></ul></li></ul><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.UDP;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+/**
+ * @Description: receive
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 0:23
+ */
+public class UdpRecv {
+    public static void main(String[] args) throws Exception {
+        DatagramSocket socket = new DatagramSocket(3000);
+        byte[] buf = new byte[1024];
+        DatagramPacket packet = new DatagramPacket(buf,buf.length);
+        System.out.println(&quot;UdpRecv：等待信息&quot;);
+        socket.receive(packet);
+        System.out.println(&quot;UdpRecv:已接受信息&quot;);
+        String strRecv = new String(packet.getData(), 0, packet.getLength()) + &quot;from&quot; + packet.getAddress().getHostAddress()
+                + &quot;:&quot; + packet.getPort();
+        System.out.println(strRecv);
+        String str = &quot;nice to meet you!!&quot;;
+        DatagramPacket packet1 = new DatagramPacket(str.getBytes(), str.length(), packet.getAddress(), packet.getPort());
+        System.out.println(&quot;UdpRecv:即将发送信息！&quot;);
+        socket.send(packet1);
+        System.out.println(&quot;UdpRecv:已发送&quot;);
+
+    }
+}
+
+</div><p id="i8i87da_15432">send:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.UDP;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
+/**
+ * @Description: send
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 0:24
+ */
+public class UdpSend {
+    public static void main(String[] args) throws Exception{
+        DatagramSocket socket = new DatagramSocket();
+        String str = &quot;hi ,im a mini robot&quot;;
+        DatagramPacket packet = new DatagramPacket(str.getBytes(), str.length(), InetAddress.getByName(&quot;127.0.0.1&quot;), 3000);
+        System.out.println(&quot;UdpSend:我要发送信息了&quot;);
+        socket.send(packet);
+        System.out.println(&quot;UdpSend: 发送完毕&quot;);
+        Thread.sleep(1000);
+        byte[] buf = new byte[1024];
+        DatagramPacket packet1 = new DatagramPacket(buf, 1024);
+        System.out.println(&quot;UdpSend：我在等待信息&quot;);
+        socket.receive(packet1);
+        System.out.println(&quot;UdpSend：已收到信息&quot;);
+        String str2 = new String(packet1.getData(), 0, packet1.getLength())+&quot;from&quot;+packet1.getAddress().getHostAddress()
+                +&quot;:&quot;+packet1.getPort();
+        System.out.println(str2);
+    }
+}
+
+</div></section></section><section class="chapter"><h3 id="tcp" data-toc="tcp">TCP</h3><ul class="list _bullet" id="i8i87da_15434"><li class="list__item" id="i8i87da_15435"><p id="i8i87da_15436">TCP协议：有链接、保证可靠的无误差通讯</p><ol class="list _decimal" id="i8i87da_15437" type="1"><li class="list__item" id="i8i87da_15438"><p>服务器：创建一个ServerSocket，等待连接</p></li><li class="list__item" id="i8i87da_15439"><p>客户机：创建一个Socket，连接到服务器</p></li><li class="list__item" id="i8i87da_15440"><p>服务器：ServerSocket接收到连接，创建一个Socket和客户的Socket建立专线连接，后续服务器和客户机的对话 （这一对Socket）会在一个单独的线程（服务器端）上运行</p></li><li class="list__item" id="i8i87da_15441"><p>服务器的ServerSocket继续等待连接，返回 i.</p></li></ol></li><li class="list__item" id="i8i87da_15442"><p id="i8i87da_15443">软件服务器有两要求：</p><ol class="list _decimal" id="i8i87da_15444" type="1"><li class="list__item" id="i8i87da_15445"><p>它能够实现一定的功能</p></li><li class="list__item" id="i8i87da_15446"><p>它必须在一个公开地址上对外提供服务</p></li></ol></li><li class="list__item" id="i8i87da_15447"><p id="i8i87da_15448">ServerSocket：服务码头</p><ul class="list _bullet" id="i8i87da_15449"><li class="list__item" id="i8i87da_15450"><p>需要绑定Port</p></li><li class="list__item" id="i8i87da_15451"><p>如果有多块网卡，需要绑定一个IP地址</p></li></ul></li><li class="list__item" id="i8i87da_15452"><p id="i8i87da_15453">Socket：运输通道</p><ul class="list _bullet" id="i8i87da_15454"><li class="list__item" id="i8i87da_15455"><p>客户端需要绑定服务器的地址和Port</p></li><li class="list__item" id="i8i87da_15456"><p>客户端往Socket输入流写入数据，送到服务端</p></li><li class="list__item" id="i8i87da_15457"><p>客户端从Socket输出流取服务端过来的数据</p></li><li class="list__item" id="i8i87da_15458"><p>服务器反之亦然</p></li></ul></li><li class="list__item" id="i8i87da_15459"><p id="i8i87da_15460">过程：</p><ul class="list _bullet" id="i8i87da_15461"><li class="list__item" id="i8i87da_15462"><p>服务端等待响应时，处于阻塞状态</p></li><li class="list__item" id="i8i87da_15463"><p>服务端可以同时响应多个客户端</p></li><li class="list__item" id="i8i87da_15464"><p>服务端每接受一个客户端，就启动一个独立的线程与其对应</p></li><li class="list__item" id="i8i87da_15465"><p>客户端或者服务端都可以选择关闭这条Socket通道</p></li><li class="list__item" id="i8i87da_15466"><p>实例 </p><ul class="list _bullet" id="i8i87da_15467"><li class="list__item" id="i8i87da_15468"><p>服务端先启动，且一直保留</p></li><li class="list__item" id="i8i87da_15469"><p>客户端后启动，可以先退出</p></li></ul></li></ul></li></ul><p id="i8i87da_15470">Server:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.TCP;
+
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 13:16
+ */
+public class TCPServer2 {
+    public static void main(String[] args) {
+        try {
+            ServerSocket serverSocket = new ServerSocket(8001);
+            while (true) {
+                Socket socket = serverSocket.accept();
+                System.out.println(&quot;来了一个client&quot;);
+                new Thread(new Worker(socket)).start();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static class Worker implements Runnable{
+        private Socket socket;
+        public Worker(Socket socket) {
+            this.socket = socket;
+        }
+
+        @Override
+        public void run() {
+            try {
+                System.out.println(&quot;服务人员已启动&quot;);
+                InputStream inputStream = socket.getInputStream();
+                OutputStream outputStream = socket.getOutputStream();
+                DataOutputStream dos = new DataOutputStream(outputStream);
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                while (true) {
+                    String strWord = bufferedReader.readLine();
+                    System.out.println(&quot;client said:&quot; + strWord + &quot;:&quot; + strWord.length());
+                    if (strWord.equalsIgnoreCase(&quot;quit&quot;)) {
+                        break;
+                    }
+                    String strEcho = strWord + &quot;666&quot;;
+                    System.out.println(&quot;server said:&quot; + strWord + &quot;---------&gt;&quot; + strEcho);
+                    dos.writeBytes(strWord + &quot;---------&gt;&quot; +strEcho+ System.getProperty(&quot;line.separator&quot;));
+                }
+                bufferedReader.close();
+                dos.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+</div><p id="i8i87da_15472">Client:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.TCP;
+
+import java.io.*;
+import java.net.InetAddress;
+import java.net.Socket;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 11:47
+ */
+public class TcpClient {
+    public static void main(String[] args) {
+        try {
+            Socket socket = new Socket(InetAddress.getByName(&quot;127.0.0.1&quot;), 8001);
+            // 同一个通道，服务端输出流就是客户端的输入流，服务端的输入流，就是客户端的输出流
+            InputStream inputStream = socket.getInputStream();//开启通道的输入流
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            OutputStream outputStream = socket.getOutputStream();//开启通道的输出流
+            DataOutputStream dataOutputStream = new DataOutputStream(outputStream);
+            BufferedReader brKey = new BufferedReader(new InputStreamReader(System.in));
+            while (true) {
+                String strWord = brKey.readLine();
+                if (strWord.equalsIgnoreCase(&quot;quit&quot;)) {
+                    break;
+                } else {
+                    System.out.println(&quot;i want to sent &quot;+strWord);
+//                    outputStream.write(strWord.getBytes(), 0, strWord.length());//可以这么写
+                    dataOutputStream.writeBytes(strWord+System.getProperty(&quot;line.separator&quot;));
+                    System.out.println(&quot;server said&quot;+bufferedReader.readLine());
+
+                }
+            }
+            dataOutputStream.close();
+            bufferedReader.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+</div></section><section class="chapter"><h3 id="http" data-toc="http">HTTP</h3><ul class="list _bullet" id="i8i87da_15474"><li class="list__item" id="i8i87da_15475"><p>在浏览器输入URL地址</p></li><li class="list__item" id="i8i87da_15476"><p>浏览器将连接到远程服务器（IP=Port(80)）</p></li><li class="list__item" id="i8i87da_15477"><p>请求下载一个HTML文件下来，放到本地临时文件夹中</p></li><li class="list__item" id="i8i87da_15478"><p>在浏览器显示出来</p></li></ul><section class="chapter"><h4 id="i8i87da_15479" data-toc="i8i87da_15479">实例</h4><ul class="list _bullet" id="i8i87da_15480"><li class="list__item" id="i8i87da_15481"><p>URLConnection </p><ul class="list _bullet" id="i8i87da_15482"><li class="list__item" id="i8i87da_15483"><p>获取资源的连接器</p></li><li class="list__item" id="i8i87da_15484"><p>根据URL的openConnection()方法获得URLConnection</p></li><li class="list__item" id="i8i87da_15485"><p>connect方法，建立和资源的联系通道</p></li><li class="list__item" id="i8i87da_15486"><p>getInputStream方法，获取资源的内容</p></li></ul></li></ul><p id="i8i87da_15487">get:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.HTTP;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 14:14
+ */
+public class URLConnectionGet {
+    public static void main(String[] args) {
+        try {
+            String urlName = &quot;http://www.baidu.com&quot;;
+            URL url = new URL(urlName);
+            URLConnection connection = url.openConnection();
+            connection.connect();
+            //打印Http的头部信息
+            Map&lt;String, List&lt;String&gt;&gt; headers = connection.getHeaderFields();
+            for (Map.Entry&lt;String, List&lt;String&gt;&gt; entry : headers.entrySet()) {
+                String key = entry.getKey();
+                for (String value : entry.getValue()) {
+                    System.out.println(key + &quot;:&quot; + value);
+                }
+            }
+            //输出将要收到的内容属性信息
+            System.out.println(&quot;-------------------&quot;);
+            System.out.println(&quot;getContentType&quot; + connection.getContentType());
+            System.out.println(&quot;getContentLength&quot; + connection.getContentLength());
+            System.out.println(&quot;getContentEncoding&quot; + connection.getContentEncoding());
+            System.out.println(&quot;getDate&quot; + connection.getDate());
+            System.out.println(&quot;getExpiration&quot; + connection.getExpiration());
+            System.out.println(&quot;getLastModified&quot; + connection.getLastModified());
+            System.out.println(&quot;-------------------&quot;);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream(),&quot;UTF-8&quot;));
+            //输出收到的内容
+            String line = &quot;&quot;;
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
+            }
+            bufferedReader.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+</div><p id="i8i87da_15489">Post:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.HTTP;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.net.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 14:42
+ */
+public class URLConnectionPost {
+    public static void main(String[] args) throws IOException {
+        String url = &quot;https://www.usps.com/go/ZipLookupAction.action&quot;;
+        Object userAgent = &quot;Httpie/0.9.2&quot;;
+        Object redirects = &quot;1&quot;;
+        CookieHandler.setDefault(new CookieManager(null, CookiePolicy.ACCEPT_ALL));
+
+        Map&lt;String, String&gt; params = new HashMap&lt;String, String&gt;();
+        params.put(&quot;tAddress&quot;, &quot;1 Market Street&quot;);
+        params.put(&quot;tCity&quot;, &quot;San Francisco&quot;);
+        params.put(&quot;sState&quot;, &quot;CA&quot;);
+        String result = doPost(new URL(url), params,
+                userAgent == null ? null : userAgent.toString(),
+                redirects == null ? -1 : Integer.parseInt(redirects.toString()));
+        System.out.println(result);
+    }
+
+    private static String doPost(URL url, Map&lt;String, String&gt; nameValueParis, String userAgent, int redirects) throws IOException {
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        if (userAgent != null) {
+            connection.setRequestProperty(&quot;User-Agent&quot;, userAgent);
+        }
+        if (redirects &gt;= 0) {
+            connection.setInstanceFollowRedirects(false);
+            connection.setDoOutput(true);
+        }
+        //输出请求的参数
+        try (PrintWriter out = new PrintWriter(connection.getOutputStream())) {
+            boolean first = true;
+            for (Map.Entry&lt;String, String&gt; pair : nameValueParis.entrySet()) {
+                //参数必须这样拼接a=1&amp;b=2&amp;c=3
+                if (first) {
+                    first = false;
+                } else {
+                    out.println('&amp;');
+                }
+                String name = pair.getKey();
+                String value = pair.getValue();
+                out.print(name);
+                out.print('=');
+                out.print(URLEncoder.encode(value, &quot;UTF-8&quot;));
+            }
+            String encoding = connection.getContentEncoding();
+            if (encoding == null) {
+                encoding = &quot;UTF-8&quot;;
+            }
+            if (redirects &gt; 0) {
+                int responseCode = connection.getResponseCode();
+                System.out.println(&quot;responseCode:&quot; + responseCode);
+                if (responseCode == HttpURLConnection.HTTP_MOVED_PERM || responseCode == HttpURLConnection.HTTP_MOVED_TEMP ||
+                        responseCode == HttpURLConnection.HTTP_SEE_OTHER) {
+                    String location = connection.getHeaderField(&quot;Location&quot;);
+                    if (location != null) {
+                        URL base = connection.getURL();
+                        connection.disconnect();
+                        return doPost(new URL(base, location), nameValueParis, userAgent, redirects - 1);
+                    }
+                }
+            } else if (redirects == 0) {
+                throw new IOException(&quot;too many redirects&quot;);
+            }
+            //获取html内容
+            StringBuilder response = new StringBuilder();
+            try (Scanner in = new Scanner(connection.getInputStream(), encoding)) {
+                while (in.hasNextLine()) {
+                    response.append(in.nextLine());
+                    response.append(&quot;\n&quot;);
+                }
+            } catch (IOException e) {
+                InputStream err = connection.getErrorStream();
+                if (err == null) {
+                    throw e;
+                }
+                try (Scanner in = new Scanner(err)) {
+                    response.append(in.nextLine());
+                    response.append(&quot;\n&quot;);
+                }
+            }
+            return response.toString();
+        }
+
+
+    }
+}
+
+</div></section></section><section class="chapter"><h3 id="jdk-httpclient-jdk9-jdk10-jdk11" data-toc="jdk-httpclient-jdk9-jdk10-jdk11">JDK HttpClient (JDK9新增，JDK10更新，JDK11正式发布)</h3><ul class="list _bullet" id="i8i87da_15491"><li class="list__item" id="i8i87da_15492"><p>java.net.http包</p></li><li class="list__item" id="i8i87da_15493"><p>取代URLConnection</p></li><li class="list__item" id="i8i87da_15494"><p>支持HTTP/1.1和HTTP/2</p></li><li class="list__item" id="i8i87da_15495"><p>实现大部分HTTP方法</p></li><li class="list__item" id="i8i87da_15496"><p>主要类 </p><ul class="list _bullet" id="i8i87da_15497"><li class="list__item" id="i8i87da_15498"><p>HttpClient</p></li><li class="list__item" id="i8i87da_15499"><p>HttpRequest</p></li><li class="list__item" id="i8i87da_15500"><p>HttpResponse</p></li></ul></li></ul><p id="i8i87da_15501">Get:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.HTTP.HttpClient;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 15:38
+ */
+public class JDKHttpClientGet {
+    public static void main(String[] args) {
+        doGet();
+    }
+
+    private static void doGet() {
+        try {
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder(URI.create(&quot;http://www.baidu.com&quot;)).build();
+            HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            System.out.println(response.body());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+</div><p id="i8i87da_15503">Post:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.HTTP.HttpClient;
+
+import java.net.URI;
+import java.net.URLEncoder;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 15:43
+ */
+public class JDKHttpClientPost {
+    public static void main(String[] args) {
+        doPost();
+    }
+
+    private static void doPost() {
+        try {
+            HttpClient client = HttpClient.newBuilder().build();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(&quot;https://zh-tools.usps.com/zip-code-lookup.htm?byaddress&quot;))
+                    .header(&quot;User-Agent&quot;, &quot;HTTPie/0.9.2&quot;)
+                    .header(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded;charset=utf-8&quot;)
+                    .POST(HttpRequest.BodyPublishers.ofString(
+                            &quot;tAdress=&quot; + URLEncoder.encode(&quot;1 Market Street&quot;, &quot;UTF-8&quot;) +
+                                    &quot;tCity=&quot;+ URLEncoder.encode(&quot;San Francisco&quot;, &quot;UTF-8&quot;) +
+                                    &quot;sState=&quot;+ &quot;CA&quot;)
+                    ).build();
+            HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            System.out.println(response.statusCode());
+            System.out.println(response.headers());
+            System.out.println(response.body().toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+</div></section><section class="chapter"><h3 id="httpcomponent" data-toc="httpcomponent">HttpComponent</h3><p id="i8i87da_15505">Get:</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.HTTP.HttpComponet;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 16:53
+ */
+public class HttpComponentsGet {
+    public static void main(String[] args) {
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        RequestConfig requestConfig = RequestConfig.custom()
+                .setConnectionRequestTimeout(5000)//设置超时时间
+                .setConnectionRequestTimeout(5000)//设置请求超时时间
+                .setSocketTimeout(5000)
+                .setRedirectsEnabled(true)//默认允许自动重定向
+                .build();
+        HttpGet httpGet = new HttpGet(&quot;http://www.baidu.com&quot;);
+        httpGet.setConfig(requestConfig);
+        String strResult = &quot;&quot;;
+        try {
+            HttpResponse httpResponse = httpClient.execute(httpGet);
+            if (httpResponse.getStatusLine().getStatusCode() == 200) {
+                strResult = EntityUtils.toString(httpResponse.getEntity(),&quot;UTF-8&quot;);//获得返回结果
+                System.out.println(strResult);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+</div><p id="i8i87da_15507">Post;</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.HTTP.HttpComponet;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.LaxRedirectStrategy;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/3/29 0029 17:03
+ */
+public class HttpComponentsPost {
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        //获取可关闭的httpClient
+        //CloseableHttpClient
+        CloseableHttpClient httpClient = HttpClientBuilder.create().setRedirectStrategy(new LaxRedirectStrategy()).build();
+        //配置超时时间
+        RequestConfig requestConfig = RequestConfig.custom()
+                .setSocketTimeout(10000)
+                .setConnectTimeout(10000)
+                .setConnectionRequestTimeout(10000)
+                .setRedirectsEnabled(false).build();
+        HttpPost httpPost = new HttpPost(&quot;https://zh-tools.usps.com/zip-code-lookup.htm?byaddress&quot;);
+        //配置post参数
+        List&lt;BasicNameValuePair&gt; list = new ArrayList&lt;&gt;();
+        list.add(new BasicNameValuePair(&quot;tAdress&quot;, URLEncoder.encode(&quot;1 Market Street&quot;, &quot;UTF-8&quot;)));//请求参数
+        list.add(new BasicNameValuePair(&quot;tCity&quot;, URLEncoder.encode(&quot;San Francisco&quot;, &quot;UTF-8&quot;)));//请求参数
+        list.add(new BasicNameValuePair(&quot;sState&quot;, &quot;CA&quot;));//请求参数
+        try {
+            UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, &quot;UTF-8&quot;);
+            // 设置post请求参数
+            httpPost.setEntity(entity);
+            httpPost.setHeader(&quot;User-Agent&quot;, &quot;HTTPie/0.9.2&quot;);
+            HttpResponse httpResponse = httpClient.execute(httpPost);
+            String result = &quot;&quot;;
+            if (httpResponse != null) {
+                int statusCode = httpResponse.getStatusLine().getStatusCode();
+                System.out.println(statusCode);
+                if (statusCode == 200) {
+                    result = EntityUtils.toString(httpResponse.getEntity());
+                } else {
+                    result = &quot;ERROR Response&quot; + httpResponse.getStatusLine().toString();
+                }
+            } else {
+            }
+            System.out.println(result);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (httpClient != null) {
+                    httpClient.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
+    }
+}
+
+</div></section></section><section class="chapter"><h2 id="java" data-toc="java">Java调用其他语言</h2><section class="chapter"><h3 id="python" data-toc="python">Python</h3><ul class="list _bullet" id="i8i87da_15509"><li class="list__item" id="i8i87da_15510"><p>解释性脚本语言</p></li><li class="list__item" id="i8i87da_15511"><p>目前版本3</p></li><li class="list__item" id="i8i87da_15512"><p>Jython </p><ul class="list _bullet" id="i8i87da_15513"><li class="list__item" id="i8i87da_15514"><p>将Python源码编译成JVM字节码,由JVM执行对应的字节码,可以很好的与JVM继承</p></li><li class="list__item" id="i8i87da_15515"><p>不是Java与Python的连接器</p></li></ul></li></ul></section></section><div class="last-modified">Last modified: 30 四月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="java.html" class="navigation-links__prev">Java-1</a><a href="java-3.html" class="navigation-links__next">Java-3</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.js"></script></body></html>

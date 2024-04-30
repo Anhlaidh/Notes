@@ -1,0 +1,101 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2024-04-30T19:18:20.814765"><title>Node | Notes</title><script type="application/json" id="virtual-toc-data">[{"id":"repl","level":0,"title":"REPL","anchor":"#repl"},{"id":"xmzlsd_112","level":0,"title":"模块","anchor":"#xmzlsd_112"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Node | Notes"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Notes Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/notes/0.1/nodejs.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Node | Notes"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/notes/0.1/nodejs.html#webpage",
+    "url": "writerside-documentation/notes/0.1/nodejs.html",
+    "name": "Node | Notes",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentationnotes/#website",
+    "url": "writerside-documentationnotes/",
+    "name": "Notes Help"
+}</script><!-- End Schema.org --></head><body data-id="NodeJS" data-main-title="Node" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="README.md|Notes///java///notes"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Notes 0.1 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="NodeJS" id="NodeJS.md">Node</h1><section class="chapter"><h2 id="repl" data-toc="repl">REPL</h2><ul class="list _bullet" id="xmzlsd_107"><li class="list__item" id="xmzlsd_108"><p>read</p></li><li class="list__item" id="xmzlsd_109"><p>exec</p></li><li class="list__item" id="xmzlsd_110"><p>print</p></li><li class="list__item" id="xmzlsd_111"><p>loop</p></li></ul></section><section class="chapter"><h2 id="xmzlsd_112" data-toc="xmzlsd_112">模块</h2><ul class="list _bullet" id="xmzlsd_113"><li class="list__item" id="xmzlsd_114"><p>规范 </p><ul class="list _bullet" id="xmzlsd_115"><li class="list__item" id="xmzlsd_116"><p>一个文件就是一个模块</p></li><li class="list__item" id="xmzlsd_117"><p>通过exports和module.export来导出模块中的成员(生命模块中哪些功能可以使用)</p></li><li class="list__item" id="xmzlsd_118"><p>通过require来加载模块</p></li></ul></li></ul><section class="chapter"><h3 id="xmzlsd_119" data-toc="xmzlsd_119">语法</h3><section class="chapter"><h4 id="commonjs" data-toc="commonjs">CommonJS</h4><ul class="list _bullet" id="xmzlsd_120"><li class="list__item" id="xmzlsd_121"><p>导出成员 </p><ul class="list _bullet" id="xmzlsd_122"><li class="list__item" id="xmzlsd_123"><p>export.属性名 = 值</p></li></ul></li><li class="list__item" id="xmzlsd_124"><p>引入模块 </p><ul class="list _bullet" id="xmzlsd_125"><li class="list__item" id="xmzlsd_126"><p>var 变量名 = require('路径')</p></li></ul></li></ul><div class="code-block" data-lang="javascript">
+//引入b模块
+var b = require('./b')
+console.log(b)
+b.add()
+</div><div class="code-block" data-lang="javascript">
+function add() {
+    console.log('this is add')
+}
+
+function del() {
+    console.log('this is del')
+}
+exports.add = add;
+exports.del = del;
+</div></section><section class="chapter"><h4 id="node-js-npm" data-toc="node-js-npm">第三方Node.js模块 npm</h4></section><section class="chapter"><h4 id="node-js-os-path-url" data-toc="node-js-os-path-url">内置node.js模块(os/path/url模块)</h4><ol class="list _decimal" id="xmzlsd_129" type="1"><li class="list__item" id="xmzlsd_130"><p>引入模块</p></li><li class="list__item" id="xmzlsd_131"><p>使用方法</p></li></ol><div class="code-block" data-lang="javascript">
+//引入官方模块(注:官方模块不需要定义)
+var os = require('os')
+var path = require('path')
+var url = require('url')
+// const {
+//     url
+// } = require('inspector')
+//需求
+//获取系统总内存
+var mem = os.totalmem() / 1024 / 1024
+console.log(mem)
+//文件后缀
+console.log(path.extname('C:\Users\china\Downloads\QQ号码_439484483.txt'))
+//获取表单get提交参数https://www.baidu.com/s?ie=UTF-8&amp;wd=aaa
+var obj = url.parse('https://www.baidu.com/s?ie=UTF-8&amp;wd=aaa', true)
+console.log(obj.path)
+console.log(obj.href)
+</div><ul class="list _bullet" id="xmzlsd_133"><li class="list__item" id="xmzlsd_134"><p>fs模块 写入文件</p></li></ul><div class="code-block" data-lang="javascript">
+//1. 引入官方的fs模块
+const fs = require('fs');
+// 2. 调用成员writeFile创建文件
+fs.writeFile('./a.txt', '你好', function (err) {
+    //err没数据 写入失败
+    if (err) {
+        console.log(err)
+        return;
+    }
+    //err有数据 写入成功
+    console.log(&quot; 没毛病,写入成功&quot;)
+})
+</div><p id="xmzlsd_136">读取文件</p><div class="code-block" data-lang="javascript">
+//1. 引入fs
+const fs = require('fs');
+//2. 调用fs模块的成员 readFile 来读取a.txt
+fs.readFile('./a.txt','utf-8', function (err, data) {
+    if (err) {
+        //如果err为真则代表读取失败(如文件不存在)
+        console.log(err)
+        return;
+    }
+    console.log(data);
+
+});
+</div><ul class="list _bullet" id="xmzlsd_138"><li class="list__item" id="xmzlsd_139"><p>http 模块</p></li></ul><div class="code-block" data-lang="javascript">
+//1. 引入http模块
+const http = require('http');
+//2. 创建web服务器对象(请求和响应)
+let server = http.createServer();
+//3. 监听请求 -&gt; 响应内容
+server.on('request', function (request, response) {
+    console.log('接收到用户请求');
+    console.log(request.url);
+    //有请求必须有响应
+    if (request.url == '/') {
+        response.end('hello');
+    }else if (request.url == '/index') {
+        response.end('this is index');
+    } else {
+//设置编码方式
+        response.setHeader('content-type','text/html;charset=utf-8')
+        response.end('未找到')
+    }
+
+});
+// 4. 启动服务
+server.listen(8080, function () {
+    console.log('服务器启动成功,域名localhost:8080');
+
+});
+</div></section></section></section><div class="last-modified">Last modified: 30 四月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="毕设.html" class="navigation-links__prev">毕设</a><a href="运筹学.html" class="navigation-links__next">运筹学</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.js"></script></body></html>

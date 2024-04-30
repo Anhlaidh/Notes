@@ -1,0 +1,63 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2024-04-30T19:18:20.870843"><title>泛型 | Notes</title><script type="application/json" id="virtual-toc-data">[{"id":"-ovbfxe_218","level":0,"title":"实现","anchor":"#-ovbfxe_218"},{"id":"-ovbfxe_238","level":0,"title":"泛型限定","anchor":"#-ovbfxe_238"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="泛型 | Notes"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Notes Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/notes/0.1/泛型.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="泛型 | Notes"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/notes/0.1/泛型.html#webpage",
+    "url": "writerside-documentation/notes/0.1/泛型.html",
+    "name": "泛型 | Notes",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentationnotes/#website",
+    "url": "writerside-documentationnotes/",
+    "name": "Notes Help"
+}</script><!-- End Schema.org --></head><body data-id="泛型" data-main-title="泛型" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="README.md|Notes///java///notes"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Notes 0.1 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="泛型" id="泛型.md">泛型</h1><p id="-ovbfxe_213">编写的代码可以被很多不同类型的对象所重用 (参数化类型，避免类型转换，代码可复用)</p><ul class="list _bullet" id="-ovbfxe_214"><li class="list__item" id="-ovbfxe_215"><p>泛型类ArrayList,HashSet,HashMap</p></li><li class="list__item" id="-ovbfxe_216"><p>泛型方法Collections.binarySearch,Array.sort</p></li><li class="list__item" id="-ovbfxe_217"><p>泛型接口List,Iterator</p></li></ul><section class="chapter"><h2 id="-ovbfxe_218" data-toc="-ovbfxe_218">实现</h2><p id="-ovbfxe_219">###泛型类</p><div class="code-block" data-lang="java">
+package JavaLearning_Advanced.Generic;
+
+/**
+ * @Description:
+ * @author: Anhlaidh
+ * @date: 2020/4/3 0003 22:27
+ */
+public class Interval&lt;T&gt; {
+    private T lower;
+    private T upper;
+
+    public Interval(T lower, T upper) {
+        this.lower = lower;
+        this.upper = upper;
+    }
+
+    public static &lt;T&gt; Interval&lt;T&gt; getReverse(Interval&lt;T&gt; interval) {
+        return new Interval&lt;T&gt;(interval.getUpper(), interval.getLower());
+    }
+
+    public T getLower() {
+        return lower;
+    }
+
+    public void setLower(T lower) {
+        this.lower = lower;
+    }
+
+    public T getUpper() {
+        return upper;
+    }
+
+    public void setUpper(T upper) {
+        this.upper = upper;
+    }
+}
+</div><section class="chapter"><h3 id="-ovbfxe_221" data-toc="-ovbfxe_221">泛型方法</h3><p id="-ovbfxe_222"><code class="code" id="-ovbfxe_223">public static &lt;T&gt; Interval&lt;T&gt; getReverse(Interval&lt;T&gt; interval)</code><br> static 后的 定义该方法所有的参数类型</p><p id="-ovbfxe_226"><code class="code" id="-ovbfxe_227">String s1 = Array.&lt;String&gt;getMiddle(&quot;abc&quot;,&quot;def&quot;,null);</code><br> 指定返回类型,允许null<br><code class="code" id="-ovbfxe_230">Integer s1 = Array.getMiddle(1,2,3);</code><br> 自动检测返回类型<br><code class="code" id="-ovbfxe_233">Integer s1 = Array.getMiddle(1,2,3.5L);</code><br> 错误，寻找共同超类，再转型</p></section><section class="chapter"><h3 id="-ovbfxe_235" data-toc="-ovbfxe_235">泛型接口</h3><div class="code-block" data-lang="java">
+public interface Calculator&lt;T&gt;{
+    public T add(T operand1,Toperand2);
+}
+</div><div class="code-block" data-lang="java">
+public class IntegerCalculator implements Calculator&lt;T&gt;{    
+    public Integer add(Integer operand1,Integer operand2){
+        return operand1+operand2;
+}
+}
+</div></section></section><section class="chapter"><h2 id="-ovbfxe_238" data-toc="-ovbfxe_238">泛型限定</h2><ul class="list _bullet" id="-ovbfxe_239"><li class="list__item" id="-ovbfxe_240"><p id="-ovbfxe_241">泛型PECS原则</p></li><li class="list__item" id="-ovbfxe_242"><p id="-ovbfxe_243">Producer Extends，Consumer Super</p></li><li class="list__item" id="-ovbfxe_244"><p id="-ovbfxe_245">要从泛型类读取类型T的数据，并且不能写入，可以用 <code class="code" id="-ovbfxe_246">&lt;? extends 通配符&gt;</code> ;(Producer Extends,泛型类是生产者，往外输出东西)</p></li><li class="list__item" id="-ovbfxe_247"><p id="-ovbfxe_248">如果要向泛型类写入T的数据，并且不需要读取，可以使用 <code class="code" id="-ovbfxe_249">&lt;? extends 通配符泛&gt;</code> ;(Consumer Super，泛型类是消费者，往内增加东西)</p></li><li class="list__item" id="-ovbfxe_250"><p id="-ovbfxe_251">如果既想写入又想读出，不使用通配符</p></li><li class="list__item" id="-ovbfxe_252"><p id="-ovbfxe_253">无限定类型的泛型</p></li><li class="list__item" id="-ovbfxe_254"><p id="-ovbfxe_255"><code class="code" id="-ovbfxe_256">Pair&lt;T&gt;</code> 原始类型</p></li><li class="list__item" id="-ovbfxe_257"><p id="-ovbfxe_258"><code class="code" id="-ovbfxe_259">Pair&lt;?&gt;</code> 无限定通配符，表示任意类型</p></li></ul><p id="-ovbfxe_260"><code class="code" id="-ovbfxe_261">&lt;T extend Comparable&gt;</code>限定T必须继承自Comparable类，用&amp;拼接，逗号隔开</p><section class="chapter"><h3 id="-ovbfxe_262" data-toc="-ovbfxe_262">泛型的继承</h3><figure id="-ovbfxe_263"><img alt="泛型图示" src="images/5f3c1de7.png" title="泛型图示" width="753" height="564"></figure><ul class="list _bullet" id="-ovbfxe_264"><li class="list__item" id="-ovbfxe_265"><p id="-ovbfxe_266">上限界定符 <code class="code" id="-ovbfxe_267">Pair&lt;? extends S&gt;</code><br> Pair能接受的参数类型，是S自身或子类<br> 只能get，不能set</p></li><li class="list__item" id="-ovbfxe_270"><p id="-ovbfxe_271">下限界定符 <code class="code" id="-ovbfxe_272">Pair&lt;? super S&gt;</code><br> Pair能接受的类型参数，是S的自身或超类<br> 只能set，不能get</p></li></ul></section><section class="chapter"><h3 id="-ovbfxe_275" data-toc="-ovbfxe_275">总结</h3><ul class="list _bullet" id="-ovbfxe_276"><li class="list__item" id="-ovbfxe_277"><p><code class="code" id="-ovbfxe_278">Pair&lt;T&gt;</code>和 <code class="code" id="-ovbfxe_279">Pair&lt;S&gt;</code>没有关系</p></li><li class="list__item" id="-ovbfxe_280"><p><code class="code" id="-ovbfxe_281">Pair&lt;T extends Comparable &amp; Serializable&gt;</code>限定T的类型</p></li><li class="list__item" id="-ovbfxe_282"><p>PRES原则</p></li></ul></section></section><div class="last-modified">Last modified: 30 四月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="wx.html" class="navigation-links__prev">微信小程序</a><a href="vue.html" class="navigation-links__next">VUE</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.js"></script></body></html>

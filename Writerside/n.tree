@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="n"
+                 name="Notes" start-page="README.md">
+
+    <toc-element topic="README.md">
+        <toc-element toc-title="C#">
+            <toc-element toc-title="BaseLearning">
+                <toc-element topic="C#_01.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element toc-title="Rust">
+            <toc-element topic="Rust.md"/>
+        </toc-element>
+        <toc-element toc-title="java">
+            <toc-element toc-title="UML">
+                <toc-element topic="部署.md"/>
+            </toc-element>
+            <toc-element toc-title="notes">
+                <toc-element topic="毕设.md"/>
+                <toc-element topic="NodeJS.md"/>
+                <toc-element topic="运筹学.md"/>
+                <toc-element topic="集群.md"/>
+                <toc-element topic="毛选.md"/>
+                <toc-element topic="算法.md"/>
+                <toc-element topic="面试.md"/>
+                <toc-element topic="WX.md"/>
+                <toc-element topic="泛型.md"/>
+                <toc-element topic="vue.md"/>
+                <toc-element topic="设计模式.md"/>
+                <toc-element toc-title="网络">
+                    <toc-element topic="TCP-IP.md"/>
+                </toc-element>
+                <toc-element toc-title="Java">
+                    <toc-element topic="算法进阶.md"/>
+                    <toc-element topic="JVM-1.md"/>
+                    <toc-element topic="算法.md"/>
+                    <toc-element topic="Java.md"/>
+                    <toc-element topic="Java-2.md"/>
+                    <toc-element topic="Java-3.md"/>
+                    <toc-element topic="JVM-2.md"/>
+                    <toc-element topic="网络.md"/>
+                    <toc-element toc-title="Spring">
+                        <toc-element topic="SpringBoot.md"/>
+                    </toc-element>
+                </toc-element>
+                <toc-element toc-title="账户">
+                    <toc-element topic="OAuth.md"/>
+                </toc-element>
+                <toc-element toc-title="中间件">
+                    <toc-element topic="Kafka.md"/>
+                </toc-element>
+                <toc-element toc-title="DB">
+                    <toc-element topic="ElasticSearch.md"/>
+                    <toc-element topic="MySQL.md"/>
+                    <toc-element topic="NoSQL.md"/>
+                    <toc-element topic="mgdb.md"/>
+                    <toc-element topic="Redis.md"/>
+                </toc-element>
+                <toc-element toc-title="设计模式">
+                    <toc-element topic="TankWar.md"/>
+                </toc-element>
+                <toc-element toc-title="高并发">
+                    <toc-element topic="多线程与高并发.md"/>
+                    <toc-element topic="并发面试底层.md"/>
+                    <toc-element topic="高并发与负载均衡.md"/>
+                    <toc-element topic="高并发_Redis.md"/>
+                    <toc-element toc-title="SpringCloud">
+                        <toc-element topic="SpringCloud.md"/>
+                        <toc-element topic="Eureka.md"/>
+                    </toc-element>
+                </toc-element>
+                <toc-element toc-title="Tool">
+                    <toc-element topic="Docker.md"/>
+                    <toc-element topic="Git.md"/>
+                    <toc-element topic="Nginx.md"/>
+                </toc-element>
+            </toc-element>
+        </toc-element>
+    </toc-element>
+</instance-profile>
